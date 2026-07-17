@@ -3,7 +3,7 @@ const SWATCHES = [
   { color: '#fbf8f0', border: 'rgba(33,29,20,.15)' },
   { color: '#211d14' },
   { color: '#c65a2e' },
-  { color: '#2e7f74' },
+  { color: '#3f5d7a' },
 ]
 
 export function ColophonView() {
@@ -22,7 +22,7 @@ export function ColophonView() {
         model is set as a plate: named, numbered, defined, illustrated, and wired to its neighbors.
       </div>
       <div className="mt-4 font-serif text-base leading-[1.75] text-umber">
-        Read it in any order. Mark what you have studied. Follow the verdigris threads — the
+        Read it in any order. Mark what you have studied. Follow the prussian threads — the
         connections are the point.
       </div>
       <div className="mt-8 flex flex-col gap-4 border-t border-ink/16 pt-[22px]">
@@ -51,7 +51,7 @@ export function ColophonView() {
               />
             ))}
             <span className="ml-1.5 font-mono text-[10px] text-stone">
-              paper · card · ink · ember · verdigris
+              paper · card · ink · ember · prussian
             </span>
           </div>
         </div>
@@ -68,7 +68,7 @@ export function ColophonView() {
             PLATES
           </span>
           <span className="font-serif text-sm text-umber">
-            Retro-futurist engravings: thin ink linework, ember suns, verdigris trajectories, ruled
+            Retro-futurist engravings: thin ink linework, ember suns, prussian trajectories, ruled
             ground. One per model, in time.
           </span>
         </div>

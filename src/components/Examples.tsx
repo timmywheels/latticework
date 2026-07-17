@@ -22,9 +22,9 @@ export function Examples({ id }: ExamplesProps) {
         {rows.map((e, i) => (
           <div
             key={i}
-            className="border-l-2 border-verdigris/35 bg-card/70 py-2 pl-3.5 pr-3 transition-colors duration-150 hover:border-ember/60"
+            className="border-l-2 border-prussian/35 bg-card/70 py-2 pl-3.5 pr-3 transition-colors duration-150 hover:border-ember/60"
           >
-            <div className="font-mono text-[9px] font-medium tracking-[0.14em] text-verdigris">
+            <div className="font-mono text-[9px] font-medium tracking-[0.14em] text-prussian">
               {e.context.toUpperCase()}
             </div>
             <div className="mt-1 font-serif text-[14px] leading-[1.6] text-umber">{e.text}</div>

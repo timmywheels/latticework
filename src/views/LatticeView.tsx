@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router'
 import {
   CLUSTER_LABELS,
@@ -35,7 +35,7 @@ const PROVENANCES = Object.keys(PROVENANCE_LABELS) as Provenance[]
 const PROV_DOT: Record<Provenance, string> = {
   'munger-named': '#c65a2e',
   'munger-used': '#d98b64',
-  'munger-adjacent': '#2e7f74',
+  'munger-adjacent': '#3f5d7a',
   community: '#8a8272',
   'canon-addition': '#b0a894',
 }
@@ -94,8 +94,10 @@ const BaseEdges = memo(function BaseEdges({
             y1={e.y1}
             x2={e.x2}
             y2={e.y2}
-            stroke={e.cross ? 'rgba(46,127,116,.09)' : 'rgba(33,29,20,.2)'}
-            strokeWidth={1}
+            stroke={e.cross ? 'rgba(63,93,122,.07)' : 'rgba(33,29,20,.13)'}
+            strokeWidth={0.75}
+            // hairline at every zoom — SVG-unit strokes fatten as the viewBox shrinks
+            vectorEffect="non-scaling-stroke"
           />
         )
       })}
@@ -158,7 +160,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
   const scale = LATTICE_W / box.w
   const labelAll = scale > 2.6 || shown.length <= 60
 
-  const zoomAt = (cx: number, cy: number, factor: number) => {
+  const zoomAt = useCallback((cx: number, cy: number, factor: number) => {
     setBox((b) => {
       const w = Math.min(LATTICE_W, Math.max(MIN_W, b.w / factor))
       const h = w * (LATTICE_H / LATTICE_W)
@@ -171,21 +173,41 @@ export function LatticeView({ studied }: LatticeViewProps) {
         y: Math.min(LATTICE_H - h, Math.max(0, cy - ry * h)),
       }
     })
-  }
+  }, [])
+
+  // the wheel listener is native and stable, so it reads the box through a ref
+  const boxRef = useRef(box)
+  useLayoutEffect(() => {
+    boxRef.current = box
+  })
 
   const toSvg = (clientX: number, clientY: number) => {
+    const b = boxRef.current
     const r = svgRef.current?.getBoundingClientRect()
-    if (!r) return { x: box.x + box.w / 2, y: box.y + box.h / 2 }
+    if (!r) return { x: b.x + b.w / 2, y: b.y + b.h / 2 }
     return {
-      x: box.x + ((clientX - r.left) / r.width) * box.w,
-      y: box.y + ((clientY - r.top) / r.height) * box.h,
+      x: b.x + ((clientX - r.left) / r.width) * b.w,
+      y: b.y + ((clientY - r.top) / r.height) * b.h,
     }
   }
 
-  const onWheel = (e: React.WheelEvent) => {
-    const p = toSvg(e.clientX, e.clientY)
-    zoomAt(p.x, p.y, e.deltaY < 0 ? 1.18 : 1 / 1.18)
-  }
+  // Zoom rides the actual wheel delta: a trackpad's stream of small events nudges
+  // the view a hair each, a mouse notch steps ~1.15× — instead of the old flat
+  // 1.18× per event, which compounded trackpad streams into overshoot. Native and
+  // non-passive because React's onWheel can't preventDefault the page scroll.
+  useEffect(() => {
+    const el = svgRef.current
+    if (!el) return
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault()
+      const dy = Math.max(-240, Math.min(240, e.deltaMode === 1 ? e.deltaY * 33 : e.deltaY))
+      const p = toSvg(e.clientX, e.clientY)
+      zoomAt(p.x, p.y, Math.exp(-dy * 0.0014))
+    }
+    el.addEventListener('wheel', onWheel, { passive: false })
+    return () => el.removeEventListener('wheel', onWheel)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [zoomAt])
 
   const onPointerDown = (e: React.PointerEvent) => {
     drag.current = { px: e.clientX, py: e.clientY, ox: box.x, oy: box.y }
@@ -325,8 +347,8 @@ export function LatticeView({ studied }: LatticeViewProps) {
           onClick={() => setShowCross((v) => !v)}
           className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-[2px] border px-2 py-[3px] font-mono text-[9.5px] transition-colors duration-150"
           style={{
-            borderColor: showCross ? 'rgba(46,127,116,.5)' : 'rgba(33,29,20,.2)',
-            color: showCross ? '#2e7f74' : '#8a8272',
+            borderColor: showCross ? 'rgba(63,93,122,.5)' : 'rgba(33,29,20,.2)',
+            color: showCross ? '#3f5d7a' : '#8a8272',
           }}
         >
           {showCross ? '◉' : '○'} CROSS-LINKS {CROSS_COUNT}
@@ -386,7 +408,6 @@ export function LatticeView({ studied }: LatticeViewProps) {
           viewBox={`${box.x} ${box.y} ${box.w} ${box.h}`}
           className="block h-auto w-full touch-none select-none"
           style={{ cursor: drag.current ? 'grabbing' : 'grab' }}
-          onWheel={onWheel}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={endDrag}
@@ -406,8 +427,9 @@ export function LatticeView({ studied }: LatticeViewProps) {
                 y1={e.y1}
                 x2={e.x2}
                 y2={e.y2}
-                stroke="rgba(46,127,116,.9)"
-                strokeWidth={2.4 / scale}
+                stroke="rgba(63,93,122,.8)"
+                strokeWidth={1.4}
+                vectorEffect="non-scaling-stroke"
               />
             ))}
           </g>
@@ -420,7 +442,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
             // sqrt-damped: full size zoomed out, growing gently as you zoom in — linear
             // scaling balloons the nodes past their labels, dividing it out shrinks them to dots
             const r = (5 + Math.min(DEGREE.get(m.id) ?? 0, 24) * 0.42) / Math.sqrt(scale)
-            const stroke = isHov ? '#c65a2e' : isNeighbor ? '#2e7f74' : '#211d14'
+            const stroke = isHov ? '#c65a2e' : isNeighbor ? '#3f5d7a' : '#211d14'
             return (
               <g
                 key={m.id}
@@ -499,7 +521,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
             <span className="min-w-0 flex-1 font-serif text-[13px] italic leading-[1.4] text-drab">
               {hovM.blurb}
             </span>
-            <span className="flex-none font-mono text-[9.5px] text-verdigris">
+            <span className="flex-none font-mono text-[9.5px] text-prussian">
               ⁘ {hovM.links.length}
             </span>
             <span className="flex w-[190px] flex-none items-center justify-end gap-1.5 font-mono text-[9.5px] text-stone">

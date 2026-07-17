@@ -54,7 +54,7 @@ export function MiniLattice({ model, max = 16 }: MiniLatticeProps) {
             y1={cy}
             x2={x}
             y2={y}
-            stroke={hov === m.id ? 'rgba(198,90,46,.85)' : 'rgba(46,127,116,.42)'}
+            stroke={hov === m.id ? 'rgba(198,90,46,.85)' : 'rgba(63,93,122,.42)'}
             strokeWidth={hov === m.id ? 1.8 : 1}
           />
         ))}
@@ -74,7 +74,7 @@ export function MiniLattice({ model, max = 16 }: MiniLatticeProps) {
                 cy={y}
                 r={5.5}
                 fill="#fbf8f0"
-                stroke={on ? '#c65a2e' : '#2e7f74'}
+                stroke={on ? '#c65a2e' : '#3f5d7a'}
                 strokeWidth={on ? 2.2 : 1.3}
               />
               <circle cx={x} cy={y} r={13} fill="transparent" />

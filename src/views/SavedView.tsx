@@ -36,7 +36,7 @@ export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
               onClick={() => copy(buildPromptPack(models))}
               title="Copy all saved models as one checklist prompt"
               className="cursor-pointer rounded-[2px] px-[14px] py-[7px] font-mono text-[10px] font-medium tracking-[0.1em] text-card transition-colors duration-200"
-              style={{ background: copied ? '#2e7f74' : '#211d14' }}
+              style={{ background: copied ? '#3f5d7a' : '#211d14' }}
             >
               {copied ? 'COPIED ✓' : 'COPY SHELF AS PROMPT ⧉'}
             </motion.button>

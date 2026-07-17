@@ -7,10 +7,8 @@ import {
   MODELS,
   MODELS_BY_ID,
   PLANNED_COUNTS,
-  areLinked,
   capTitle,
   neighborModel,
-  type Model,
 } from '../data/models'
 import { PlateArt } from '../components/PlateArt'
 import { PlatePlaceholder } from '../components/PlatePlaceholder'
@@ -76,15 +74,6 @@ export function IndexView({
       rows: MODELS.filter((m) => m.disc === d),
     }))
     .filter((g) => g.rows.length > 0)
-
-  const isWiredToHover = (m: Model) =>
-    showConnections && !!hovM && hovM.id !== m.id && areLinked(hovM, m)
-
-  const rowBg = (m: Model) => {
-    if (hover === m.id) return '#fbf8f0'
-    if (isWiredToHover(m)) return 'rgba(46,127,116,.12)'
-    return 'transparent'
-  }
 
   const previewLinks = pM.links.map((id) => MODELS_BY_ID[id]).filter(Boolean)
 
@@ -170,7 +159,7 @@ export function IndexView({
                     onClick={() => openModel(m.id)}
                     onMouseEnter={() => setHover(m.id)}
                     className="flex cursor-pointer items-baseline gap-3.5 border-b border-dotted border-ink/20 transition-[background-color] duration-150 hover:bg-card"
-                    style={{ padding: rowPadding, background: rowBg(m) }}
+                    style={{ padding: rowPadding }}
                   >
                     <span className="w-[38px] flex-none font-mono text-[11px] font-medium text-ember">
                       {m.id}
@@ -181,16 +170,8 @@ export function IndexView({
                     <span className="min-w-0 flex-1 font-serif text-[12.5px] italic leading-[1.4] text-drab">
                       {m.blurb}
                     </span>
-                    <span
-                      className={`w-[88px] flex-none text-right font-mono text-[9.5px] text-verdigris ${
-                        isWiredToHover(m) ? 'font-medium' : ''
-                      }`}
-                    >
-                      {!showConnections
-                        ? ''
-                        : isWiredToHover(m)
-                          ? `⁘ WIRED TO ${hovM!.id}`
-                          : `⁘ ${m.links.length}`}
+                    <span className="w-[88px] flex-none text-right font-mono text-[9.5px] text-prussian">
+                      {showConnections ? `⁘ ${m.links.length}` : ''}
                     </span>
                     <span
                       className="w-[16px] flex-none text-right font-serif text-[12px]"
@@ -210,7 +191,7 @@ export function IndexView({
             </div>
           ))}
           <div className="px-5 py-3.5 font-mono text-[10px] text-faded">
-            HOVER A ROW TO PREVIEW ITS PLATE &amp; TINT ITS CONNECTIONS · CLICK TO OPEN THE FULL
+            HOVER A ROW TO PREVIEW ITS PLATE · CLICK TO OPEN THE FULL
             PLATE
           </div>
         </div>
@@ -257,7 +238,7 @@ export function IndexView({
                   key={m.id}
                   type="button"
                   onClick={() => setSel(m.id)}
-                  className="cursor-pointer border-b border-verdigris/50 text-left font-serif text-[13px] italic text-verdigris transition-colors duration-150 hover:border-ember hover:text-ember"
+                  className="cursor-pointer border-b border-prussian/50 text-left font-serif text-[13px] italic text-prussian transition-colors duration-150 hover:border-ember hover:text-ember"
                 >
                   {m.name.length > 32 ? m.name.slice(0, 31).toLowerCase() + '…' : m.name.toLowerCase()}
                 </button>

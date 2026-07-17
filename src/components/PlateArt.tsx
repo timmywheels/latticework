@@ -50,8 +50,8 @@ export function PlateArt({ inset = 8 }: PlateArtProps) {
         <line x1="61" y1="212" x2="61" y2="216" stroke="#211d14" strokeWidth="1.2" />
         {/* the reward, lifted */}
         <circle cx="300" cy="132" r="10" fill="#c65a2e" stroke="#211d14" strokeWidth="1.2" />
-        <path d="M 306 118 Q 316 96 296 84" fill="none" stroke="#2e7f74" strokeWidth="1.3" strokeDasharray="4 4" />
-        <path d="M 296 84 L 305 86 M 296 84 L 299 93" fill="none" stroke="#2e7f74" strokeWidth="1.3" />
+        <path d="M 306 118 Q 316 96 296 84" fill="none" stroke="#3f5d7a" strokeWidth="1.3" strokeDasharray="4 4" />
+        <path d="M 296 84 L 305 86 M 296 84 L 299 93" fill="none" stroke="#3f5d7a" strokeWidth="1.3" />
         {/* field marks */}
         <path d="M 96 92 L 104 92 M 100 88 L 100 96" stroke="#211d14" strokeWidth="1" opacity="0.45" />
         <path d="M 148 56 L 156 56 M 152 52 L 152 60" stroke="#211d14" strokeWidth="1" opacity="0.35" />

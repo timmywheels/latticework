@@ -3,7 +3,7 @@ import { PEOPLE, PROVENANCE_LABELS, type Model } from '../data/models'
 const PROV_DOT: Record<string, string> = {
   'munger-named': '#c65a2e',
   'munger-used': '#d98b64',
-  'munger-adjacent': '#2e7f74',
+  'munger-adjacent': '#3f5d7a',
   community: '#8a8272',
   'canon-addition': '#b0a894',
 }
@@ -59,7 +59,7 @@ export function ModelPopover({ model, onOpen, onClose }: ModelPopoverProps) {
             />
             {PROVENANCE_LABELS[model.provenance].toUpperCase()}
           </span>
-          <span className="text-verdigris">⁘ {model.links.length}</span>
+          <span className="text-prussian">⁘ {model.links.length}</span>
         </div>
 
         {thinkers.length > 0 && (

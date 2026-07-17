@@ -28,7 +28,7 @@ const RING = 16
 const PROV_DOT: Record<Provenance, string> = {
   'munger-named': '#c65a2e',
   'munger-used': '#d98b64',
-  'munger-adjacent': '#2e7f74',
+  'munger-adjacent': '#3f5d7a',
   community: '#8a8272',
   'canon-addition': '#b0a894',
 }
@@ -130,7 +130,7 @@ export function ModelDetailView({
               className="mt-[22px] flex h-[110px] items-center justify-center border border-dashed border-ink/30"
               style={{
                 background:
-                  'repeating-linear-gradient(45deg, transparent 0 6px, rgba(46,127,116,.07) 6px 7px)',
+                  'repeating-linear-gradient(45deg, transparent 0 6px, rgba(63,93,122,.07) 6px 7px)',
               }}
             >
               <span className="font-mono text-[10px] text-drab">
@@ -138,6 +138,8 @@ export function ModelDetailView({
               </span>
             </div>
           )}
+
+          <CopyPrompt id={selM.id} />
 
           {/* the specimen record — everything about the plate that isn't prose */}
           <dl className="mt-[22px] border-t border-ink/14 pt-3">
@@ -195,7 +197,7 @@ export function ModelDetailView({
             <dt className="mt-4 border-t border-ink/10 pt-3 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
               WIRED TO
             </dt>
-            <dd className="mt-1.5 font-mono text-[11px] text-verdigris">
+            <dd className="mt-1.5 font-mono text-[11px] text-prussian">
               ⁘ {selM.links.length} NEIGHBORS
             </dd>
           </dl>
@@ -218,7 +220,6 @@ export function ModelDetailView({
 
           <div className="clear-both" />
           <Examples id={selM.id} />
-          <CopyPrompt id={selM.id} />
 
           {/* actions sit above the lattice, so a well-wired plate can't push them off-screen */}
           <div className="mt-[26px] flex flex-wrap gap-2.5">
@@ -227,7 +228,7 @@ export function ModelDetailView({
               whileTap={{ scale: 0.97 }}
               onClick={() => onToggleStudied(id)}
               className="cursor-pointer rounded-[2px] px-[22px] py-[11px] text-center font-mono text-[11px] font-medium tracking-[0.1em] text-card transition-colors duration-200 hover:opacity-[0.88]"
-              style={{ background: isStudied ? '#2e7f74' : '#c65a2e' }}
+              style={{ background: isStudied ? '#3f5d7a' : '#c65a2e' }}
             >
               {isStudied ? 'STUDIED ✦' : 'MARK STUDIED ✦'}
             </motion.button>
@@ -274,7 +275,7 @@ export function ModelDetailView({
               <Link
                 key={m.id}
                 to={`/models/${m.id}`}
-                className="cursor-pointer rounded-[2px] border border-verdigris/30 px-2 py-[3px] font-serif text-[12px] italic text-verdigris transition-colors duration-150 hover:border-ember hover:text-ember"
+                className="cursor-pointer rounded-[2px] border border-prussian/30 px-2 py-[3px] font-serif text-[12px] italic text-prussian transition-colors duration-150 hover:border-ember hover:text-ember"
               >
                 {m.name.length > 40 ? m.name.slice(0, 39) + '…' : m.name}
               </Link>
