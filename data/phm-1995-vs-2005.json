@@ -1,0 +1,193 @@
+{
+ "meta": {
+  "title": "The Psychology of Human Misjudgment — 1995 vs 2005",
+  "note": "Munger's psychology list exists in two incompatible editions. The June 1995 Harvard speech is billed as '24 Standard Causes of Human Misjudgment' but the extant Tilson transcription enumerates only 22 (his spoken numbering skips; Tilson's brackets correct it). The 25 numbered 'Tendencies' exist only in Munger's own 2005 rewrite for Poor Charlie's Almanack, which he wrote 'from memory unassisted by any research'. Any catalog claiming 'Munger's 25 biases' is citing the 2005 edition, not the famous speech.",
+  "sources": [
+   "https://fs.blog/great-talks/psychology-human-misjudgment/",
+   "https://buffettmungerwisdom.wordpress.com/wp-content/uploads/2013/01/mungerspeech_june_95.pdf"
+  ]
+ },
+ "summary": "The 1995 Harvard speech (Tilson transcription) is billed as \"24 Standard Causes of Human Misjudgment\" but actually enumerates only 22 items — Munger's spoken numbers skipped around (\"Nine [he means eight],\" \"Seventeen [he means 16],\" \"Twenty-two [he means 18]\"), and Tilson's brackets correct them. The 2005 rewrite (Talk Eleven of Poor Charlie's Almanack) restructures these into 25 uniformly named \"Tendencies.\" NET CHANGES: (a) ADDED IN 2005 as numbered constructs: Doubt-Avoidance (4), Curiosity (6), Kantian Fairness (7), Excessive Self-Regard (12), Overoptimism (13), and Lollapalooza (25) — though Lollapalooza was already the centerpiece of the 1995 talk's Q&A section (just unnumbered), Doubt-Avoidance was carved out of the old consistency-and-commitment territory, and Excessive Self-Regard absorbs the \"especially like oneself/one's own idea structures\" clause of 1995 #15 plus the self-picked-lottery material of 1995 #14. (b) DISAPPEARED FROM 1995: #8 (economists loved EMT for elegant math — a man-with-a-hammer digression, never a real construct; man-with-a-hammer survives as an unnumbered recurring motif), #14 (mis-gambling compulsion — dissolved and dispersed across Tendencies 1, 12, and 14, since 2005 explains gambling as a lollapalooza rather than a tendency), and #19 (other normal limitations of sensation/memory/cognition/knowledge — undiscussed even in 1995 and dropped). (c) MERGERS: 1995 #1 (reinforcement/incentives) + #3 (incentive-caused bias/agency costs) merged into Tendency 1 (Reward and Punishment Superresponse); 1995 #16 (crude heuristics/conveniently available information) + #17 (over-influence by extra-vivid evidence) merged into Tendency 18 (Availability-Misweighing — the 2005 text explicitly folds vividness into availability). (d) SPLITS: 1995 #15 (liking + disliking distortion) split into Tendencies 2 (Liking/Loving) and 3 (Disliking/Hating), with its self-regard clause migrating to 12; 1995 #21 (mental declines incl. disuse) split into Tendencies 19 (Use-It-or-Lose-It) and 21 (Senescence-Misinfluence). (e) RENAMES of note: simple psychological denial → Simple, Pain-Avoiding Psychological Denial (11); consistency-and-commitment → Inconsistency-Avoidance (5); Pavlovian association → Influence-from-Mere-Association (10, taking Persian Messenger Syndrome with it); chemical dependency → Drug-Misinfluence (20); stress-induced mental changes → Stress-Influence (17); why-question confusion → Reason-Respecting (24, keeping Carl Braun's five Ws); say-something syndrome → Twaddle (23, keeping the honeybee dance). Envy/Jealousy (8) is the only item carried over essentially unchanged in both name and content. Sources: fs.blog full text of the 2005 talk (https://fs.blog/great-talks/psychology-human-misjudgment/), Whitney Tilson's 1995 transcription PDF (https://buffettmungerwisdom.wordpress.com/wp-content/uploads/2013/01/mungerspeech_june_95.pdf); local working copies at /private/tmp/claude-501/-Users-timothy-wheeler-dev-ai-latticework/a281494d-4f70-44ff-b9d0-c47f4bf5fc9d/scratchpad/fsblog.txt.",
+ "mapping": [
+  {
+   "cause_1995": "1. Under-recognition of the power of what psychologists call 'reinforcement' and what economists call 'incentives'",
+   "tendency_2005": "1. Reward and Punishment Superresponse Tendency",
+   "relationship": "merged",
+   "notes": "1995 causes #1 and #3 were fused into one 2005 tendency. The FedEx night-shift and Xerox sales-commission examples survive verbatim under Tendency 1, as do Skinner and man-with-a-hammer (Blanchard) digressions. Part of 1995 #14's gambling material (Skinner's variable-ratio reinforcement) also landed here."
+  },
+  {
+   "cause_1995": "2. My second factor is simple psychological denial",
+   "tendency_2005": "11. Simple, Pain-Avoiding Psychological Denial",
+   "relationship": "same-renamed",
+   "notes": "Same construct, near-identical name; still anchored by the dead-airman's-mother example. Moved from position 2 to 11."
+  },
+  {
+   "cause_1995": "3. Incentive-caused bias, both in one's own mind and that of one's trusted advisor, where it creates what economists call 'agency costs'",
+   "tendency_2005": "1. Reward and Punishment Superresponse Tendency",
+   "relationship": "merged",
+   "notes": "Absorbed into Tendency 1 as its major sub-topic: the 2005 text names 'incentive-caused bias' explicitly (13 mentions) and keeps the gall-bladder surgeon, cash-register/Patterson, and defense-contractor stories inside Tendency 1's discussion."
+  },
+  {
+   "cause_1995": "4. Bias from consistency and commitment tendency, including the tendency to avoid or promptly resolve cognitive dissonance; includes the self-confirmation tendency of all conclusions, particularly expressed conclusions, hard-won conclusions",
+   "tendency_2005": "5. Inconsistency-Avoidance Tendency",
+   "relationship": "same-renamed",
+   "notes": "Renamed and reframed as anti-change/status-quo programming. Retains Max Planck, Chinese brainwashing, initiation rituals, public-declaration pounding-in, and first-conclusion (confirmation) bias. The adjacent new Tendency 4 (Doubt-Avoidance) was carved out as a sibling construct covering the quick-decision-under-puzzlement side of the same territory."
+  },
+  {
+   "cause_1995": "5. Bias from Pavlovian association, misconstruing past correlation as a reliable basis for decision-making",
+   "tendency_2005": "10. Influence-from-Mere-Association Tendency",
+   "relationship": "same-renamed",
+   "notes": "Same construct under a de-jargonized name. Persian Messenger Syndrome (Bill Paley/CBS, the Texas oil litigation) moved with it and sits under Tendency 10 in 2005. The Skinnerian/operant-conditioning strand of the 1995 discussion migrated to Tendency 1 (rewards)."
+  },
+  {
+   "cause_1995": "6. Bias from reciprocation tendency, including the tendency of one on a roll to act as other persons expect",
+   "tendency_2005": "9. Reciprocation Tendency",
+   "relationship": "same-renamed",
+   "notes": "Cialdini's ask-for-a-lot-then-back-off zoo experiment retained. The 1995 role-theory rider ('act as other persons expect') is de-emphasized; in 2005 role/identity maintenance is treated under Inconsistency-Avoidance (5)."
+  },
+  {
+   "cause_1995": "7. Bias from over-influence by social proof — that is, the conclusions of others, particularly under conditions of natural uncertainty and stress",
+   "tendency_2005": "15. Social-Proof Tendency",
+   "relationship": "same-renamed",
+   "notes": "Straight carry-over; oil-company fertilizer-acquisition copycat example retained. Triggering by uncertainty and stress kept in the 2005 definition."
+  },
+  {
+   "cause_1995": "8. [He says 'Nine', means 8]: What made these economists love the efficient market theory is the math was so elegant",
+   "tendency_2005": "NONE",
+   "relationship": "dropped-2005",
+   "notes": "Never a real psychological construct — a man-with-a-hammer digression about EMT economists. Dropped as a numbered item in 2005; man-with-a-hammer survives as a recurring unnumbered motif (under Tendencies 1, 19, and the closing Q&A, where Munger ties it to Availability-Misweighing grounded in easy-to-control data)."
+  },
+  {
+   "cause_1995": "9. Bias from contrast-caused distortions of sensation, perception and cognition",
+   "tendency_2005": "16. Contrast-Misreaction Tendency",
+   "relationship": "same-renamed",
+   "notes": "Cialdini three-buckets demo, real-estate broker trick, and frog-in-slowly-heated-water all retained."
+  },
+  {
+   "cause_1995": "10. Bias from over-influence by authority",
+   "tendency_2005": "22. Authority-Misinfluence Tendency",
+   "relationship": "same-renamed",
+   "notes": "Milgram and the pilot/co-pilot simulator story retained. In 2005 Munger reinterprets Milgram as a lollapalooza of about six tendencies, not authority alone."
+  },
+  {
+   "cause_1995": "11. Bias from deprival super-reaction syndrome, including bias caused by present or threatened scarcity, including threatened removal of something almost possessed, but never possessed",
+   "tendency_2005": "14. Deprival-Superreaction Tendency",
+   "relationship": "same-renamed",
+   "notes": "Munger dog, neighbor's-pine-tree feud, and New Coke framing carried over; 2005 explicitly subsumes loss aversion and extends the definition to near-misses in gambling (bar-bar-lemon slot results) — material that in 1995 lived under cause #14 mis-gambling compulsion."
+  },
+  {
+   "cause_1995": "12. Bias from envy/jealousy",
+   "tendency_2005": "8. Envy/Jealousy Tendency",
+   "relationship": "unchanged",
+   "notes": "Identical construct and label (modulo the uniform 'Tendency' suffix applied to every 2005 item). 'It's not greed that drives the world, but envy' retained."
+  },
+  {
+   "cause_1995": "13. Bias from chemical dependency",
+   "tendency_2005": "20. Drug-Misinfluence Tendency",
+   "relationship": "same-renamed",
+   "notes": "Renamed; the 2005 entry is one paragraph that defers its substance to Tendency 11 (denial), mirroring the 1995 point that dependency 'always involves massive denial.'"
+  },
+  {
+   "cause_1995": "14. Bias from mis-gambling compulsion",
+   "tendency_2005": "NONE",
+   "relationship": "dropped-2005",
+   "notes": "Disappears as a standalone construct; its content is dispersed: variable-ratio reinforcement → Tendency 1; irrational love of self-picked lottery numbers → Tendency 12 (Excessive Self-Regard); near-misses and get-even passion → Tendency 14 (Deprival-Superreaction). Munger's 2005 method explains gambling as a lollapalooza of primitive tendencies rather than a tendency itself."
+  },
+  {
+   "cause_1995": "15. Bias from liking distortion, including the tendency to especially like oneself, one's own kind and one's own idea structures, and to be especially susceptible to being misled by someone liked (liking half)",
+   "tendency_2005": "2. Liking/Loving Tendency",
+   "relationship": "split",
+   "notes": "The 1995 double-barreled item was split three ways in 2005. The liking half became Tendency 2 (favoring, being misled by, and distorting facts for the liked/loved)."
+  },
+  {
+   "cause_1995": "15. Bias from liking distortion... Disliking distortion, the reciprocal of liking distortion and the tendency not to learn appropriately from someone disliked (disliking half)",
+   "tendency_2005": "3. Disliking/Hating Tendency",
+   "relationship": "split",
+   "notes": "The disliking/reciprocal half became its own Tendency 3. The third fragment — 'especially like oneself, one's own kind and one's own idea structures' — migrated into the new Tendency 12 (Excessive Self-Regard), which discusses overappraisal of one's own conclusions and preferring people like oneself."
+  },
+  {
+   "cause_1995": "16. [He says 'Seventeen', means 16]: Bias from the non-mathematical nature of the human brain, employing crude heuristics, often misled by mere contrast, a tendency to overweigh conveniently available information",
+   "tendency_2005": "18. Availability-Misweighing Tendency",
+   "relationship": "merged",
+   "notes": "1995 #16 and #17 merged into Tendency 18, which is narrowed to pure availability ('An idea or a fact is not worth more merely because it is easily available'). The broader innumeracy/Fermat-Pascal/Zeckhauser-bridge theme moved into the talk's general antidote discussion (checklists), and the 'misled by mere contrast' clause was already covered by Contrast-Misreaction (16)."
+  },
+  {
+   "cause_1995": "17. Bias from over-influence by extra-vivid evidence",
+   "tendency_2005": "18. Availability-Misweighing Tendency",
+   "relationship": "merged",
+   "notes": "Explicitly absorbed: the 2005 text says 'extra-vivid evidence, being so memorable and thus more available in cognition, should often consciously be underweighed.' The 1995 $30-million 1,500-shares story and Gutfreund/Mozer vividness misjudgment were folded into the general narrative."
+  },
+  {
+   "cause_1995": "18. [He says 'Twenty-two', means 18]: Mental confusion caused by information not arrayed in the mind and theory structures... developed in response to the question 'Why?'; mis-influence from pseudo-reasons; failure to obtain deserved influence by not explaining why",
+   "tendency_2005": "24. Reason-Respecting Tendency",
+   "relationship": "same-renamed",
+   "notes": "Same construct, compact new name. Carl Braun's five-Ws firing rule retained under Tendency 24, including the flip side: any reason, even a meaningless one ('because I have to make copies'), boosts compliance."
+  },
+  {
+   "cause_1995": "19. Other normal limitations of sensation, memory, cognition and knowledge",
+   "tendency_2005": "NONE",
+   "relationship": "dropped-2005",
+   "notes": "Dropped entirely. Even in 1995 Munger said 'Well, I don't have time for that' and gave it no discussion. The 2005 talk deliberately restricts itself to psychological tendencies rather than raw perceptual/cognitive capacity limits (mentioned only in passing in the introduction)."
+  },
+  {
+   "cause_1995": "20. Stress-induced mental changes, small and large, temporary and permanent",
+   "tendency_2005": "17. Stress-Influence Tendency",
+   "relationship": "same-renamed",
+   "notes": "Pavlov's Leningrad-flood dogs and stress-induced personality reversal / cult deprogramming discussion carried over intact."
+  },
+  {
+   "cause_1995": "21. Other common mental illnesses and declines, temporary and permanent, including the tendency to lose ability through disuse (disuse half)",
+   "tendency_2005": "19. Use-It-or-Lose-It Tendency",
+   "relationship": "split",
+   "notes": "The single 1995 catch-all was split: the 'lose ability through disuse' clause became Tendency 19 (skill attrition, checklist/practice antidote, pilot-simulator example)."
+  },
+  {
+   "cause_1995": "21. Other common mental illnesses and declines, temporary and permanent (age/decline half)",
+   "tendency_2005": "21. Senescence-Misinfluence Tendency",
+   "relationship": "split",
+   "notes": "The 'declines, temporary and permanent' side became Tendency 21 (old-age cognitive decay, maintenance of practiced skills, bridge tournaments). The 'other common mental illnesses' remainder has no 2005 successor."
+  },
+  {
+   "cause_1995": "22. Development and organizational confusion from say-something syndrome",
+   "tendency_2005": "23. Twaddle Tendency",
+   "relationship": "same-renamed",
+   "notes": "Munger's own confirmed rename (say-something syndrome → twaddle). The incoherent honeybee-dance experiment is retained nearly verbatim under Tendency 23."
+  },
+  {
+   "cause_1995": "NONE",
+   "tendency_2005": "4. Doubt-Avoidance Tendency",
+   "relationship": "added-2005",
+   "notes": "New as a standalone construct: the drive to remove doubt by reaching a quick decision (judges/juries forced-delay antidote, leaps of religious faith). Closely related to — and arguably carved out of — the 1995 consistency-and-commitment discussion; 2005 presents it as the trigger-stage sibling of Inconsistency-Avoidance (5), triggered by puzzlement and stress."
+  },
+  {
+   "cause_1995": "NONE",
+   "tendency_2005": "6. Curiosity Tendency",
+   "relationship": "added-2005",
+   "notes": "Entirely new in 2005, and unusual in being a helpful tendency: curiosity as an antidote that 'helps man to prevent or reduce bad consequences arising from other psychological tendencies' (Athens vs. Rome example). Nothing corresponding in 1995."
+  },
+  {
+   "cause_1995": "NONE",
+   "tendency_2005": "7. Kantian Fairness Tendency",
+   "relationship": "added-2005",
+   "notes": "Entirely new in 2005: expectation of categorical-imperative-style fair conduct (one-way bridge courtesy, queuing, first-come-first-served) and angry reactions to unfairness. No 1995 antecedent."
+  },
+  {
+   "cause_1995": "NONE",
+   "tendency_2005": "12. Excessive Self-Regard Tendency",
+   "relationship": "added-2005",
+   "notes": "New as a numbered construct (endowment effect, overappraisal of own skills/conclusions/possessions, Swedish-drivers survey, hiring-interview overweighting, Tolstoy effect), but it absorbs two 1995 fragments: the 'especially like oneself, one's own kind and one's own idea structures' clause of 1995 #15 and the self-picked-lottery-numbers material from 1995 #14."
+  },
+  {
+   "cause_1995": "NONE",
+   "tendency_2005": "13. Overoptimism Tendency",
+   "relationship": "added-2005",
+   "notes": "New in 2005, anchored by Demosthenes ('What a man wishes, that also will he believe') and excess optimism even absent pain; antidote is trained Fermat/Pascal probability thinking. Distinct from denial (11), which requires pain. No 1995 counterpart."
+  },
+  {
+   "cause_1995": "NONE",
+   "tendency_2005": "25. Lollapalooza Tendency — The Tendency to Get Extreme Consequences from Confluences of Psychological Tendencies Acting in Favor of a Particular Outcome",
+   "relationship": "added-2005",
+   "notes": "Not numbered in 1995, but the concept was there prominently: Munger treated combinations as his post-list 'most important question' (Tupperware parties, Moonie conversions, AA, Milgram reinterpretation, open-outcry auctions, McDonnell-Douglas evacuation disaster, boards of directors). In 2005 it was promoted into the numbered list as Tendency 25 — added as a numbered item, not new as an idea."
+  }
+ ]
+}

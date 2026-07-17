@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #f3efe4;
+  --color-card: #fbf8f0;
+  --color-ink: #211d14;
+  --color-ember: #c65a2e;
+  --color-verdigris: #2e7f74;
+  --color-stone: #8a8272;
+  --color-drab: #6b6455;
+  --color-umber: #4a443a;
+  --color-faded: #b0a894;
+  --color-pale: #d8d2c2;
+
+  --font-serif: 'Newsreader', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+html {
+  /* paper behind elastic overscroll, and no dark-mode canvas bleeding through */
+  background: var(--color-paper);
+  color-scheme: light;
+  /* keep the scrollbar gutter reserved so content height changes don't shift the page */
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+}
+
+::selection {
+  background: rgba(198, 90, 46, 0.25);
+}
