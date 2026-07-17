@@ -8,6 +8,11 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.abspath(os.path.join(BASE, '..'))
 # blurbs + links, generated once by an LLM pass and cached here so the layout is reproducible
 WIRING = os.path.join(PROJ, 'data', 'wiring.json')
+# worked examples: the teaching half of a plate, kept in their own module so the
+# index and lattice don't carry ~300KB of prose they never render
+EXAMPLES = os.path.join(PROJ, 'data', 'examples.json')
+# copy-as-prompt: one operationalized LLM prompt per plate
+PROMPTS = os.path.join(PROJ, 'data', 'prompts.json')
 W, H = 3200.0, 2000.0
 
 DISC_CODE = {
@@ -397,9 +402,98 @@ def main():
     L.append('  return a.links.includes(b.id) || b.links.includes(a.id)')
     L.append('}')
     L.append('')
+    L.append('// MODELS is grouped by discipline, so prev/next paging needs its own ordering')
+    L.append('const BY_NUMBER: Model[] = [...MODELS].sort(')
+    L.append('  (a, b) => parseInt(a.id.slice(1), 10) - parseInt(b.id.slice(1), 10),')
+    L.append(')')
+    L.append('')
+    L.append('/** The plate `step` places away in plate-number order, wrapping at the ends. */')
+    L.append('export function neighborModel(id: string, step: 1 | -1): Model {')
+    L.append('  const idx = BY_NUMBER.findIndex((m) => m.id === id)')
+    L.append('  return BY_NUMBER[(idx + step + BY_NUMBER.length) % BY_NUMBER.length]')
+    L.append('}')
+    L.append('')
 
     out = os.path.join(PROJ, 'src/data/models.ts')
     open(out, 'w').write('\n'.join(L))
+
+    # ---- emit examples module ------------------------------------------
+    if os.path.exists(EXAMPLES):
+        ex = json.load(open(EXAMPLES))
+        live = {m['id'] for m in models}
+        E = []
+        E.append('// GENERATED — see data/README.md. Worked examples per plate.')
+        E.append('')
+        E.append('export interface Example {')
+        E.append('  /** the setting it happens in, e.g. "The grocery store" */')
+        E.append('  context: string')
+        E.append('  text: string')
+        E.append('}')
+        E.append('')
+        E.append('export const EXAMPLES: Record<string, Example[]> = {')
+        n_ex = 0
+        for mid in sorted(k for k in ex if k in live):
+            rows = ex[mid]
+            if not rows:
+                continue
+            E.append(f"  {mid}: [")
+            for r in rows:
+                c, t = esc(r.get('context', '')), esc(r.get('text', ''))
+                if not t:
+                    continue
+                E.append(f"    {{ context: '{c}', text: '{t}' }},")
+                n_ex += 1
+            E.append('  ],')
+        E.append('}')
+        E.append('')
+        exout = os.path.join(PROJ, 'src/data/examples.ts')
+        open(exout, 'w').write('\n'.join(E))
+        covered = sum(1 for m in models if ex.get(m['id']))
+        print(f'wrote {exout}: {n_ex} examples covering {covered}/{len(models)} models')
+        missing = [m['id'] for m in models if not ex.get(m['id'])]
+        if missing:
+            print(f'  WARNING: {len(missing)} models have no examples: {missing[:8]}')
+    else:
+        print('no data/examples.json — skipping examples module')
+
+    # ---- emit prompts module -------------------------------------------
+    if os.path.exists(PROMPTS):
+        pr = json.load(open(PROMPTS))
+        live = {m['id'] for m in models}
+        P = []
+        P.append('// GENERATED — see data/README.md. One copy-paste LLM prompt per plate.')
+        P.append('')
+        P.append('export interface ModelPrompt {')
+        P.append('  /** one line: when to reach for this prompt */')
+        P.append('  use: string')
+        P.append('  /** the full copy-paste prompt, ending in the situation placeholder */')
+        P.append('  body: string')
+        P.append('}')
+        P.append('')
+        P.append('export const PROMPTS: Record<string, ModelPrompt> = {')
+        n_p = 0
+        for mid in sorted(k for k in pr if k in live):
+            r = pr[mid]
+            body, use = (r.get('body') or '').strip(), (r.get('use') or '').strip()
+            if not body:
+                continue
+            P.append(f"  {mid}: {{")
+            P.append(f"    use: '{esc(use)}',")
+            # a prompt is multi-line; emit as a template literal with escapes
+            b = body.replace('\\', '\\\\').replace('`', '\\`').replace('${', '\\${')
+            P.append('    body: `' + b + '`,')
+            P.append('  },')
+            n_p += 1
+        P.append('}')
+        P.append('')
+        prout = os.path.join(PROJ, 'src/data/prompts.ts')
+        open(prout, 'w').write('\n'.join(P))
+        print(f'wrote {prout}: {n_p} prompts covering {n_p}/{len(models)} models')
+        miss = [m['id'] for m in models if not pr.get(m['id'])]
+        if miss:
+            print(f'  WARNING: {len(miss)} models have no prompt: {miss[:8]}')
+    else:
+        print('no data/prompts.json — skipping prompts module')
     print(f'wrote {out}: {len(models)} models, {len(edges)} edges')
     print('blurbs from wiring:', sum(1 for m in models if wiring.get(m['id'], {}).get('blurb')))
     print('legacy plates preserved:', sum(1 for m in models if m['cap']))

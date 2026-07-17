@@ -4,13 +4,17 @@ import {
   ART_READY_ID,
   MODELS,
   MODELS_BY_ID,
+  PEOPLE,
   PROVENANCE_LABELS,
   capTitle,
   neighborModel,
+  type Provenance,
 } from '../data/models'
 import { PlateArt } from '../components/PlateArt'
 import { PlatePlaceholder } from '../components/PlatePlaceholder'
 import { MiniLattice } from '../components/MiniLattice'
+import { Examples } from '../components/Examples'
+import { CopyPrompt } from '../components/CopyPrompt'
 
 interface ModelDetailViewProps {
   studied: string[]
@@ -20,6 +24,14 @@ interface ModelDetailViewProps {
 }
 
 const RING = 16
+
+const PROV_DOT: Record<Provenance, string> = {
+  'munger-named': '#c65a2e',
+  'munger-used': '#d98b64',
+  'munger-adjacent': '#2e7f74',
+  community: '#8a8272',
+  'canon-addition': '#b0a894',
+}
 
 export function ModelDetailView({
   studied,
@@ -47,6 +59,9 @@ export function ModelDetailView({
 
   const neighbors = selM.links.map((l) => MODELS_BY_ID[l]).filter(Boolean)
   const rest = neighbors.slice(RING)
+  const thinkers = (selM.thinkers ?? [])
+    .map((t) => PEOPLE.find((p) => p.slug === t))
+    .filter((t): t is (typeof PEOPLE)[number] => Boolean(t))
 
   return (
     <div className="mx-auto w-full max-w-[1120px] box-border px-7 pb-12 pt-[26px]">
@@ -85,8 +100,9 @@ export function ModelDetailView({
         transition={{ duration: 0.22, ease: 'easeOut' }}
         className="mt-[34px] flex items-start gap-11"
       >
-        {/* plate */}
-        <div className="w-[470px] flex-none">
+        {/* plate — sticky: the prose column always outruns it, so let it track
+            the reading instead of stranding whitespace at the bottom left */}
+        <div className="sticky top-4 w-[470px] flex-none self-start">
           {selM.id === ART_READY_ID ? (
             <PlateArt inset={8} />
           ) : (
@@ -123,25 +139,66 @@ export function ModelDetailView({
             </div>
           )}
 
-          {/* provenance and citation live here, out of the prose column */}
-          <div className="mt-[22px] border-t border-ink/14 pt-3">
-            <div className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+          {/* the specimen record — everything about the plate that isn't prose */}
+          <dl className="mt-[22px] border-t border-ink/14 pt-3">
+            <dt className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
               PROVENANCE
-            </div>
-            <div className="mt-1.5 font-serif text-[13px] text-umber">
+            </dt>
+            <dd className="mt-1.5 flex items-center gap-1.5 font-serif text-[13px] text-umber">
+              <span
+                className="inline-block h-[7px] w-[7px] flex-none rounded-full"
+                style={{ background: PROV_DOT[selM.provenance] }}
+              />
               {PROVENANCE_LABELS[selM.provenance]}
-            </div>
+            </dd>
             {selM.mungerQuote && (
-              <div className="mt-2 border-l-2 border-ember/40 pl-2.5 font-serif text-[12.5px] italic leading-[1.5] text-drab">
+              <dd className="mt-2 border-l-2 border-ember/40 pl-2.5 font-serif text-[12.5px] italic leading-[1.5] text-drab">
                 “{selM.mungerQuote}”
-              </div>
+              </dd>
             )}
             {selM.mungerCitation && (
-              <div className="mt-2 font-mono text-[9px] leading-[1.6] text-faded">
+              <dd className="mt-2 font-mono text-[9px] leading-[1.6] text-faded">
                 {selM.mungerCitation}
-              </div>
+              </dd>
             )}
-          </div>
+
+            {thinkers.length > 0 && (
+              <>
+                <dt className="mt-4 border-t border-ink/10 pt-3 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+                  THINKERS
+                </dt>
+                <dd className="mt-1.5 flex flex-wrap gap-1.5">
+                  {thinkers.map((t) => (
+                    <Link
+                      key={t.slug}
+                      to={`/lattice?who=${t.slug}`}
+                      className="cursor-pointer rounded-[2px] border border-ink/20 px-1.5 py-[2px] font-mono text-[9.5px] text-drab transition-colors duration-150 hover:border-ember hover:text-ember"
+                    >
+                      {t.name}
+                    </Link>
+                  ))}
+                </dd>
+              </>
+            )}
+
+            {(selM.aka?.length ?? 0) > 0 && (
+              <>
+                <dt className="mt-4 border-t border-ink/10 pt-3 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+                  ALSO KNOWN AS
+                </dt>
+                <dd className="mt-1.5 font-serif text-[12.5px] italic leading-[1.5] text-drab">
+                  {selM.aka!.slice(0, 4).join(' · ')}
+                </dd>
+              </>
+            )}
+
+            <dt className="mt-4 border-t border-ink/10 pt-3 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+              WIRED TO
+            </dt>
+            <dd className="mt-1.5 font-mono text-[11px] text-verdigris">
+              ⁘ {selM.links.length} NEIGHBORS
+            </dd>
+          </dl>
         </div>
 
         {/* prose */}
@@ -159,8 +216,12 @@ export function ModelDetailView({
             {selM.long.slice(1)}
           </div>
 
+          <div className="clear-both" />
+          <Examples id={selM.id} />
+          <CopyPrompt id={selM.id} />
+
           {/* actions sit above the lattice, so a well-wired plate can't push them off-screen */}
-          <div className="clear-both mt-[26px] flex flex-wrap gap-2.5">
+          <div className="mt-[26px] flex flex-wrap gap-2.5">
             <motion.button
               type="button"
               whileTap={{ scale: 0.97 }}
@@ -168,7 +229,7 @@ export function ModelDetailView({
               className="cursor-pointer rounded-[2px] px-[22px] py-[11px] text-center font-mono text-[11px] font-medium tracking-[0.1em] text-card transition-colors duration-200 hover:opacity-[0.88]"
               style={{ background: isStudied ? '#2e7f74' : '#c65a2e' }}
             >
-              {isStudied ? 'STUDIED ✦ — TAP TO UNMARK' : 'MARK STUDIED ✦'}
+              {isStudied ? 'STUDIED ✦' : 'MARK STUDIED ✦'}
             </motion.button>
             <motion.button
               type="button"

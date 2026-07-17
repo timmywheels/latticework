@@ -1,6 +1,8 @@
 import { Link, useNavigate } from 'react-router'
 import { motion } from 'motion/react'
 import { DISCIPLINE_ORDER, MODELS_BY_ID, type Model } from '../data/models'
+import { buildPromptPack } from '../lib/promptPack'
+import { useCopy } from '../hooks/useCopy'
 
 interface SavedViewProps {
   saved: string[]
@@ -10,6 +12,7 @@ interface SavedViewProps {
 
 export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
   const navigate = useNavigate()
+  const { copied, copy } = useCopy()
   const models = saved.map((id) => MODELS_BY_ID[id]).filter(Boolean) as Model[]
 
   const groups = DISCIPLINE_ORDER.map((d) => ({
@@ -21,9 +24,23 @@ export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
     <div className="mx-auto w-full max-w-[1120px] box-border px-7 pb-12 pt-[30px]">
       <div className="flex items-baseline justify-between border-b border-ink/16 pb-4">
         <div className="font-serif text-[32px] font-medium tracking-[-0.01em]">Your shelf.</div>
-        <div className="font-mono text-[10px] tracking-[0.1em] text-stone">
-          {models.length} SAVED · {models.filter((m) => studied.includes(m.id)).length} OF THEM
-          STUDIED
+        <div className="flex items-center gap-4">
+          <div className="font-mono text-[10px] tracking-[0.1em] text-stone">
+            {models.length} SAVED · {models.filter((m) => studied.includes(m.id)).length} OF THEM
+            STUDIED
+          </div>
+          {models.length > 0 && (
+            <motion.button
+              type="button"
+              whileTap={{ scale: 0.96 }}
+              onClick={() => copy(buildPromptPack(models))}
+              title="Copy all saved models as one checklist prompt"
+              className="cursor-pointer rounded-[2px] px-[14px] py-[7px] font-mono text-[10px] font-medium tracking-[0.1em] text-card transition-colors duration-200"
+              style={{ background: copied ? '#2e7f74' : '#211d14' }}
+            >
+              {copied ? 'COPIED ✓' : 'COPY SHELF AS PROMPT ⧉'}
+            </motion.button>
+          )}
         </div>
       </div>
 
@@ -33,7 +50,7 @@ export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
           <div className="max-w-[420px] font-serif text-[14px] leading-[1.6] text-stone">
             Mark a plate with <span className="text-ember">❖ SAVE</span> and it lands here — a
             shelf of the models you mean to come back to, separate from the ones you have already
-            studied.
+            studied. Collect a few and you can copy the whole shelf as one checklist prompt.
           </div>
           <Link
             to="/"

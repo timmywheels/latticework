@@ -4,6 +4,10 @@
 
 `wiring.json` — per-model `blurb` + `links`, generated once by an LLM pass and cached so the build is reproducible.
 
+`examples.json` — **1,963 worked examples**, 2–3 per model, covering all 963. The teaching half of a plate: a definition says what a model *is*, an example is what makes it stick.
+
+`prompts.json` — **963 copy-as-prompt entries**, one per model. Each is a paste-ready prompt that makes an LLM actually apply that model to the reader's own situation.
+
 `phm-1995-vs-2005.json` — item-by-item mapping between the two incompatible editions of *The Psychology of Human Misjudgment*.
 
 ## Regenerating the app data
@@ -14,7 +18,9 @@
 python3 scripts/build-models.py    # needs numpy
 ```
 
-The script merges `latticework-catalog.json` + `wiring.json`, lays the graph out, and emits `models.ts` (963 models, 3,964 edges) plus the `PEOPLE` bust roster. It is deterministic — same inputs, byte-identical output.
+The script merges `latticework-catalog.json` + `wiring.json`, lays the graph out, and emits `models.ts` (963 models, 3,964 edges) plus the `PEOPLE` bust roster. It also emits `src/data/examples.ts` and `src/data/prompts.ts`. Those are large (~430KB and ~1.7MB), so the plate route is lazy-loaded in `App.tsx` — keeping the index and lattice entry bundle at ~350KB gzipped instead of ~960KB. It is deterministic — same inputs, byte-identical output.
+
+**Anything you want in `models.ts` must live in the generator.** `neighborModel()` was once hand-added to the generated file and would have been destroyed on the next run; it now lives in `build-models.py`. Add exports there, never to the output.
 
 **Layout.** Each discipline is laid out as its own island, filled with a phyllotaxis spiral (most-connected at the centre), and the islands are then packed by cross-discipline edge weight. Cross-discipline edges are drawn but exert **no force** — an earlier global force-directed pass collapsed all 18 disciplines into one hairball, because 2,079 cross-links overwhelm any anchor gravity.
 
@@ -53,6 +59,28 @@ The tag is **metadata, not a filter**. Munger is the seed of this catalog, not i
 454 models carry a `thinkers` array of roster slugs (`munger`, `darwin`, `roosevelt`…). A slug means **genuine intellectual association** — the person originated the idea or is inseparably identified with it — not merely that they mentioned it. Munger is deliberately held to his signature models (99) rather than tagged across the catalog he seeded; the provenance field already records his relationship to everything else.
 
 The roster began badly lopsided (Roosevelt 1 model, Marcus Aurelius 0), which makes for busts not worth clicking, so 211 models were added covering what those thinkers are actually known for — The Man in the Arena, premeditatio malorum, the OODA loop, the coastline paradox. 37 thinkers now clear the ≥5 bar and get a medallion.
+
+## Examples
+
+Each plate carries 2–3 (37 models get 3). The bar: an example must show the model **doing work** — changing what someone notices or decides — in a concrete setting, in plain language. Never a definition wearing a costume.
+
+An audit of a 40-model sample scored 6% restatement, 4% jargon, "good" setting variety, verdict ship. It flagged one real recurring flaw — closing-line moralizing, where a good scene bolts the definition on and takes the insight back from the reader. 49 candidates were judged; **24 trimmed, 25 kept** (the regex over-flagged; endings that carry the scene's sting were left alone). Trims were applied under a guard that only permits truncation, never rewriting.
+
+Settings are deliberately domestic as well as professional — a paid-off Civic, two nurses counting narcotics, a chore chart, an HOA board. Abstract models get the most concrete treatment: Gödel's incompleteness is *"The bylaws say the board interprets the bylaws. So who says the board read them right? The bylaws."*
+
+## The prompt library
+
+Every plate has a **COPY AS PROMPT** button, and the prompt is shown rather than hidden — one you can't read before pasting is one you can't trust or edit.
+
+The design bar: a prompt's steps must be what **that** model actually makes you do. A prompt whose steps would suit any model does no work. Base Rates opens by forcing the reference class *before* your specifics; Inversion forbids telling you how to succeed at all. An adversarial audit ran the swap test — "would anyone notice if these steps were moved to a different model?" — and scored 5% interchangeable, 90% executable steps, 100% escape hatch, 100% placeholder.
+
+Two guards are in every prompt:
+- **"If this model doesn't fit, say so plainly and stop."** A model forced onto the wrong situation is worse than no model.
+- **The UNRESOLVED guard.** The audit's one blocking finding was that many prompts demand facts the reader's paste cannot contain (named precedents, historical magnitudes, returns on capital) — and an LLM told to name three failed competitors *will*, inventing them if needed. So every prompt now ends: *write UNRESOLVED and tell me what to go find. Never invent it.* This was injected deterministically across all 963 rather than trusted to per-model generation.
+
+The **Shelf** copies all saved models as one checklist prompt (`src/lib/promptPack.ts`) — the latticework thesis made operational: run the whole checklist, note which models disagree, and look for the lollapalooza where several point the same way at once.
+
+**Known gap:** the audit flagged M070 (biological scaling) as the one prompt whose steps never do the arithmetic its own premise names, making it liftable onto another model. Worth a fix.
 
 ## What was mined
 

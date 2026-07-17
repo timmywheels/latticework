@@ -14,6 +14,7 @@ import {
   type Provenance,
 } from '../data/models'
 import { Bust } from '../components/Bust'
+import { ModelPopover } from '../components/ModelPopover'
 
 interface LatticeViewProps {
   studied: string[]
@@ -107,6 +108,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
   const svgRef = useRef<SVGSVGElement | null>(null)
   const [box, setBox] = useState<Box>(FULL)
   const [hover, setHover] = useState<string | null>(null)
+  const [picked, setPicked] = useState<string | null>(null)
   const [showCross, setShowCross] = useState(true)
   const drag = useRef<{ px: number; py: number; ox: number; oy: number } | null>(null)
 
@@ -212,6 +214,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
   // marooned across a 3200×2000 plate is technically correct and useless
   const filterKey = `${who}|${prov}|${disc}`
   useEffect(() => {
+    setPicked(null)
     if (!visible) {
       setBox(FULL)
       return
@@ -240,6 +243,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filterKey])
 
+  const pickedM = picked ? MODELS_BY_ID[picked] : null
   const whoM = who ? (PEOPLE.find((p) => p.slug === who) ?? null) : null
   const rail: (Provenance | 'ALL')[] = ['ALL', ...PROVENANCES]
   const provCount = (p: Provenance | 'ALL') =>
@@ -252,7 +256,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
           The lattice itself.
         </div>
         <div className="font-mono text-[10px] tracking-[0.1em] text-stone">
-          {shown.length} OF {MODELS.length} MODELS · SCROLL TO ZOOM · DRAG TO PAN · CLICK TO OPEN
+          {shown.length} OF {MODELS.length} MODELS · SCROLL TO ZOOM · DRAG TO PAN · CLICK A NODE
         </div>
       </div>
 
@@ -359,7 +363,16 @@ export function LatticeView({ studied }: LatticeViewProps) {
 
       <div className="relative mt-3 border border-ink bg-card">
         <div className="pointer-events-none absolute inset-2 z-10 border border-dotted border-ink/30" />
-        {(box.w !== FULL.w || box.x !== 0 || box.y !== 0) && (
+        {pickedM && (
+          <div className="absolute right-3 top-3 z-30">
+            <ModelPopover
+              model={pickedM}
+              onOpen={() => navigate(`/models/${pickedM.id}`, { state: { from: `/lattice?${params.toString()}` } })}
+              onClose={() => setPicked(null)}
+            />
+          </div>
+        )}
+        {!pickedM && (box.w !== FULL.w || box.x !== 0 || box.y !== 0) && (
           <button
             type="button"
             onClick={() => setBox(FULL)}
@@ -401,7 +414,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
 
           {shown.map((m) => {
             const isStudied = studied.includes(m.id)
-            const isHov = hover === m.id
+            const isHov = hover === m.id || picked === m.id
             const isNeighbor = neighbors.has(m.id)
             const dim = !!hovM && !isHov && !isNeighbor
             // sqrt-damped: full size zoomed out, growing gently as you zoom in — linear
@@ -412,7 +425,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
               <g
                 key={m.id}
                 onMouseEnter={() => setHover(m.id)}
-                onClick={() => !drag.current && navigate(`/models/${m.id}`)}
+                onClick={() => !drag.current && setPicked(m.id)}
                 style={{ cursor: 'pointer', opacity: dim ? 0.28 : 1 }}
               >
                 <circle
