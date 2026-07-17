@@ -12637,3 +12637,40 @@ export function neighborModel(id: string, step: 1 | -1): Model {
   const idx = BY_NUMBER.findIndex((m) => m.id === id)
   return BY_NUMBER[(idx + step + BY_NUMBER.length) % BY_NUMBER.length]
 }
+
+/** All models in plate-number order — the daily-email sequence reads from this. */
+export const PLATE_ORDER: Model[] = BY_NUMBER
+
+// URL slugs, derived from names: /models/multiply-by-zero, not /models/M457.
+// Collisions dedupe deterministically (-2, -3, …) in MODELS order.
+function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f'’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
+
+export const MODEL_SLUGS: Record<string, string> = {}
+export const MODELS_BY_SLUG: Record<string, Model> = {}
+{
+  const taken = new Set<string>()
+  for (const m of MODELS) {
+    let s = slugify(m.name) || m.id.toLowerCase()
+    if (taken.has(s)) {
+      let n = 2
+      while (taken.has(`${s}-${n}`)) {
+        n++
+      }
+      s = `${s}-${n}`
+    }
+    taken.add(s)
+    MODEL_SLUGS[m.id] = s
+    MODELS_BY_SLUG[s] = m
+  }
+}
+
+export function modelPath(m: Model): string {
+  return `/models/${MODEL_SLUGS[m.id]}`
+}

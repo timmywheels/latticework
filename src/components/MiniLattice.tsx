@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
-import { MODELS_BY_ID, type Model } from '../data/models'
+import { MODELS_BY_ID, modelPath, type Model } from '../data/models'
 import { ModelPopover } from './ModelPopover'
 
 interface MiniLatticeProps {
@@ -66,7 +66,7 @@ export function MiniLattice({ model, max = 16 }: MiniLatticeProps) {
               key={m.id}
               onMouseEnter={() => setHov(m.id)}
               onMouseLeave={() => setHov(null)}
-              onClick={() => navigate(`/models/${m.id}`)}
+              onClick={() => navigate(modelPath(m))}
               style={{ cursor: 'pointer' }}
             >
               <circle

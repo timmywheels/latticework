@@ -1,0 +1,7 @@
+# copy to .dev.vars for `wrangler dev`. Without RESEND_API_KEY, sends log to stdout.
+SITE_URL=http://localhost:8787
+TOKEN_SECRET=dev-secret
+CRON_SECRET=dev-cron
+RESEND_API_KEY=
+RESEND_AUDIENCE_ID=
+LIST_FROM="Latticework <models@latticework.page>"

@@ -4,18 +4,18 @@ import { motion } from 'motion/react'
 import {
   ART_READY_ID,
   DISCIPLINE_ORDER,
+  MODEL_SLUGS,
   MODELS,
   MODELS_BY_ID,
+  MODELS_BY_SLUG,
   PLANNED_COUNTS,
   capTitle,
+  modelPath,
   neighborModel,
 } from '../data/models'
-import { PlateArt } from '../components/PlateArt'
-import { PlatePlaceholder } from '../components/PlatePlaceholder'
-
-const MUNGER_CORE = MODELS.filter(
-  (m) => m.provenance === 'munger-named' || m.provenance === 'munger-used',
-).length
+import { DisciplineThumb, ModelPlate } from '../components/DisciplinePlates'
+import { SubscribeForm } from '../components/SubscribeForm'
+import { useKeys } from '../hooks/useKeys'
 
 /** past this the preview's link list outgrows the panel and buries the button */
 const PREVIEW_LINKS = 6
@@ -34,33 +34,46 @@ export function IndexView({
   density = 'comfortable',
 }: IndexViewProps) {
   const navigate = useNavigate()
-  // discipline + selected plate live in the URL, so back/forward and a shared
+  // discipline + selected model live in the URL, so back/forward and a shared
   // link all land where the reader actually was
   const [params, setParams] = useSearchParams()
-  const disc = params.get('disc') ?? 'ALL'
-  const sel = params.get('sel') ?? ART_READY_ID
+  const rawDiscipline = (params.get('discipline') ?? '').toUpperCase()
+  const disc = (DISCIPLINE_ORDER as string[]).includes(rawDiscipline) ? rawDiscipline : 'ALL'
+  const modelSlug = params.get('model') ?? ''
   const [hover, setHover] = useState<string | null>(null)
 
   const setDisc = (d: string) => {
     const next = new URLSearchParams(params)
-    if (d === 'ALL') next.delete('disc')
-    else next.set('disc', d)
+    if (d === 'ALL') {
+      next.delete('discipline')
+    } else {
+      next.set('discipline', d.toLowerCase())
+      // landing on a discipline always previews its first model
+      const first = MODELS.find((m) => m.disc === d)
+      if (first) {
+        next.set('model', MODEL_SLUGS[first.id])
+      }
+    }
     setParams(next, { replace: true })
   }
   const setSel = (id: string) => {
     const next = new URLSearchParams(params)
-    next.set('sel', id)
+    next.set('model', MODEL_SLUGS[id])
     setParams(next, { replace: true })
   }
 
   const hovM = hover ? MODELS_BY_ID[hover] : null
-  // a stale or filtered-out id must never blank the preview panel
-  const selM = MODELS_BY_ID[sel] ?? MODELS[0]
+  // a stale or unknown slug must never blank the preview panel — and a shared
+  // /?discipline=law link with no model should preview law, not the global default
+  let selM = MODELS_BY_SLUG[modelSlug] ?? MODELS_BY_ID[ART_READY_ID] ?? MODELS[0]
+  if (disc !== 'ALL' && selM.disc !== disc) {
+    selM = MODELS.find((m) => m.disc === disc) ?? selM
+  }
   const pM = hovM ?? selM
   const rowPadding = density === 'compact' ? '8px 20px' : '13px 20px'
 
   const openModel = (id: string) =>
-    navigate(`/models/${id}`, { state: { from: `/?${params.toString()}` } })
+    navigate(modelPath(MODELS_BY_ID[id]), { state: { from: `/?${params.toString()}` } })
 
   const rail = [
     { name: 'ALL', count: MODELS.length },
@@ -81,34 +94,97 @@ export function IndexView({
   const prevM = neighborModel(pM.id, -1)
   const nextM = neighborModel(pM.id, 1)
 
+  // j/k walk the visible ledger; ←/→ step by number; ↵ opens the selection
+  const walk = (step: 1 | -1) => {
+    const flat = groups.flatMap((g) => g.rows)
+    const idx = flat.findIndex((m) => m.id === selM.id)
+    const next = flat[(idx + step + flat.length) % flat.length]
+    setSel(next.id)
+    document.getElementById(`row-${next.id}`)?.scrollIntoView({ block: 'nearest' })
+  }
+  useKeys((e) => {
+    if (e.key === 'j' || e.key === 'ArrowDown') {
+      e.preventDefault()
+      walk(1)
+    } else if (e.key === 'k' || e.key === 'ArrowUp') {
+      e.preventDefault()
+      walk(-1)
+    } else if (e.key === 'ArrowLeft') {
+      setSel(prevM.id)
+    } else if (e.key === 'ArrowRight') {
+      setSel(nextM.id)
+    } else if (e.key === 'Enter') {
+      openModel(selM.id)
+    }
+  })
+
   return (
     <div>
       {/* hero */}
       <div className="border-b border-ink/16">
-        <div className="mx-auto flex max-w-[1280px] items-end justify-between gap-10 px-7 pb-9 pt-10">
+        <div className="mx-auto flex max-w-[1280px] flex-col items-start gap-6 px-4 pb-7 pt-8 md:flex-row md:items-end md:justify-between md:gap-10 md:px-7 md:pb-9 md:pt-10">
           <div className="max-w-[640px]">
-            <div className="font-serif text-[44px] font-medium leading-[1.08] tracking-[-0.015em] text-pretty">
+            <div className="font-serif text-[32px] font-medium leading-[1.08] tracking-[-0.015em] text-pretty md:text-[44px]">
               {MODELS.length} mental models, hung on a single lattice.
             </div>
             <div className="mt-3 font-serif text-[15px] italic leading-[1.6] text-umber">
-              The big ideas from the big disciplines — each one a plate, each plate wired to its
-              neighbors.
+              The big ideas from the big disciplines — every model wired to its neighbors.
             </div>
           </div>
-          <div className="flex-none text-right font-mono text-[10px] leading-[1.8] tracking-[0.1em] text-stone">
-            DRAFT SCAFFOLD
-            <br />
-            {MODELS.length} MODELS · {MUNGER_CORE} FROM MUNGER&apos;S OWN WORDS
-            <br />
-            VOL. I — JULY MMXXVI
+          <div className="w-full flex-none md:w-auto">
+            <div className="font-mono text-[10px] leading-[1.8] tracking-[0.1em] text-stone md:text-right">
+              {MODELS.length} MODELS · {DISCIPLINE_ORDER.length} DISCIPLINES
+              <br />
+              VOL. I — JULY MMXXVI
+            </div>
+            <SubscribeForm />
           </div>
         </div>
       </div>
 
-      <div className="mx-auto flex min-h-[720px] max-w-[1280px] items-start">
+      {/* the plate cabinet — one tile per discipline, doubling as the filter */}
+      <div className="border-b border-ink/16">
+        <div className="mx-auto max-w-[1280px] px-4 py-4 md:px-7">
+          <div className="no-scrollbar flex gap-3 overflow-x-auto pb-1">
+            {DISCIPLINE_ORDER.map((d) => {
+              const active = disc === d
+              return (
+                <button
+                  key={d}
+                  type="button"
+                  onClick={() => setDisc(active ? 'ALL' : d)}
+                  className="group w-[124px] flex-none cursor-pointer text-left"
+                >
+                  <div
+                    className={`border transition-colors duration-150 ${
+                      active ? 'border-ember' : 'border-ink/30 group-hover:border-ink'
+                    }`}
+                  >
+                    <DisciplineThumb disc={d} />
+                  </div>
+                  <div className="mt-1.5 flex items-baseline justify-between gap-1">
+                    <span
+                      className={`truncate font-mono text-[8.5px] font-medium tracking-[0.08em] ${
+                        active ? 'text-ember' : 'text-drab'
+                      }`}
+                    >
+                      {d}
+                    </span>
+                    <span className="flex-none font-mono text-[8.5px] text-faded">
+                      {PLANNED_COUNTS[d]}
+                    </span>
+                  </div>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto flex max-w-[1280px] items-start md:min-h-[720px]">
         {/* discipline rail — sticky, so the reader can switch discipline from
             anywhere in a 752-row ledger */}
-        <div className="sticky top-0 max-h-[100svh] w-[200px] flex-none overflow-y-auto border-r border-ink/16 py-[22px]">
+        <div className="sticky top-0 hidden max-h-[100svh] w-[200px] flex-none overflow-y-auto border-r border-ink/16 py-[22px] lg:block">
           <div className="px-[22px] pb-3 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
             DISCIPLINES
           </div>
@@ -153,24 +229,29 @@ export function IndexView({
               {g.rows.map((m) => {
                 const isStudied = studied.includes(m.id)
                 const isSaved = saved.includes(m.id)
+                const isSelected = m.id === selM.id
                 return (
                   <div
                     key={m.id}
+                    id={`row-${m.id}`}
                     onClick={() => openModel(m.id)}
                     onMouseEnter={() => setHover(m.id)}
                     className="flex cursor-pointer items-baseline gap-3.5 border-b border-dotted border-ink/20 transition-[background-color] duration-150 hover:bg-card"
-                    style={{ padding: rowPadding }}
+                    style={{
+                      padding: rowPadding,
+                      background: isSelected ? 'rgba(198,90,46,.07)' : undefined,
+                    }}
                   >
                     <span className="w-[38px] flex-none font-mono text-[11px] font-medium text-ember">
                       {m.id}
                     </span>
-                    <span className="w-[186px] flex-none font-serif text-[17px] font-medium">
+                    <span className="min-w-0 flex-1 font-serif text-[16px] font-medium md:w-[186px] md:flex-none md:text-[17px]">
                       {m.name}
                     </span>
-                    <span className="min-w-0 flex-1 font-serif text-[12.5px] italic leading-[1.4] text-drab">
+                    <span className="hidden min-w-0 flex-1 font-serif text-[12.5px] italic leading-[1.4] text-drab md:block">
                       {m.blurb}
                     </span>
-                    <span className="w-[88px] flex-none text-right font-mono text-[9.5px] text-prussian">
+                    <span className="hidden w-[88px] flex-none text-right font-mono text-[9.5px] text-prussian sm:block">
                       {showConnections ? `⁘ ${m.links.length}` : ''}
                     </span>
                     <span
@@ -190,15 +271,14 @@ export function IndexView({
               })}
             </div>
           ))}
-          <div className="px-5 py-3.5 font-mono text-[10px] text-faded">
-            HOVER A ROW TO PREVIEW ITS PLATE · CLICK TO OPEN THE FULL
-            PLATE
+          <div className="hidden px-5 py-3.5 font-mono text-[10px] text-faded md:block">
+            HOVER A ROW TO PREVIEW IT · CLICK TO OPEN THE FULL ENTRY
           </div>
         </div>
 
         {/* preview panel — sticky, self-scrolling, and always full viewport height,
             so the button bar sits at the bottom edge no matter how short the plate */}
-        <div className="sticky top-0 flex h-[100svh] w-[348px] flex-none flex-col border-l border-ink/16 bg-card">
+        <div className="sticky top-0 hidden h-[100svh] w-[348px] flex-none flex-col border-l border-ink/16 bg-card md:flex">
           <motion.div
             key={pM.id}
             initial={{ opacity: 0.25 }}
@@ -207,21 +287,14 @@ export function IndexView({
             className="min-h-0 flex-1 overflow-y-auto px-[26px] py-6"
           >
             <div className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
-              PLATE NO. {pM.id} — {pM.disc}
+              MODEL NO. {pM.id} — {pM.disc}
             </div>
             <div className="mt-2 font-serif text-[28px] font-medium leading-[1.1]">{pM.name}</div>
             <div className="mt-1 font-serif text-sm italic leading-[1.5] text-ember">
               {pM.blurb}
             </div>
             <div className="mt-3.5">
-              {pM.id === ART_READY_ID ? (
-                <PlateArt inset={6} />
-              ) : (
-                <PlatePlaceholder
-                  height={150}
-                  caption={pM.cap ? `retro-futurist plate — ${pM.cap}` : 'plate not yet typeset'}
-                />
-              )}
+              <ModelPlate model={pM} inset={6} />
             </div>
             {pM.cap && (
               <div className="mt-2 text-center font-mono text-[10px] tracking-[0.08em] text-stone">
@@ -256,7 +329,7 @@ export function IndexView({
               whileTap={{ scale: 0.97 }}
               onClick={() => setSel(prevM.id)}
               title={`◂ ${prevM.id}`}
-              aria-label={`Previous plate — ${prevM.id}`}
+              aria-label={`Previous model — ${prevM.id}`}
               className="w-[38px] flex-none cursor-pointer rounded-[2px] border border-ink/30 font-mono text-[11px] font-medium text-ink transition-colors duration-150 hover:border-ember hover:text-ember"
             >
               ◂
@@ -267,14 +340,14 @@ export function IndexView({
               onClick={() => openModel(pM.id)}
               className="min-w-0 flex-1 cursor-pointer rounded-[2px] bg-ink py-[9px] text-center font-mono text-[10.5px] font-medium tracking-[0.1em] text-card transition-colors duration-150 hover:bg-ember"
             >
-              READ THE FULL PLATE ▸
+              READ THE FULL ENTRY ▸
             </motion.button>
             <motion.button
               type="button"
               whileTap={{ scale: 0.97 }}
               onClick={() => setSel(nextM.id)}
               title={`${nextM.id} ▸`}
-              aria-label={`Next plate — ${nextM.id}`}
+              aria-label={`Next model — ${nextM.id}`}
               className="w-[38px] flex-none cursor-pointer rounded-[2px] border border-ink/30 font-mono text-[11px] font-medium text-ink transition-colors duration-150 hover:border-ember hover:text-ember"
             >
               ▸

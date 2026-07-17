@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
 import { MODELS } from '../data/models'
+import { StitchMark } from './StitchMark'
 
 interface MastheadProps {
   studiedCount: number
@@ -8,10 +9,9 @@ interface MastheadProps {
 }
 
 const NAV_ITEMS = [
-  { name: 'INDEX', to: '/' },
+  { name: 'ALMANACK', to: '/' },
   { name: 'LATTICE', to: '/lattice' },
   { name: 'SHELF', to: '/saved' },
-  { name: 'COLOPHON', to: '/colophon' },
 ]
 
 export function Masthead({ studiedCount, savedCount }: MastheadProps) {
@@ -22,14 +22,19 @@ export function Masthead({ studiedCount, savedCount }: MastheadProps) {
 
   return (
     <div className="border-b-2 border-ink/16">
-      <div className="mx-auto flex max-w-[1280px] items-center justify-between px-7 py-4">
+      <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3 md:px-7 md:py-4">
         <Link to="/" className="flex cursor-pointer items-baseline gap-3.5">
+          {/* self-center keeps the mark optically centered while the wordmark and
+              tagline share a true text baseline */}
+          <span className="self-center">
+            <StitchMark size={19} />
+          </span>
           <span className="font-serif text-2xl font-semibold tracking-[-0.01em]">latticework.</span>
-          <span className="font-mono text-[10px] tracking-[0.14em] text-stone">
-            A FIELD GUIDE TO THE WORLD'S BEST MENTAL MODELS
+          <span className="hidden font-mono text-[10px] tracking-[0.14em] text-stone lg:inline">
+            A FIELD GUIDE FOR THINKERS
           </span>
         </Link>
-        <div className="flex items-center gap-[18px]">
+        <div className="flex flex-wrap items-center gap-x-[18px] gap-y-1.5">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
@@ -67,8 +72,8 @@ export function Masthead({ studiedCount, savedCount }: MastheadProps) {
               className="inline-block"
             >
               {studiedCount}
-            </motion.span>{' '}
-            OF {MODELS.length} STUDIED
+            </motion.span>
+            <span className="hidden sm:inline"> OF {MODELS.length}</span> STUDIED
           </span>
         </div>
       </div>

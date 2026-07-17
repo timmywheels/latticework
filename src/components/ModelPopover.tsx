@@ -13,6 +13,7 @@ interface ModelPopoverProps {
   /** shows the action row — used by the big lattice, omitted on hover cards */
   onOpen?: () => void
   onClose?: () => void
+  className?: string
 }
 
 /**
@@ -20,13 +21,13 @@ interface ModelPopoverProps {
  * Deliberately does NOT pull in EXAMPLES or PROMPTS — those live in the plate's
  * lazy chunk, and importing them here would drag ~2MB back onto the entry bundle.
  */
-export function ModelPopover({ model, onOpen, onClose }: ModelPopoverProps) {
+export function ModelPopover({ model, onOpen, onClose, className = 'w-[290px]' }: ModelPopoverProps) {
   const thinkers = (model.thinkers ?? [])
     .map((t) => PEOPLE.find((p) => p.slug === t)?.name)
     .filter(Boolean)
 
   return (
-    <div className="w-[290px] border border-ink/70 bg-card shadow-[3px_3px_0_rgba(33,29,20,.18)]">
+    <div className={`${className} border border-ink/70 bg-card shadow-[3px_3px_0_rgba(33,29,20,.18)]`}>
       <div className="flex items-baseline justify-between border-b border-ink/12 px-3 py-1.5">
         <span className="font-mono text-[9px] font-medium tracking-[0.14em] text-ember">
           {model.id} — {model.disc}
@@ -74,7 +75,7 @@ export function ModelPopover({ model, onOpen, onClose }: ModelPopoverProps) {
             onClick={onOpen}
             className="mt-2.5 w-full cursor-pointer rounded-[2px] bg-ink py-[7px] text-center font-mono text-[10px] font-medium tracking-[0.1em] text-card transition-colors duration-150 hover:bg-ember"
           >
-            READ THE FULL PLATE ▸
+            READ THE FULL ENTRY ▸
           </button>
         )}
       </div>

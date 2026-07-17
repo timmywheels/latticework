@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router'
 import { motion } from 'motion/react'
-import { DISCIPLINE_ORDER, MODELS_BY_ID, type Model } from '../data/models'
+import { DISCIPLINE_ORDER, MODELS_BY_ID, modelPath, type Model } from '../data/models'
 import { buildPromptPack } from '../lib/promptPack'
 import { useCopy } from '../hooks/useCopy'
 
@@ -48,7 +48,7 @@ export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
         <div className="mt-16 flex flex-col items-center gap-3 text-center">
           <div className="font-serif text-[22px] italic text-drab">Nothing saved yet.</div>
           <div className="max-w-[420px] font-serif text-[14px] leading-[1.6] text-stone">
-            Mark a plate with <span className="text-ember">❖ SAVE</span> and it lands here — a
+            Mark a model with <span className="text-ember">❖ SAVE</span> and it lands here — a
             shelf of the models you mean to come back to, separate from the ones you have already
             studied. Collect a few and you can copy the whole shelf as one checklist prompt.
           </div>
@@ -56,7 +56,7 @@ export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
             to="/"
             className="mt-3 cursor-pointer rounded-[2px] bg-ink px-5 py-[9px] font-mono text-[10.5px] font-medium tracking-[0.1em] text-card transition-colors duration-150 hover:bg-ember"
           >
-            BROWSE THE INDEX ▸
+            BROWSE THE ALMANACK ▸
           </Link>
         </div>
       ) : (
@@ -71,16 +71,16 @@ export function SavedView({ saved, studied, onToggleSaved }: SavedViewProps) {
             {g.rows.map((m) => (
               <div
                 key={m.id}
-                onClick={() => navigate(`/models/${m.id}`, { state: { from: '/saved' } })}
+                onClick={() => navigate(modelPath(m), { state: { from: '/saved' } })}
                 className="flex cursor-pointer items-baseline gap-3.5 border-b border-dotted border-ink/20 px-1 py-[13px] transition-colors duration-150 hover:bg-card"
               >
                 <span className="w-[42px] flex-none font-mono text-[11px] font-medium text-ember">
                   {m.id}
                 </span>
-                <span className="w-[220px] flex-none font-serif text-[17px] font-medium">
+                <span className="min-w-0 flex-1 font-serif text-[16px] font-medium md:w-[220px] md:flex-none md:text-[17px]">
                   {m.name}
                 </span>
-                <span className="min-w-0 flex-1 font-serif text-[12.5px] italic leading-[1.4] text-drab">
+                <span className="hidden min-w-0 flex-1 font-serif text-[12.5px] italic leading-[1.4] text-drab md:block">
                   {m.blurb}
                 </span>
                 <span

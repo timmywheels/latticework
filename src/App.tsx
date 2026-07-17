@@ -1,9 +1,11 @@
-import { Suspense, lazy, useEffect } from "react";
-import { Navigate, Route, Routes, useLocation } from "react-router";
+import { Suspense, lazy, useEffect, useState } from "react";
+import { Navigate, Route, Routes, useLocation, useNavigate } from "react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { useStudied } from "./hooks/useStudied";
 import { useSaved } from "./hooks/useSaved";
+import { useKeys } from "./hooks/useKeys";
 import { Masthead } from "./components/Masthead";
+import { HotkeysPanel } from "./components/HotkeysPanel";
 import { Footer } from "./components/Footer";
 import { IndexView } from "./views/IndexView";
 import { LatticeView } from "./views/LatticeView";
@@ -35,12 +37,26 @@ export default function App() {
   const { studied, toggleStudied } = useStudied();
   const { saved, toggleSaved } = useSaved();
   const location = useLocation();
+  const navigate = useNavigate();
+  const [keysOpen, setKeysOpen] = useState(false);
   // crossfade between sections; model-to-model changes animate inside the detail view
   const section = location.pathname.split("/")[1] || "index";
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  useKeys((e) => {
+    if (e.key === "?") {
+      setKeysOpen((v) => !v);
+    } else if (e.key === "i") {
+      navigate("/");
+    } else if (e.key === "l") {
+      navigate("/lattice");
+    } else if (e.key === "s") {
+      navigate("/saved");
+    }
+  });
 
   return (
     <div className="flex min-h-screen flex-col bg-paper text-ink">
@@ -62,7 +78,7 @@ export default function App() {
                 element={<IndexView studied={studied} saved={saved} />}
               />
               <Route
-                path="/models/:id"
+                path="/models/:slug"
                 element={
                   <ModelDetailView
                     studied={studied}
@@ -94,6 +110,7 @@ export default function App() {
       </AnimatePresence>
 
       <Footer />
+      <HotkeysPanel open={keysOpen} onToggle={() => setKeysOpen((v) => !v)} />
     </div>
   );
 }

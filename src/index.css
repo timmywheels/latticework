@@ -34,3 +34,11 @@ body {
 ::selection {
   background: rgba(198, 90, 46, 0.25);
 }
+
+/* scrollable strips that shouldn't show a scrollbar (tile cabinet, bust row) */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

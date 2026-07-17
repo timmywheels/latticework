@@ -8,13 +8,14 @@ import {
   MODELS,
   MODELS_BY_ID,
   PEOPLE,
-  PROVENANCE_LABELS,
+  modelPath,
   type Discipline,
   type Model,
   type Provenance,
 } from '../data/models'
 import { Bust } from '../components/Bust'
 import { ModelPopover } from '../components/ModelPopover'
+import { useKeys } from '../hooks/useKeys'
 
 interface LatticeViewProps {
   studied: string[]
@@ -29,7 +30,6 @@ interface Box {
 
 const FULL: Box = { x: 0, y: 0, w: LATTICE_W, h: LATTICE_H }
 const MIN_W = 380
-const PROVENANCES = Object.keys(PROVENANCE_LABELS) as Provenance[]
 
 /** Munger's own words vs. everything the compilers and this catalog added. */
 const PROV_DOT: Record<Provenance, string> = {
@@ -112,13 +112,16 @@ export function LatticeView({ studied }: LatticeViewProps) {
   const [hover, setHover] = useState<string | null>(null)
   const [picked, setPicked] = useState<string | null>(null)
   const [showCross, setShowCross] = useState(true)
+  const [full, setFull] = useState(false)
   const drag = useRef<{ px: number; py: number; ox: number; oy: number } | null>(null)
 
   // filters live in the URL so back/forward and shared links restore the view
   const [params, setParams] = useSearchParams()
   const who = params.get('who') ?? ''
-  const prov = (params.get('prov') as Provenance | null) ?? 'ALL'
-  const disc = (params.get('disc') as Discipline | null) ?? 'ALL'
+  const rawDiscipline = (params.get('discipline') ?? '').toUpperCase()
+  const disc = (DISCIPLINE_ORDER as string[]).includes(rawDiscipline)
+    ? (rawDiscipline as Discipline)
+    : 'ALL'
 
   const setParam = (k: string, v: string) => {
     const next = new URLSearchParams(params)
@@ -129,16 +132,14 @@ export function LatticeView({ studied }: LatticeViewProps) {
 
   const matches = useCallback(
     (m: Model) =>
-      (prov === 'ALL' || m.provenance === prov) &&
-      (disc === 'ALL' || m.disc === disc) &&
-      (!who || (m.thinkers ?? []).includes(who)),
-    [prov, disc, who],
+      (disc === 'ALL' || m.disc === disc) && (!who || (m.thinkers ?? []).includes(who)),
+    [disc, who],
   )
 
   const visible = useMemo(() => {
-    if (prov === 'ALL' && disc === 'ALL' && !who) return null
+    if (disc === 'ALL' && !who) return null
     return new Set(MODELS.filter(matches).map((m) => m.id))
-  }, [prov, disc, who, matches])
+  }, [disc, who, matches])
 
   const shown = useMemo(() => (visible ? MODELS.filter((m) => visible.has(m.id)) : MODELS), [visible])
 
@@ -209,12 +210,60 @@ export function LatticeView({ studied }: LatticeViewProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [zoomAt])
 
+  useKeys((e) => {
+    if (e.key === 'Escape') {
+      if (picked) {
+        setPicked(null)
+      } else if (full) {
+        setFull(false)
+      } else {
+        setBox(FULL)
+      }
+    } else if (e.key === 'r') {
+      setBox(FULL)
+    } else if (e.key === 'f') {
+      setFull((v) => !v)
+    }
+  })
+
+  // fullscreen locks the page scroll behind the map
+  useEffect(() => {
+    document.body.style.overflow = full ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [full])
+
+  // touch: one finger pans (drag), two fingers pinch about their midpoint
+  const pointers = useRef(new Map<number, { x: number; y: number }>())
+  const pinchDist = useRef<number | null>(null)
+
   const onPointerDown = (e: React.PointerEvent) => {
-    drag.current = { px: e.clientX, py: e.clientY, ox: box.x, oy: box.y }
+    pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY })
+    if (pointers.current.size === 2) {
+      const [a, b] = [...pointers.current.values()]
+      pinchDist.current = Math.hypot(a.x - b.x, a.y - b.y)
+      drag.current = null
+    } else {
+      drag.current = { px: e.clientX, py: e.clientY, ox: box.x, oy: box.y }
+    }
     ;(e.target as Element).setPointerCapture?.(e.pointerId)
   }
 
   const onPointerMove = (e: React.PointerEvent) => {
+    if (pointers.current.has(e.pointerId)) {
+      pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY })
+    }
+    if (pinchDist.current !== null && pointers.current.size >= 2) {
+      const [a, b] = [...pointers.current.values()]
+      const dist = Math.hypot(a.x - b.x, a.y - b.y)
+      if (dist > 0 && pinchDist.current > 0) {
+        const mid = toSvg((a.x + b.x) / 2, (a.y + b.y) / 2)
+        zoomAt(mid.x, mid.y, dist / pinchDist.current)
+      }
+      pinchDist.current = dist
+      return
+    }
     const d = drag.current
     if (!d) return
     const r = svgRef.current?.getBoundingClientRect()
@@ -228,13 +277,21 @@ export function LatticeView({ studied }: LatticeViewProps) {
     }))
   }
 
-  const endDrag = () => {
+  const endDrag = (e?: React.PointerEvent) => {
+    if (e) {
+      pointers.current.delete(e.pointerId)
+    } else {
+      pointers.current.clear()
+    }
+    if (pointers.current.size < 2) {
+      pinchDist.current = null
+    }
     drag.current = null
   }
 
   // when a filter narrows the set, frame what survives — nine Roosevelt models
   // marooned across a 3200×2000 plate is technically correct and useless
-  const filterKey = `${who}|${prov}|${disc}`
+  const filterKey = `${who}|${disc}`
   useEffect(() => {
     setPicked(null)
     if (!visible) {
@@ -267,17 +324,14 @@ export function LatticeView({ studied }: LatticeViewProps) {
 
   const pickedM = picked ? MODELS_BY_ID[picked] : null
   const whoM = who ? (PEOPLE.find((p) => p.slug === who) ?? null) : null
-  const rail: (Provenance | 'ALL')[] = ['ALL', ...PROVENANCES]
-  const provCount = (p: Provenance | 'ALL') =>
-    p === 'ALL' ? MODELS.length : MODELS.filter((m) => m.provenance === p).length
 
   return (
-    <div className="mx-auto w-full max-w-[1280px] box-border px-7 pb-12 pt-[30px]">
-      <div className="flex items-baseline justify-between">
-        <div className="font-serif text-[32px] font-medium tracking-[-0.01em]">
+    <div className="mx-auto w-full max-w-[1280px] box-border px-4 pb-12 pt-6 md:px-7 md:pt-[30px]">
+      <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
+        <div className="font-serif text-[26px] font-medium tracking-[-0.01em] md:text-[32px]">
           The lattice itself.
         </div>
-        <div className="font-mono text-[10px] tracking-[0.1em] text-stone">
+        <div className="hidden font-mono text-[10px] tracking-[0.1em] text-stone md:block">
           {shown.length} OF {MODELS.length} MODELS · SCROLL TO ZOOM · DRAG TO PAN · CLICK A NODE
         </div>
       </div>
@@ -298,7 +352,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
             </button>
           )}
         </div>
-        <div className="flex gap-x-1 gap-y-3 overflow-x-auto pb-1">
+        <div className="no-scrollbar flex gap-x-1 gap-y-3 overflow-x-auto pb-1">
           {PEOPLE.map((p) => (
             <Bust
               key={p.slug}
@@ -320,8 +374,8 @@ export function LatticeView({ studied }: LatticeViewProps) {
         )}
       </div>
 
-      <div className="mt-2.5 flex flex-wrap items-center gap-x-1.5 gap-y-2">
-        <span className="mr-1 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+      <div className="no-scrollbar mt-2.5 flex items-center gap-x-1.5 gap-y-2 overflow-x-auto md:flex-wrap md:overflow-visible">
+        <span className="mr-1 flex-none font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
           DISCIPLINE
         </span>
         {(['ALL', ...DISCIPLINE_ORDER] as (Discipline | 'ALL')[]).map((d) => {
@@ -330,8 +384,8 @@ export function LatticeView({ studied }: LatticeViewProps) {
             <button
               key={d}
               type="button"
-              onClick={() => setParam('disc', d)}
-              className="cursor-pointer rounded-[2px] px-2 py-[3px] font-mono text-[9.5px] transition-colors duration-150 hover:bg-ember/8"
+              onClick={() => setParam('discipline', d === 'ALL' ? '' : d.toLowerCase())}
+              className="flex-none cursor-pointer rounded-[2px] px-2 py-[3px] font-mono text-[9.5px] transition-colors duration-150 hover:bg-ember/8"
               style={{
                 background: active ? 'rgba(198,90,46,.12)' : 'transparent',
                 color: active ? '#211d14' : '#8a8272',
@@ -345,7 +399,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
         <button
           type="button"
           onClick={() => setShowCross((v) => !v)}
-          className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-[2px] border px-2 py-[3px] font-mono text-[9.5px] transition-colors duration-150"
+          className="ml-2 flex flex-none cursor-pointer items-center gap-1.5 rounded-[2px] border px-2 py-[3px] font-mono text-[9.5px] transition-colors duration-150"
           style={{
             borderColor: showCross ? 'rgba(63,93,122,.5)' : 'rgba(33,29,20,.2)',
             color: showCross ? '#3f5d7a' : '#8a8272',
@@ -355,58 +409,42 @@ export function LatticeView({ studied }: LatticeViewProps) {
         </button>
       </div>
 
-      {/* provenance — demoted to a quiet sub-filter; it is a footnote about sourcing,
-          not the organising idea of the lattice */}
-      <div className="mt-1.5 flex flex-wrap items-center gap-x-1.5 gap-y-2">
-        <span className="mr-1 font-mono text-[9.5px] font-medium tracking-[0.18em] text-faded">
-          SOURCING
-        </span>
-        {rail.map((p) => {
-          const active = prov === p
-          return (
-            <button
-              key={p}
-              type="button"
-              onClick={() => setParam('prov', p)}
-              className="flex cursor-pointer items-center gap-1 rounded-[2px] px-1.5 py-[2px] font-mono text-[9px] transition-colors duration-150 hover:bg-ink/5"
-              style={{ color: active ? '#211d14' : '#b0a894', fontWeight: active ? 500 : 400 }}
-            >
-              {p !== 'ALL' && (
-                <span
-                  className="inline-block h-[6px] w-[6px] rounded-full"
-                  style={{ background: PROV_DOT[p], opacity: active ? 1 : 0.5 }}
-                />
-              )}
-              {p === 'ALL' ? 'ALL' : PROVENANCE_LABELS[p].toUpperCase()} {provCount(p)}
-            </button>
-          )
-        })}
-      </div>
-
-      <div className="relative mt-3 border border-ink bg-card">
+      <div className={full ? 'fixed inset-0 z-50 bg-card' : 'relative mt-3 border border-ink bg-card'}>
         <div className="pointer-events-none absolute inset-2 z-10 border border-dotted border-ink/30" />
         {pickedM && (
-          <div className="absolute right-3 top-3 z-30">
+          <div className="absolute left-2 right-2 top-2 z-30 md:left-auto md:right-3 md:top-3">
             <ModelPopover
+              className="w-full md:w-[290px]"
               model={pickedM}
-              onOpen={() => navigate(`/models/${pickedM.id}`, { state: { from: `/lattice?${params.toString()}` } })}
+              onOpen={() => navigate(modelPath(pickedM), { state: { from: `/lattice?${params.toString()}` } })}
               onClose={() => setPicked(null)}
             />
           </div>
         )}
-        {!pickedM && (box.w !== FULL.w || box.x !== 0 || box.y !== 0) && (
-          <button
-            type="button"
-            onClick={() => setBox(FULL)}
-            className="absolute right-3 top-3 z-20 cursor-pointer rounded-[2px] border border-ink/30 bg-card px-2.5 py-1 font-mono text-[9.5px] tracking-[0.08em] text-drab transition-colors duration-150 hover:border-ink hover:text-ink"
-          >
-            RESET VIEW
-          </button>
+        {!pickedM && (
+          <div className="absolute right-3 top-3 z-20 flex gap-2">
+            {(box.w !== FULL.w || box.x !== 0 || box.y !== 0) && (
+              <button
+                type="button"
+                onClick={() => setBox(FULL)}
+                className="cursor-pointer rounded-[2px] border border-ink/30 bg-card px-2.5 py-1 font-mono text-[9.5px] tracking-[0.08em] text-drab transition-colors duration-150 hover:border-ink hover:text-ink"
+              >
+                RESET VIEW
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => setFull((v) => !v)}
+              className="cursor-pointer rounded-[2px] border border-ink/30 bg-card px-2.5 py-1 font-mono text-[9.5px] tracking-[0.08em] text-drab transition-colors duration-150 hover:border-ink hover:text-ink"
+            >
+              {full ? '✕ EXIT' : '⛶ FULL SCREEN'}
+            </button>
+          </div>
         )}
         <svg
           ref={svgRef}
           viewBox={`${box.x} ${box.y} ${box.w} ${box.h}`}
-          className="block h-auto w-full touch-none select-none"
+          className={`block w-full touch-none select-none ${full ? 'h-full' : 'h-auto'}`}
           style={{ cursor: drag.current ? 'grabbing' : 'grab' }}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
@@ -509,7 +547,7 @@ export function LatticeView({ studied }: LatticeViewProps) {
       </div>
 
       {/* hover readout — keeps the graph legible without tooltips fighting the edges */}
-      <div className="mt-3 flex min-h-[42px] items-start gap-4 border-t border-ink/14 pt-3">
+      <div className="mt-3 hidden min-h-[42px] items-start gap-4 border-t border-ink/14 pt-3 md:flex">
         {hovM ? (
           <>
             <span className="w-[44px] flex-none font-mono text-[11px] font-medium text-ember">
