@@ -352,7 +352,9 @@ export function LatticeView({ studied }: LatticeViewProps) {
             </button>
           )}
         </div>
-        <div className="no-scrollbar flex gap-x-1 gap-y-3 overflow-x-auto pb-1">
+        {/* overflow-x-auto also clips vertically, so pad the top/sides to give the
+            hover lift + focus ring room instead of shearing the top edge off */}
+        <div className="no-scrollbar flex gap-x-1 gap-y-3 overflow-x-auto px-0.5 pt-2 pb-2">
           {PEOPLE.map((p) => (
             <Bust
               key={p.slug}
