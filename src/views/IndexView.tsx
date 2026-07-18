@@ -9,6 +9,7 @@ import {
   MODELS_BY_ID,
   MODELS_BY_SLUG,
   PLANNED_COUNTS,
+  PLATE_ORDER,
   capTitle,
   modelOfTheDay,
   modelPath,
@@ -81,13 +82,10 @@ export function IndexView({
     ...DISCIPLINE_ORDER.map((d) => ({ name: d, count: PLANNED_COUNTS[d] })),
   ]
 
-  const groups = DISCIPLINE_ORDER.filter((d) => disc === 'ALL' || d === disc)
-    .map((d) => ({
-      name: d,
-      count: PLANNED_COUNTS[d],
-      rows: MODELS.filter((m) => m.disc === d),
-    }))
-    .filter((g) => g.rows.length > 0)
+  // the ledger reads in model-number order (M001↑). Ids are shuffled so that
+  // order is an eclectic mix of disciplines, not one discipline at a time — so
+  // there are no discipline sections, just a per-row tag. The rail still filters.
+  const rows = PLATE_ORDER.filter((m) => disc === 'ALL' || m.disc === disc)
 
   const previewLinks = pM.links.map((id) => MODELS_BY_ID[id]).filter(Boolean)
 
@@ -97,9 +95,8 @@ export function IndexView({
 
   // j/k walk the visible ledger; ←/→ step by number; ↵ opens the selection
   const walk = (step: 1 | -1) => {
-    const flat = groups.flatMap((g) => g.rows)
-    const idx = flat.findIndex((m) => m.id === selM.id)
-    const next = flat[(idx + step + flat.length) % flat.length]
+    const idx = rows.findIndex((m) => m.id === selM.id)
+    const next = rows[(idx + step + rows.length) % rows.length]
     setSel(next.id)
     document.getElementById(`row-${next.id}`)?.scrollIntoView({ block: 'nearest' })
   }
@@ -244,67 +241,68 @@ export function IndexView({
 
         {/* ledger — hover clears at the column edge, so row-to-row moves never flash */}
         <div className="min-w-0 flex-1" onMouseLeave={() => setHover(null)}>
-          {groups.map((g) => (
-            <div key={g.name}>
-              <div className="sticky top-0 z-10 flex justify-between border-b border-ink/14 bg-paper px-5 pb-2.5 pt-3.5">
-                <span className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
-                  {g.name}
+          <div className="sticky top-0 z-10 flex justify-between border-b border-ink/14 bg-paper px-5 pb-2.5 pt-3.5">
+            <span className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+              {disc === 'ALL' ? 'ALL DISCIPLINES' : disc}
+            </span>
+            <span className="font-mono text-[9.5px] text-faded">{rows.length} MODELS</span>
+          </div>
+          {rows.map((m) => {
+            const isStudied = studied.includes(m.id)
+            const isSaved = saved.includes(m.id)
+            const isSelected = m.id === selM.id
+            return (
+              <div
+                key={m.id}
+                id={`row-${m.id}`}
+                onClick={() => openModel(m.id)}
+                onMouseEnter={() => setHover(m.id)}
+                className="flex cursor-pointer items-center gap-3.5 border-b border-dotted border-ink/20 transition-[background-color] duration-150 hover:bg-card"
+                style={{
+                  // fixed height (not padding) → every row identical, whether the
+                  // title is one line or clamped at two
+                  height: density === 'compact' ? 56 : 70,
+                  paddingInline: 20,
+                  background: isSelected ? 'rgba(198,90,46,.07)' : undefined,
+                }}
+              >
+                {/* number over discipline tag — the ledger has no section headers,
+                    so each row carries its own discipline */}
+                <span className="flex w-[82px] flex-none flex-col gap-[3px]">
+                  <span className="font-mono text-[11px] font-medium text-ember">{m.id}</span>
+                  <span className="truncate font-mono text-[8px] tracking-[0.12em] text-stone">
+                    {m.disc}
+                  </span>
                 </span>
-                <span className="font-mono text-[9.5px] text-faded">{g.count} MODELS</span>
+                {/* fixed row height + title clamped to 2 lines + blurb to 1 keeps
+                    every row the same height. full name on hover. */}
+                <span
+                  title={m.name}
+                  className="min-w-0 flex-[3] font-serif text-[16px] font-medium leading-tight md:text-[17px] line-clamp-2"
+                >
+                  {m.name}
+                </span>
+                <span className="hidden min-w-0 flex-[2] truncate font-serif text-[12.5px] italic text-drab md:block">
+                  {m.blurb}
+                </span>
+                <span className="hidden w-[88px] flex-none text-right font-mono text-[9.5px] text-prussian sm:block">
+                  {showConnections ? `⁘ ${m.links.length}` : ''}
+                </span>
+                <span
+                  className="w-[16px] flex-none text-right font-serif text-[12px]"
+                  style={{ color: isSaved ? '#c65a2e' : 'transparent' }}
+                >
+                  ❖
+                </span>
+                <span
+                  className="flex-none font-serif text-[13px]"
+                  style={{ color: isStudied ? '#c65a2e' : '#d8d2c2' }}
+                >
+                  {isStudied ? '✦' : '✧'}
+                </span>
               </div>
-              {g.rows.map((m) => {
-                const isStudied = studied.includes(m.id)
-                const isSaved = saved.includes(m.id)
-                const isSelected = m.id === selM.id
-                return (
-                  <div
-                    key={m.id}
-                    id={`row-${m.id}`}
-                    onClick={() => openModel(m.id)}
-                    onMouseEnter={() => setHover(m.id)}
-                    className="flex cursor-pointer items-center gap-3.5 border-b border-dotted border-ink/20 transition-[background-color] duration-150 hover:bg-card"
-                    style={{
-                      // fixed height (not padding) → every row identical, whether the
-                      // title is one line or clamped at two
-                      height: density === 'compact' ? 56 : 70,
-                      paddingInline: 20,
-                      background: isSelected ? 'rgba(198,90,46,.07)' : undefined,
-                    }}
-                  >
-                    <span className="w-[38px] flex-none font-mono text-[11px] font-medium text-ember">
-                      {m.id}
-                    </span>
-                    {/* fixed row height + title clamped to 2 lines + blurb to 1 keeps
-                        every row the same height. full name on hover. */}
-                    <span
-                      title={m.name}
-                      className="min-w-0 flex-[3] font-serif text-[16px] font-medium leading-tight md:text-[17px] line-clamp-2"
-                    >
-                      {m.name}
-                    </span>
-                    <span className="hidden min-w-0 flex-[2] truncate font-serif text-[12.5px] italic text-drab md:block">
-                      {m.blurb}
-                    </span>
-                    <span className="hidden w-[88px] flex-none text-right font-mono text-[9.5px] text-prussian sm:block">
-                      {showConnections ? `⁘ ${m.links.length}` : ''}
-                    </span>
-                    <span
-                      className="w-[16px] flex-none text-right font-serif text-[12px]"
-                      style={{ color: isSaved ? '#c65a2e' : 'transparent' }}
-                    >
-                      ❖
-                    </span>
-                    <span
-                      className="flex-none font-serif text-[13px]"
-                      style={{ color: isStudied ? '#c65a2e' : '#d8d2c2' }}
-                    >
-                      {isStudied ? '✦' : '✧'}
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
-          ))}
+            )
+          })}
           <div className="hidden px-5 py-3.5 font-mono text-[10px] text-faded md:block">
             HOVER A ROW TO PREVIEW IT · CLICK TO OPEN THE FULL ENTRY
           </div>

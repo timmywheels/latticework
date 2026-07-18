@@ -2,11 +2,12 @@ import { useCallback, useState } from 'react'
 
 import { MODELS_BY_ID } from '../data/models'
 
-// bumped when the id scheme changed (legacy '012' → catalog 'M647'), so old
-// localStorage payloads are discarded rather than silently marking nothing
-const STORAGE_KEY = 'latticework-studied-v3'
+// bumped whenever the id scheme changes (here: ids reshuffled so model-number
+// order mixes disciplines), so old localStorage payloads are discarded rather
+// than silently marking the wrong models
+const STORAGE_KEY = 'latticework-studied-v5'
 // compound interest · inversion · incentives · loss aversion
-const DEFAULT_STUDIED = ['M005', 'M098', 'M236', 'M206']
+const DEFAULT_STUDIED = ['M0301', 'M0811', 'M0001', 'M0631']
 
 function load(): string[] {
   try {

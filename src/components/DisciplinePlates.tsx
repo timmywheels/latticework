@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { ART_READY_ID, type Discipline, type Model } from '../data/models'
+import { ART_READY_ID, MODEL_SLUGS, type Discipline, type Model } from '../data/models'
 import { PlateArt } from './PlateArt'
 
 const INK = '#211d14'
@@ -873,14 +873,15 @@ function ModelArtFrame({
 }
 
 /**
- * Bespoke model engravings, keyed by model id. Anything not registered here
- * falls back to its discipline's series plate — so the map grows one keystone
- * at a time, and no model is ever blank. Each plate riffs on its discipline's
- * visual key (Thinking = examination: lens, prussian lattice, ember focus).
+ * Bespoke model engravings, keyed by model *slug* (name-derived, so stable
+ * across id renumbering). Anything not registered here falls back to its
+ * discipline's series plate — so the map grows one keystone at a time, and no
+ * model is ever blank. Each plate riffs on its discipline's visual key
+ * (Thinking = examination: lens, prussian lattice, ember focus).
  */
 const MODEL_PLATES: Record<string, { title: string; fig: string; art: ReactNode }> = {
-  // M098 — Inversion: the same problem, mirrored across the axis, comes out clean.
-  M098: {
+  // Inversion: the same problem, mirrored across the axis, comes out clean.
+  'inversion': {
     title: 'turn it upside down',
     fig: '098',
     art: (
@@ -937,8 +938,8 @@ const MODEL_PLATES: Record<string, { title: string; fig: string; art: ReactNode 
       </>
     ),
   },
-  // M083 — Circle of competence: a compass scribes the perimeter that matters.
-  M083: {
+  // Circle of competence: a compass scribes the perimeter that matters.
+  'circle-of-competence': {
     title: 'know the perimeter',
     fig: '083',
     art: (
@@ -1016,7 +1017,7 @@ export function ModelPlate({ model, inset = 8 }: { model: Model; inset?: number 
   if (model.id === ART_READY_ID) {
     return <PlateArt inset={inset} />
   }
-  const plate = MODEL_PLATES[model.id]
+  const plate = MODEL_PLATES[MODEL_SLUGS[model.id]]
   if (plate) {
     return (
       <ModelArtFrame inset={inset} title={plate.title} fig={plate.fig}>

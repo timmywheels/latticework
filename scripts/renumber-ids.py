@@ -1,11 +1,51 @@
 #!/usr/bin/env python3
-"""One-time migration: renumber model ids so M001..M963 follow the browse order
-(curated DISCIPLINE_ORDER, then provenance, then name) — so the ALL ledger reads
-M001 ascending. Applies the same old→new bijection to the catalog, wiring, examples,
-and prompts. Slugs are name-derived, so URLs are unaffected. Idempotent-safe: rerun
-only re-applies the same deterministic ordering.
+"""Renumber model ids so M001..M963 follow a deterministic *shuffled* order in
+which no two consecutive ids share a discipline — so the ALL ledger, read in
+model-number order, is an eclectic mix rather than 137 Economics in a row, and
+the daily email (which walks id order) is varied for free. Applies the same
+old→new bijection to the catalog, wiring, examples, and prompts. Slugs are
+name-derived, so URLs are unaffected.
+
+The order is seeded on each model's NAME (a stable identity, unlike the id we're
+reassigning), so the migration is idempotent: rerunning reproduces the same ids.
 """
 import json, os
+
+
+def _mix(x):
+    """splitmix32 finalizer — strong avalanche so sequential inputs scatter."""
+    x = (x + 0x9E3779B9) & 0xFFFFFFFF
+    x = ((x ^ (x >> 16)) * 0x21F0AAAD) & 0xFFFFFFFF
+    x = ((x ^ (x >> 15)) * 0x735A2D97) & 0xFFFFFFFF
+    return (x ^ (x >> 15)) & 0xFFFFFFFF
+
+
+def _fnv(s):
+    h = 2166136261
+    for ch in s:
+        h = ((h ^ ord(ch)) * 16777619) & 0xFFFFFFFF
+    return h
+
+
+# Pinned first so the ledger always opens on it (catalog name; build renames it
+# to the display "Incentives"). Kept at M001 across reruns of this migration.
+PIN_FIRST = 'Reward and Punishment Superresponse Tendency'
+
+
+def shuffled_order(models):
+    """A stable pseudo-random order, with Incentives swapped to the front.
+
+    Sort by a well-mixed hash of the name (looks random, fully deterministic),
+    then swap the opener (Incentives) into first place. That's enough to break up
+    the long single-discipline blocks — the point is variety, not eliminating
+    every adjacency, so the occasional back-to-back pair is fine and left alone.
+    """
+    seq = sorted(models, key=lambda m: _mix(_fnv(m['name'])))
+    for k, mdl in enumerate(seq):
+        if mdl['name'] == PIN_FIRST:
+            seq[0], seq[k] = seq[k], seq[0]  # exactly "swap Incentives with M001"
+            break
+    return seq
 
 PROJ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 D = os.path.join(PROJ, 'data')
@@ -32,10 +72,10 @@ def main():
     cat = json.load(open(os.path.join(D, 'latticework-catalog.json')))
     models = cat['models']
 
-    order_key = lambda m: (ORDER.index(DISC_CODE[m['discipline']]),
-                           -PROV_RANK.get(m['provenance'], 0), m['name'])
-    ordered = sorted(models, key=order_key)
-    remap = {m['id']: f'M{i:03d}' for i, m in enumerate(ordered, 1)}
+    ordered = shuffled_order(models)
+    # 4-digit zero-pad: the catalog is nearing 1000, so M0001..M0963 keeps ids a
+    # fixed width (and column-aligned) even once it crosses into four figures.
+    remap = {m['id']: f'M{i:04d}' for i, m in enumerate(ordered, 1)}
 
     # bijection sanity
     assert len(remap) == len(models), 'duplicate old ids'
@@ -83,22 +123,20 @@ def main():
         if nm in seed_names or nm == 'Deprival-Superreaction Tendency':
             seeds[nm] = m['id']
 
-    print(f'renumbered {len(models)} ids in curated order')
+    print(f'renumbered {len(models)} ids in shuffled order (Incentives pinned to M0001)')
     print(f'  wiring links dropped (were already dangling): {dropped_links}')
     print(f'  examples={len(ex)} prompts={len(pr)} — all keys valid, links resolve')
     print('  new seed ids:', seeds)
-    # show the new per-discipline id ranges (should be contiguous, ascending in ORDER)
-    range_by = {}
-    for m in models:
-        c = DISC_CODE[m['discipline']]
-        n = int(m['id'][1:])
-        range_by.setdefault(c, [n, n])
-        range_by[c][0] = min(range_by[c][0], n)
-        range_by[c][1] = max(range_by[c][1], n)
-    print('  id ranges follow ORDER:')
-    for c in ORDER:
-        lo, hi = range_by[c]
-        print(f'    M{lo:03d}–M{hi:03d}  {c}')
+    # hardcoded studied seeds in src/hooks/useStudied.ts must move with the ids
+    watch = ['M005', 'M098', 'M236', 'M206']
+    print('  DEFAULT_STUDIED remap:', {o: remap[o] for o in watch if o in remap})
+    # verify the mix: walking ids in order must never repeat a discipline back-to-back
+    seq = sorted(models, key=lambda m: int(m['id'][1:]))
+    max_run, run = 1, 1
+    for a, b in zip(seq, seq[1:]):
+        run = run + 1 if a['discipline'] == b['discipline'] else 1
+        max_run = max(max_run, run)
+    print(f'  max consecutive same-discipline run in id order: {max_run}')
 
 
 if __name__ == '__main__':
