@@ -10,6 +10,8 @@
 
 `phm-1995-vs-2005.json` — item-by-item mapping between the two incompatible editions of *The Psychology of Human Misjudgment*.
 
+`sources.json` — **37 attributed sources** behind the catalog (primary talks, meeting transcripts, interviews, and the five audited compilations), each with creator, host, type, year, URL, and what it supports. Human-readable form: [`../SOURCES.md`](../SOURCES.md). Every URL was fetched during research and verified against the research record — none reconstructed. The raw fan-out research dumps (~1.9 MB) stayed in `/tmp` as working scratch; this is the curated extract.
+
 ## Regenerating the app data
 
 `src/data/models.ts` is **generated** — do not hand-edit it. It is built from the two files above:

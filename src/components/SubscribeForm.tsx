@@ -2,8 +2,9 @@ import { useState, type FormEvent } from 'react'
 
 const API = import.meta.env.VITE_API_URL ?? ''
 
-/** One model a day. Posts to the server's double-opt-in endpoint. */
-export function SubscribeForm() {
+/** One model a day. Posts to the server's double-opt-in endpoint.
+ *  'hero' aligns right on desktop with its own label; 'band' is bare and left-aligned. */
+export function SubscribeForm({ variant = 'hero' }: { variant?: 'hero' | 'band' }) {
   const [email, setEmail] = useState('')
   const [state, setState] = useState<'idle' | 'busy' | 'sent' | 'error'>('idle')
 
@@ -25,20 +26,23 @@ export function SubscribeForm() {
     }
   }
 
+  const hero = variant === 'hero'
   if (state === 'sent') {
     return (
-      <div className="mt-4 font-mono text-[10px] tracking-[0.1em] text-ember md:text-right">
+      <div className={`mt-4 font-mono text-[10px] tracking-[0.1em] text-ember ${hero ? 'md:text-right' : ''}`}>
         CHECK YOUR INBOX TO CONFIRM ✓
       </div>
     )
   }
 
   return (
-    <form onSubmit={submit} className="mt-4">
-      <div className="font-mono text-[9px] tracking-[0.15em] text-faded md:text-right">
-        ONE MODEL IN YOUR INBOX, DAILY
-      </div>
-      <div className="mt-1.5 flex gap-1.5 md:justify-end">
+    <form onSubmit={submit} className={hero ? 'mt-4' : 'mt-3 md:mt-0'}>
+      {hero && (
+        <div className="font-mono text-[9px] tracking-[0.15em] text-faded md:text-right">
+          ONE MODEL IN YOUR INBOX, DAILY
+        </div>
+      )}
+      <div className={`mt-1.5 flex gap-1.5 ${hero ? 'md:justify-end' : ''}`}>
         <input
           type="email"
           required
@@ -56,7 +60,7 @@ export function SubscribeForm() {
         </button>
       </div>
       {state === 'error' && (
-        <div className="mt-1.5 font-mono text-[9.5px] text-ember md:text-right">
+        <div className={`mt-1.5 font-mono text-[9.5px] text-ember ${hero ? 'md:text-right' : ''}`}>
           SOMETHING SLIPPED — TRY AGAIN
         </div>
       )}

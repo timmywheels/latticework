@@ -19,30 +19,36 @@ export function CopyPrompt({ id }: CopyPromptProps) {
   if (!p) return null
 
   return (
-    <div className="mt-[22px] border border-dotted border-prussian/40 bg-card/60 p-3.5">
-      <div className="flex items-center justify-between gap-2">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          className="flex min-w-0 flex-1 cursor-pointer items-center gap-1.5 text-left font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone transition-colors duration-150 hover:text-ink"
-        >
-          <span className="text-[8px]">{open ? '▾' : '▸'}</span>
-          USE IT WITH AN LLM
-        </button>
+    <div className="mt-[22px] border border-dotted border-prussian/40 bg-card/60 p-4">
+      {/* label + descriptor ride together on the left; the button centers against
+          the whole block so it never crowds the line under it */}
+      <div className="flex items-center justify-between gap-4">
+        <div className="min-w-0 flex-1">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            className="flex cursor-pointer items-center gap-1.5 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone transition-colors duration-150 hover:text-ink"
+          >
+            <span className="text-[8px]">{open ? '▾' : '▸'}</span>
+            USE IT WITH AN LLM
+          </button>
+          <div className="mt-1.5 font-serif text-[13px] italic leading-[1.4] text-drab">
+            {p.use}
+          </div>
+        </div>
         <motion.button
           type="button"
           whileTap={{ scale: 0.96 }}
           onClick={() => copy(p.body)}
-          className="flex-none cursor-pointer rounded-[2px] px-[14px] py-[7px] font-mono text-[10px] font-medium tracking-[0.1em] text-card transition-colors duration-200"
+          className="flex-none cursor-pointer self-center rounded-[2px] px-[14px] py-[8px] font-mono text-[10px] font-medium tracking-[0.1em] text-card transition-colors duration-200"
           style={{ background: copied ? '#3f5d7a' : '#211d14' }}
         >
           {copied ? 'COPIED ✓' : 'COPY AS PROMPT ⧉'}
         </motion.button>
       </div>
-      <div className="mt-1.5 font-serif text-[13px] italic leading-[1.4] text-drab">{p.use}</div>
       {open && (
-        <pre className="mt-3 max-h-[340px] overflow-y-auto whitespace-pre-wrap border-t border-ink/12 pt-3 font-mono text-[11px] leading-[1.6] text-umber">
+        <pre className="mt-3.5 max-h-[340px] overflow-y-auto whitespace-pre-wrap border-t border-ink/12 pt-3 font-mono text-[11px] leading-[1.6] text-umber">
           {p.body}
         </pre>
       )}

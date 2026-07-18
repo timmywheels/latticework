@@ -10,7 +10,9 @@ import {
   MODELS_BY_SLUG,
   PLANNED_COUNTS,
   capTitle,
+  modelOfTheDay,
   modelPath,
+  randomModel,
   neighborModel,
 } from '../data/models'
 import { DisciplineThumb, ModelPlate } from '../components/DisciplinePlates'
@@ -70,7 +72,6 @@ export function IndexView({
     selM = MODELS.find((m) => m.disc === disc) ?? selM
   }
   const pM = hovM ?? selM
-  const rowPadding = density === 'compact' ? '8px 20px' : '13px 20px'
 
   const openModel = (id: string) =>
     navigate(modelPath(MODELS_BY_ID[id]), { state: { from: `/?${params.toString()}` } })
@@ -124,11 +125,36 @@ export function IndexView({
       <div className="border-b border-ink/16">
         <div className="mx-auto flex max-w-[1280px] flex-col items-start gap-6 px-4 pb-7 pt-8 md:flex-row md:items-end md:justify-between md:gap-10 md:px-7 md:pb-9 md:pt-10">
           <div className="max-w-[640px]">
-            <div className="font-serif text-[32px] font-medium leading-[1.08] tracking-[-0.015em] text-pretty md:text-[44px]">
+            <div className="font-serif text-[32px] font-medium leading-[1.08] tracking-[-0.015em] text-pretty md:text-[44px] [font-optical-sizing:none]">
               {MODELS.length} mental models, hung on a single lattice.
             </div>
             <div className="mt-3 font-serif text-[15px] italic leading-[1.6] text-umber">
               The big ideas from the big disciplines — every model wired to its neighbors.
+            </div>
+            <div className="mt-4 flex flex-wrap items-baseline gap-x-6 gap-y-2">
+              <button
+                type="button"
+                onClick={() => openModel(modelOfTheDay().id)}
+                className="group flex cursor-pointer items-baseline gap-2.5 text-left"
+              >
+                <span className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-ember">
+                  TODAY&apos;S MODEL
+                </span>
+                <span className="font-serif text-[15px] italic text-ink transition-colors duration-150 group-hover:text-ember">
+                  {modelOfTheDay().name} ▸
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={() => openModel(randomModel().id)}
+                title="Jump to a random model — or press R"
+                className="group flex cursor-pointer items-baseline gap-1.5 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone transition-colors duration-150 hover:text-ember"
+              >
+                <span className="text-[11px] leading-none transition-transform duration-300 group-hover:rotate-180">
+                  ↻
+                </span>
+                SURPRISE ME
+              </button>
             </div>
           </div>
           <div className="w-full flex-none md:w-auto">
@@ -236,19 +262,27 @@ export function IndexView({
                     id={`row-${m.id}`}
                     onClick={() => openModel(m.id)}
                     onMouseEnter={() => setHover(m.id)}
-                    className="flex cursor-pointer items-baseline gap-3.5 border-b border-dotted border-ink/20 transition-[background-color] duration-150 hover:bg-card"
+                    className="flex cursor-pointer items-center gap-3.5 border-b border-dotted border-ink/20 transition-[background-color] duration-150 hover:bg-card"
                     style={{
-                      padding: rowPadding,
+                      // fixed height (not padding) → every row identical, whether the
+                      // title is one line or clamped at two
+                      height: density === 'compact' ? 56 : 70,
+                      paddingInline: 20,
                       background: isSelected ? 'rgba(198,90,46,.07)' : undefined,
                     }}
                   >
                     <span className="w-[38px] flex-none font-mono text-[11px] font-medium text-ember">
                       {m.id}
                     </span>
-                    <span className="min-w-0 flex-1 font-serif text-[16px] font-medium md:w-[186px] md:flex-none md:text-[17px]">
+                    {/* fixed row height + title clamped to 2 lines + blurb to 1 keeps
+                        every row the same height. full name on hover. */}
+                    <span
+                      title={m.name}
+                      className="min-w-0 flex-[3] font-serif text-[16px] font-medium leading-tight md:text-[17px] line-clamp-2"
+                    >
                       {m.name}
                     </span>
-                    <span className="hidden min-w-0 flex-1 font-serif text-[12.5px] italic leading-[1.4] text-drab md:block">
+                    <span className="hidden min-w-0 flex-[2] truncate font-serif text-[12.5px] italic text-drab md:block">
                       {m.blurb}
                     </span>
                     <span className="hidden w-[88px] flex-none text-right font-mono text-[9.5px] text-prussian sm:block">

@@ -15,8 +15,11 @@ import {
 import { ModelPlate } from '../components/DisciplinePlates'
 import { MiniLattice } from '../components/MiniLattice'
 import { useKeys } from '../hooks/useKeys'
+import { useCopy } from '../hooks/useCopy'
+import { SubscribeForm } from '../components/SubscribeForm'
 import { Examples } from '../components/Examples'
 import { CopyPrompt } from '../components/CopyPrompt'
+import { SourceList } from '../components/SourceList'
 
 interface ModelDetailViewProps {
   studied: string[]
@@ -81,6 +84,10 @@ export function ModelDetailView({
     }
   })
 
+  // every hook must run before the redirect guards below, or the hook count
+  // changes between renders (React #310) when a legacy /models/M123 link redirects
+  const { copied, copy } = useCopy()
+
   if (!slug || !selM) return <Navigate to="/" replace />
   // legacy /models/M123 links land here; send them on to the canonical slug
   if (slug !== MODEL_SLUGS[selM.id]) {
@@ -88,6 +95,14 @@ export function ModelDetailView({
   }
 
   const id = selM.id
+  const share = () => {
+    const url = `${window.location.origin}${modelPath(selM)}`
+    if (navigator.share) {
+      navigator.share({ title: selM.name, text: selM.blurb, url }).catch(() => {})
+    } else {
+      copy(url)
+    }
+  }
   const isStudied = studied.includes(id)
   const isSaved = saved.includes(id)
 
@@ -225,13 +240,15 @@ export function ModelDetailView({
             <dd className="mt-1.5 font-mono text-[11px] text-prussian">
               ⁘ {selM.links.length} NEIGHBORS
             </dd>
+
+            <SourceList model={selM} />
           </dl>
           </div>
         </div>
 
         {/* prose */}
         <div className="min-w-0 flex-1">
-          <div className="font-serif text-[36px] font-medium leading-[1.05] tracking-[-0.015em] text-pretty md:text-[52px]">
+          <div className="font-serif text-[36px] font-medium leading-[1.05] tracking-[-0.015em] text-pretty md:text-[52px] [font-optical-sizing:none]">
             {selM.name}
           </div>
           <div className="mt-2.5 font-serif text-[19px] italic leading-[1.45] text-ember">
@@ -280,6 +297,18 @@ export function ModelDetailView({
                 RUN THE DEMO ▸
               </motion.button>
             )}
+            <motion.button
+              type="button"
+              whileTap={{ scale: 0.97 }}
+              onClick={share}
+              className="cursor-pointer rounded-[2px] border px-[18px] py-[11px] font-mono text-[11px] font-medium tracking-[0.1em] transition-colors duration-150"
+              style={{
+                borderColor: copied ? '#3f5d7a' : 'rgba(33,29,20,.3)',
+                color: copied ? '#3f5d7a' : '#211d14',
+              }}
+            >
+              {copied ? 'LINK COPIED ✓' : 'SHARE ⁘'}
+            </motion.button>
           </div>
 
           <div className="md:hidden">
@@ -344,6 +373,8 @@ export function ModelDetailView({
             <dd className="mt-1.5 font-mono text-[11px] text-prussian">
               ⁘ {selM.links.length} NEIGHBORS
             </dd>
+
+            <SourceList model={selM} />
           </dl>
           </div>
         </div>
@@ -373,6 +404,22 @@ export function ModelDetailView({
             ))}
           </div>
         )}
+      </div>
+
+      {/* the reader who arrived from a friend's link never saw the hero form */}
+      <div className="mt-10 border border-dotted border-ink/30 bg-card/60 px-5 py-4 md:flex md:items-center md:justify-between md:gap-8">
+        <div>
+          <div className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+            ONE MODEL A DAY
+          </div>
+          <div className="mt-1 font-serif text-[14px] italic leading-[1.5] text-umber">
+            Liked this one? There are {MODELS.length} more — one lands in your inbox every
+            morning.
+          </div>
+        </div>
+        <div className="md:w-[320px] md:flex-none">
+          <SubscribeForm variant="band" />
+        </div>
       </div>
     </div>
   )

@@ -1,0 +1,105 @@
+#!/usr/bin/env python3
+"""One-time migration: renumber model ids so M001..M963 follow the browse order
+(curated DISCIPLINE_ORDER, then provenance, then name) — so the ALL ledger reads
+M001 ascending. Applies the same old→new bijection to the catalog, wiring, examples,
+and prompts. Slugs are name-derived, so URLs are unaffected. Idempotent-safe: rerun
+only re-applies the same deterministic ordering.
+"""
+import json, os
+
+PROJ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+D = os.path.join(PROJ, 'data')
+
+# must match build-models.py exactly
+ORDER = ['MATHEMATICS', 'THINKING', 'PSYCHOLOGY', 'ECONOMICS', 'BUSINESS', 'INVESTING',
+         'ACCOUNTING', 'SOCIOLOGY', 'LAW', 'HISTORY', 'PHILOSOPHY', 'ART', 'MILITARY',
+         'BIOLOGY', 'PHYSICS', 'ENGINEERING', 'SYSTEMS', 'COMPUTING']
+DISC_CODE = {
+    'Mathematics, Probability & Statistics': 'MATHEMATICS', 'Psychology & Human Nature': 'PSYCHOLOGY',
+    'Economics & Microeconomics': 'ECONOMICS', 'Biology, Evolution & Physiology': 'BIOLOGY',
+    'Physics & Chemistry': 'PHYSICS', 'Engineering & Reliability': 'ENGINEERING',
+    'Systems & Complexity': 'SYSTEMS', 'General Thinking Tools & Epistemology': 'THINKING',
+    'Philosophy, Ethics, Literature & Rhetoric': 'PHILOSOPHY', 'Business Strategy & Moats': 'BUSINESS',
+    'Investing & Capital Allocation': 'INVESTING', 'Accounting & Finance': 'ACCOUNTING',
+    'Law & Institutions': 'LAW', 'History': 'HISTORY', 'Military & Conflict': 'MILITARY',
+    'Art, Narrative & Communication': 'ART', 'Sociology & Organizations': 'SOCIOLOGY',
+    'Computer Science & Information': 'COMPUTING',
+}
+PROV_RANK = {'munger-named': 5, 'munger-used': 4, 'munger-adjacent': 3, 'community': 2, 'canon-addition': 1}
+
+
+def main():
+    cat = json.load(open(os.path.join(D, 'latticework-catalog.json')))
+    models = cat['models']
+
+    order_key = lambda m: (ORDER.index(DISC_CODE[m['discipline']]),
+                           -PROV_RANK.get(m['provenance'], 0), m['name'])
+    ordered = sorted(models, key=order_key)
+    remap = {m['id']: f'M{i:03d}' for i, m in enumerate(ordered, 1)}
+
+    # bijection sanity
+    assert len(remap) == len(models), 'duplicate old ids'
+    assert len(set(remap.values())) == len(models), 'duplicate new ids'
+
+    # 1. catalog: id field
+    for m in models:
+        m['id'] = remap[m['id']]
+    json.dump(cat, open(os.path.join(D, 'latticework-catalog.json'), 'w'), indent=1, ensure_ascii=False)
+
+    # 2. wiring: id key + links values
+    wiring = json.load(open(os.path.join(D, 'wiring.json')))
+    dropped_links = 0
+    for r in wiring:
+        r['id'] = remap[r['id']]
+        new_links = []
+        for l in r.get('links', []):
+            if l in remap:
+                new_links.append(remap[l])
+            else:
+                dropped_links += 1
+        r['links'] = new_links
+    json.dump(wiring, open(os.path.join(D, 'wiring.json'), 'w'), indent=1, ensure_ascii=False)
+
+    # 3 + 4. examples + prompts: remap keys
+    for fn in ('examples.json', 'prompts.json'):
+        obj = json.load(open(os.path.join(D, fn)))
+        remapped = {remap[k]: v for k, v in obj.items() if k in remap}
+        assert len(remapped) == len(obj), f'{fn}: some keys were not valid ids'
+        json.dump(remapped, open(os.path.join(D, fn), 'w'), indent=1, ensure_ascii=False)
+
+    # verify: every wiring link is a live id; examples/prompts cover the catalog
+    live = {m['id'] for m in models}
+    ex = json.load(open(os.path.join(D, 'examples.json')))
+    pr = json.load(open(os.path.join(D, 'prompts.json')))
+    bad_links = sum(1 for r in wiring for l in r['links'] if l not in live)
+    assert bad_links == 0, f'{bad_links} dangling wiring links'
+    assert set(ex).issubset(live) and set(pr).issubset(live), 'orphan example/prompt keys'
+
+    # the seed the app studies by default — report new ids by name so useStudied can update
+    seed_names = ['Compound Interest', 'Inversion', 'Incentives']
+    seeds = {}
+    for m in models:
+        nm = m['name']
+        if nm in seed_names or nm == 'Deprival-Superreaction Tendency':
+            seeds[nm] = m['id']
+
+    print(f'renumbered {len(models)} ids in curated order')
+    print(f'  wiring links dropped (were already dangling): {dropped_links}')
+    print(f'  examples={len(ex)} prompts={len(pr)} — all keys valid, links resolve')
+    print('  new seed ids:', seeds)
+    # show the new per-discipline id ranges (should be contiguous, ascending in ORDER)
+    range_by = {}
+    for m in models:
+        c = DISC_CODE[m['discipline']]
+        n = int(m['id'][1:])
+        range_by.setdefault(c, [n, n])
+        range_by[c][0] = min(range_by[c][0], n)
+        range_by[c][1] = max(range_by[c][1], n)
+    print('  id ranges follow ORDER:')
+    for c in ORDER:
+        lo, hi = range_by[c]
+        print(f'    M{lo:03d}–M{hi:03d}  {c}')
+
+
+if __name__ == '__main__':
+    main()

@@ -4,9 +4,9 @@ import { MODELS_BY_ID } from '../data/models'
 
 // bumped when the id scheme changed (legacy '012' → catalog 'M647'), so old
 // localStorage payloads are discarded rather than silently marking nothing
-const STORAGE_KEY = 'latticework-studied-v2'
+const STORAGE_KEY = 'latticework-studied-v3'
 // compound interest · inversion · incentives · loss aversion
-const DEFAULT_STUDIED = ['M442', 'M292', 'M647', 'M617']
+const DEFAULT_STUDIED = ['M005', 'M098', 'M236', 'M206']
 
 function load(): string[] {
   try {

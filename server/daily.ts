@@ -1,16 +1,8 @@
-import { PLATE_ORDER, modelPath, type Model } from '../src/data/models'
+import { modelOfTheDay, modelPath, type Model } from '../src/data/models'
 import { siteUrl, type AppEnv } from './env'
 import { createMailer } from './mailer'
 
-/** Everyone gets the same model on the same day — deterministic, no cursor to store. */
-const LAUNCH_UTC_DAY = Math.floor(Date.UTC(2026, 6, 17) / 86_400_000)
-
-export function modelOfTheDay(now = new Date()): Model {
-  const day = Math.floor(now.getTime() / 86_400_000)
-  const n = PLATE_ORDER.length
-  const idx = (((day - LAUNCH_UTC_DAY) % n) + n) % n
-  return PLATE_ORDER[idx]
-}
+export { modelOfTheDay }
 
 const PAPER = '#f3efe4'
 const CARD = '#fbf8f0'
@@ -57,6 +49,7 @@ export function renderDailyEmail(m: Model, site: string): { subject: string; htm
         </td></tr>
         <tr><td style="font-family:${MONO};font-size:10px;line-height:1.8;color:${STONE};padding-top:14px;">
           You asked for one mental model a day. Tomorrow brings the next.<br/>
+          Forwarded by a friend? <a href="${site}" style="color:${EMBER};">Get your own daily model</a>.<br/>
           <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:${STONE};">Unsubscribe</a>
         </td></tr>
       </table>

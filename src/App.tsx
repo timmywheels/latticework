@@ -6,10 +6,12 @@ import { useSaved } from "./hooks/useSaved";
 import { useKeys } from "./hooks/useKeys";
 import { Masthead } from "./components/Masthead";
 import { HotkeysPanel } from "./components/HotkeysPanel";
+import { SearchPalette } from "./components/SearchPalette";
 import { Footer } from "./components/Footer";
 import { IndexView } from "./views/IndexView";
 import { LatticeView } from "./views/LatticeView";
 import { ColophonView } from "./views/ColophonView";
+import { modelPath, randomModel } from "./data/models";
 
 // The plate is the only view that needs the examples (~430KB) and the prompt
 // library (~1.7MB). Splitting it keeps that weight off the index and lattice,
@@ -39,6 +41,7 @@ export default function App() {
   const location = useLocation();
   const navigate = useNavigate();
   const [keysOpen, setKeysOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   // crossfade between sections; model-to-model changes animate inside the detail view
   const section = location.pathname.split("/")[1] || "index";
 
@@ -46,8 +49,23 @@ export default function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // ⌘K / Ctrl+K opens search from anywhere; useKeys skips chords, so listen here
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setSearchOpen((v) => !v);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   useKeys((e) => {
-    if (e.key === "?") {
+    if (e.key === "/") {
+      e.preventDefault();
+      setSearchOpen(true);
+    } else if (e.key === "?") {
       setKeysOpen((v) => !v);
     } else if (e.key === "i") {
       navigate("/");
@@ -55,12 +73,19 @@ export default function App() {
       navigate("/lattice");
     } else if (e.key === "s") {
       navigate("/saved");
+    } else if (e.key === "r" && !location.pathname.startsWith("/lattice")) {
+      // on the lattice, r resets the view (handled in LatticeView), so yield here
+      navigate(modelPath(randomModel()));
     }
   });
 
   return (
     <div className="flex min-h-screen flex-col bg-paper text-ink">
-      <Masthead studiedCount={studied.length} savedCount={saved.length} />
+      <Masthead
+        studiedCount={studied.length}
+        savedCount={saved.length}
+        onSearch={() => setSearchOpen(true)}
+      />
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -111,6 +136,7 @@ export default function App() {
 
       <Footer />
       <HotkeysPanel open={keysOpen} onToggle={() => setKeysOpen((v) => !v)} />
+      <SearchPalette open={searchOpen} onClose={() => setSearchOpen(false)} />
     </div>
   );
 }

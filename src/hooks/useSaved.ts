@@ -3,7 +3,7 @@ import { MODELS_BY_ID } from '../data/models'
 
 // Saved is deliberately separate from studied: studied is "I have learned this",
 // saved is "I want to come back to this". A reader needs both.
-const STORAGE_KEY = 'latticework-saved-v1'
+const STORAGE_KEY = 'latticework-saved-v2'
 
 function load(): string[] {
   try {

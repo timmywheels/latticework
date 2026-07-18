@@ -9,12 +9,22 @@
     "not_found_handling": "single-page-application",
     "run_worker_first": ["/models/*", "/api/*", "/sitemap.xml", "/robots.txt", "/__scheduled"]
   },
+  "routes": [{ "pattern": "latticework.page", "custom_domain": true }],
   "triggers": {
     "crons": ["0 13 * * *"]
   },
   "vars": {
     "SITE_URL": "https://latticework.page"
-  }
+  },
+    "observability": {
+      "logs": {
+        "enabled": true,
+        "invocation_logs": true
+      },
+      "traces": {
+        "enabled": false
+      }
+    }
   // secrets (wrangler secret put): TOKEN_SECRET, CRON_SECRET, RESEND_API_KEY,
   // RESEND_AUDIENCE_ID, LIST_FROM. Local dev: .dev.vars
 }

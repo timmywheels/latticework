@@ -834,6 +834,155 @@ const PLATES: Record<Discipline, { title: string; art: ReactNode }> = {
   },
 }
 
+/** Frame for a model's own engraving — «title» bottom-left, its FIG number bottom-right. */
+function ModelArtFrame({
+  inset,
+  title,
+  fig,
+  children,
+}: {
+  inset: number
+  title: string
+  fig: string
+  children: ReactNode
+}) {
+  return (
+    <div className="relative border border-ink bg-card">
+      <div
+        className="pointer-events-none absolute border border-dotted border-ink/35"
+        style={{ inset }}
+      />
+      <svg viewBox="0 0 400 280" className="block h-auto w-full">
+        {children}
+        <text x="24" y="268" fill={STONE} fontSize="8" fontFamily="'IBM Plex Mono', monospace">
+          «{title}»
+        </text>
+        <text
+          x="376"
+          y="268"
+          textAnchor="end"
+          fill={STONE}
+          fontSize="8"
+          fontFamily="'IBM Plex Mono', monospace"
+        >
+          FIG. {fig} — DRAFT
+        </text>
+      </svg>
+    </div>
+  )
+}
+
+/**
+ * Bespoke model engravings, keyed by model id. Anything not registered here
+ * falls back to its discipline's series plate — so the map grows one keystone
+ * at a time, and no model is ever blank. Each plate riffs on its discipline's
+ * visual key (Thinking = examination: lens, prussian lattice, ember focus).
+ */
+const MODEL_PLATES: Record<string, { title: string; fig: string; art: ReactNode }> = {
+  // M098 — Inversion: the same problem, mirrored across the axis, comes out clean.
+  M098: {
+    title: 'turn it upside down',
+    fig: '098',
+    art: (
+      <>
+        {/* the mirror */}
+        <line
+          x1="52"
+          y1="150"
+          x2="348"
+          y2="150"
+          stroke={PRUSSIAN}
+          strokeWidth="1"
+          strokeDasharray="4 4"
+          opacity="0.75"
+        />
+        {[92, 140, 188, 236, 284, 332].map((x) => (
+          <line key={x} x1={x} y1="146" x2={x} y2="154" stroke={PRUSSIAN} strokeWidth="0.7" opacity="0.5" />
+        ))}
+        {/* forward: the hard direction, ending in an unsolved snarl */}
+        <circle cx="90" cy="116" r="3.4" fill={INK} />
+        <line x1="90" y1="116" x2="286" y2="82" stroke={INK} strokeWidth="1.3" opacity="0.75" />
+        {[
+          'M 278 74 L 300 90',
+          'M 300 74 L 278 90',
+          'M 276 82 L 302 82',
+          'M 289 70 L 289 94',
+        ].map((d) => (
+          <path key={d} d={d} stroke={INK} strokeWidth="1" opacity="0.7" fill="none" />
+        ))}
+        {/* inverted: the fruitful direction, arriving at a clean solution */}
+        <circle cx="90" cy="184" r="3.4" fill={INK} opacity="0.5" />
+        <line x1="90" y1="184" x2="286" y2="218" stroke={EMBER} strokeWidth="2" strokeLinecap="round" />
+        <path
+          d="M 286 218 L 272 214 M 286 218 L 276 226"
+          stroke={EMBER}
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+        />
+        <circle cx="298" cy="222" r="5" fill={EMBER} />
+        {/* the reflection tie */}
+        <line
+          x1="290"
+          y1="96"
+          x2="297"
+          y2="205"
+          stroke={PRUSSIAN}
+          strokeWidth="0.8"
+          strokeDasharray="3 3"
+          opacity="0.55"
+        />
+        <Mark x={330} y={116} o={0.3} />
+        <Mark x={64} y={230} o={0.3} />
+      </>
+    ),
+  },
+  // M083 — Circle of competence: a compass scribes the perimeter that matters.
+  M083: {
+    title: 'know the perimeter',
+    fig: '083',
+    art: (
+      <>
+        {/* the field of the unknown, faint */}
+        {[
+          [78, 76],
+          [330, 84],
+          [96, 214],
+          [326, 210],
+          [64, 150],
+          [348, 156],
+        ].map(([x, y]) => (
+          <circle key={`${x}-${y}`} cx={x} cy={y} r="2.4" fill={INK} opacity="0.3" />
+        ))}
+        <Mark x={92} y={112} o={0.28} />
+        <Mark x={316} y={196} o={0.28} />
+        {/* interior tint — the area, which matters less than the boundary */}
+        <circle cx="196" cy="164" r="66" fill={EMBER} opacity="0.09" />
+        {/* the perimeter itself, drawn bold */}
+        <circle cx="196" cy="164" r="66" fill="none" stroke={INK} strokeWidth="1.8" />
+        <circle cx="196" cy="164" r="59" fill="none" stroke={INK} strokeWidth="0.6" opacity="0.45" />
+        {/* what is genuinely known — solid marks inside */}
+        {[
+          [176, 150],
+          [214, 148],
+          [188, 186],
+          [222, 180],
+        ].map(([x, y]) => (
+          <circle key={`${x}-${y}`} cx={x} cy={y} r="3" fill={INK} />
+        ))}
+        <circle cx="196" cy="164" r="4.5" fill={EMBER} />
+        {/* the compass: needle at centre, pen on the rim */}
+        <circle cx="206" cy="60" r="3.4" fill="none" stroke={INK} strokeWidth="1.4" />
+        <line x1="206" y1="62" x2="196" y2="164" stroke={INK} strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="206" y1="62" x2="237" y2="215" stroke={INK} strokeWidth="2" strokeLinecap="round" />
+        {/* fresh ink where the pen bites the rim */}
+        <path d="M 247 206 A 66 66 0 0 1 227 222" fill="none" stroke={INK} strokeWidth="2.4" />
+        <circle cx="237" cy="215" r="2.4" fill={INK} />
+      </>
+    ),
+  },
+}
+
 /** Raw series art + title, for server-side OG image rendering. */
 export function disciplineArt(disc: Discipline): ReactNode {
   return PLATES[disc].art
@@ -866,6 +1015,14 @@ export function ModelPlate({ model, inset = 8 }: { model: Model; inset?: number 
   // model-specific engravings register here as they're drawn
   if (model.id === ART_READY_ID) {
     return <PlateArt inset={inset} />
+  }
+  const plate = MODEL_PLATES[model.id]
+  if (plate) {
+    return (
+      <ModelArtFrame inset={inset} title={plate.title} fig={plate.fig}>
+        {plate.art}
+      </ModelArtFrame>
+    )
   }
   return <DisciplinePlate disc={model.disc} inset={inset} />
 }

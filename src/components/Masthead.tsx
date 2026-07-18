@@ -6,6 +6,7 @@ import { StitchMark } from './StitchMark'
 interface MastheadProps {
   studiedCount: number
   savedCount: number
+  onSearch: () => void
 }
 
 const NAV_ITEMS = [
@@ -14,7 +15,7 @@ const NAV_ITEMS = [
   { name: 'SHELF', to: '/saved' },
 ]
 
-export function Masthead({ studiedCount, savedCount }: MastheadProps) {
+export function Masthead({ studiedCount, savedCount, onSearch }: MastheadProps) {
   const { pathname } = useLocation()
 
   const isActive = (to: string) =>
@@ -31,10 +32,20 @@ export function Masthead({ studiedCount, savedCount }: MastheadProps) {
           </span>
           <span className="font-serif text-2xl font-semibold tracking-[-0.01em]">latticework.</span>
           <span className="hidden font-mono text-[10px] tracking-[0.14em] text-stone lg:inline">
-            A FIELD GUIDE FOR THINKERS
+            A FIELD GUIDE FOR DECISIONS
           </span>
         </Link>
         <div className="flex flex-wrap items-center gap-x-[18px] gap-y-1.5">
+          <button
+            type="button"
+            onClick={onSearch}
+            aria-label="Search models"
+            className="flex cursor-pointer items-center gap-1.5 rounded-[2px] border border-ink/20 px-2 py-1 font-mono text-[10px] text-stone transition-colors duration-150 hover:border-ink hover:text-ink"
+          >
+            <span className="text-[12px] leading-none">⌕</span>
+            <span className="hidden tracking-[0.08em] sm:inline">SEARCH</span>
+            <kbd className="hidden rounded-[2px] border border-ink/15 px-1 text-[8.5px] text-faded md:inline">/</kbd>
+          </button>
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
