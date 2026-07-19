@@ -27,25 +27,58 @@ def _fnv(s):
     return h
 
 
-# Pinned first so the ledger always opens on it (catalog name; build renames it
-# to the display "Incentives"). Kept at M001 across reruns of this migration.
-PIN_FIRST = 'Reward and Punishment Superresponse Tendency'
+# The curated opener: the first 25 ids, in this order, are hand-picked "banger"
+# models so the ledger captivates from M0001 down. Pinned by CATALOG name (stable
+# across reruns) — the catalog stores Incentives under its formal name, which
+# build renames to "Incentives" for display. Everything after M0025 stays shuffled.
+PIN_ORDER = [
+    'Reward and Punishment Superresponse Tendency',  # Incentives
+    'Inversion',
+    'Compound interest / compounding',
+    'Circle of competence',
+    'Margin of Safety',
+    'Opportunity cost',
+    'Lollapalooza Effect',
+    'First principles thinking',
+    'Supply and demand',
+    'Evolution by Natural Selection',
+    'Network Effects',
+    'Game theory',
+    "Bayes' theorem / Bayesian updating",
+    'Survivorship bias',
+    'Confirmation Bias',
+    'Black swan events',
+    'Antifragility',
+    'Pareto principle (80/20)',
+    "Occam's razor",
+    'Economic Moats',
+    "Prisoner's dilemma",
+    'Entropy and the second law',
+    'Mr. Market',
+    'Dunning-Kruger Effect',
+    "Chesterton's fence",
+]
 
 
 def shuffled_order(models):
-    """A stable pseudo-random order, with Incentives swapped to the front.
+    """The curated openers first, then a stable pseudo-random tail.
 
-    Sort by a well-mixed hash of the name (looks random, fully deterministic),
-    then swap the opener (Incentives) into first place. That's enough to break up
-    the long single-discipline blocks — the point is variety, not eliminating
-    every adjacency, so the occasional back-to-back pair is fine and left alone.
+    PIN_ORDER takes M0001..M0025 in the given order. The rest are sorted by a
+    well-mixed hash of the name (looks random, fully deterministic) — enough to
+    break up the long single-discipline blocks. The point is variety, not
+    eliminating every adjacency, so the occasional back-to-back pair is fine.
     """
-    seq = sorted(models, key=lambda m: _mix(_fnv(m['name'])))
-    for k, mdl in enumerate(seq):
-        if mdl['name'] == PIN_FIRST:
-            seq[0], seq[k] = seq[k], seq[0]  # exactly "swap Incentives with M001"
-            break
-    return seq
+    by_name = {}
+    for m in models:
+        by_name.setdefault(m['name'], []).append(m)
+    pinned = []
+    for nm in PIN_ORDER:
+        hits = by_name.get(nm, [])
+        assert len(hits) == 1, f'PIN_ORDER name matched {len(hits)} models (need exactly 1): {nm!r}'
+        pinned.append(hits[0])
+    pinned_ids = {m['id'] for m in pinned}
+    tail = [m for m in sorted(models, key=lambda m: _mix(_fnv(m['name']))) if m['id'] not in pinned_ids]
+    return pinned + tail
 
 PROJ = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 D = os.path.join(PROJ, 'data')

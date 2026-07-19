@@ -5,9 +5,9 @@ import { MODELS_BY_ID } from '../data/models'
 // bumped whenever the id scheme changes (here: ids reshuffled so model-number
 // order mixes disciplines), so old localStorage payloads are discarded rather
 // than silently marking the wrong models
-const STORAGE_KEY = 'latticework-studied-v5'
-// compound interest · inversion · incentives · loss aversion
-const DEFAULT_STUDIED = ['M0301', 'M0811', 'M0001', 'M0631']
+const STORAGE_KEY = 'latticework-studied-v6'
+// incentives · inversion · compound interest · loss aversion
+const DEFAULT_STUDIED = ['M0001', 'M0002', 'M0003', 'M0639']
 
 function load(): string[] {
   try {
