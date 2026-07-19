@@ -119,16 +119,25 @@ export function IndexView({
   return (
     <div>
       {/* hero */}
-      <div className="border-b border-ink/16">
-        <div className="mx-auto flex max-w-[1280px] flex-col items-start gap-6 px-4 pb-7 pt-8 md:flex-row md:items-end md:justify-between md:gap-10 md:px-7 md:pb-9 md:pt-10">
-          <div className="max-w-[640px]">
+      <div>
+        <div className="mx-auto max-w-[1280px] px-4 pb-6 pt-8 md:px-7 md:pb-7 md:pt-10">
+          <div className="max-w-[680px]">
             <div className="font-serif text-[32px] font-medium leading-[1.08] tracking-[-0.015em] text-pretty md:text-[44px] [font-optical-sizing:none]">
-              {MODELS.length} mental models, hung on a single lattice.
+              {MODELS.length} mental models to build your own latticework.
             </div>
-            <div className="mt-3 font-serif text-[15px] italic leading-[1.6] text-umber">
-              The big ideas from the big disciplines — every model wired to its neighbors.
-            </div>
-            <div className="mt-4 flex flex-wrap items-baseline gap-x-6 gap-y-2">
+            <blockquote className="mt-5 border-l-2 border-ember/40 pl-4 font-serif text-[16px] italic leading-[1.55] text-umber md:text-[18px]">
+              “If the facts don’t hang together on a latticework of theory, you don’t
+              have them in a usable form. You’ve got to have mental models in your head.”
+              <span className="mt-2 block font-mono text-[9.5px] not-italic tracking-[0.16em] text-stone">
+                — CHARLIE MUNGER, USC BUSINESS SCHOOL, 1994
+              </span>
+            </blockquote>
+          </div>
+        </div>
+        {/* dark utility bar — today's model on the left, subscribe on the right */}
+        <div className="mx-auto max-w-[1280px] px-4 pb-8 md:px-7 md:pb-9">
+          <div className="flex flex-col gap-4 bg-ink px-5 py-4 text-card md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 md:py-3.5">
+            <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
               <button
                 type="button"
                 onClick={() => openModel(modelOfTheDay().id)}
@@ -137,7 +146,7 @@ export function IndexView({
                 <span className="font-mono text-[9.5px] font-medium tracking-[0.18em] text-ember">
                   TODAY&apos;S MODEL
                 </span>
-                <span className="font-serif text-[15px] italic text-ink transition-colors duration-150 group-hover:text-ember">
+                <span className="font-serif text-[15px] italic text-card transition-colors duration-150 group-hover:text-ember">
                   {modelOfTheDay().name} ▸
                 </span>
               </button>
@@ -145,7 +154,7 @@ export function IndexView({
                 type="button"
                 onClick={() => openModel(randomModel().id)}
                 title="Jump to a random model — or press R"
-                className="group flex cursor-pointer items-baseline gap-1.5 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone transition-colors duration-150 hover:text-ember"
+                className="group flex cursor-pointer items-baseline gap-1.5 font-mono text-[9.5px] font-medium tracking-[0.18em] text-faded transition-colors duration-150 hover:text-ember"
               >
                 <span className="text-[11px] leading-none transition-transform duration-300 group-hover:rotate-180">
                   ↻
@@ -153,14 +162,12 @@ export function IndexView({
                 SURPRISE ME
               </button>
             </div>
-          </div>
-          <div className="w-full flex-none md:w-auto">
-            <div className="font-mono text-[10px] leading-[1.8] tracking-[0.1em] text-stone md:text-right">
-              {MODELS.length} MODELS · {DISCIPLINE_ORDER.length} DISCIPLINES
-              <br />
-              VOL. I — JULY MMXXVI
+            <div className="flex flex-wrap items-center gap-x-3.5 gap-y-1">
+              <span className="hidden font-mono text-[9px] tracking-[0.15em] text-faded lg:inline">
+                ONE MODEL IN YOUR INBOX, DAILY
+              </span>
+              <SubscribeForm variant="band" />
             </div>
-            <SubscribeForm />
           </div>
         </div>
       </div>

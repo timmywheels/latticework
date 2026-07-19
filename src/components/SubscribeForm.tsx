@@ -36,25 +36,31 @@ export function SubscribeForm({ variant = 'hero' }: { variant?: 'hero' | 'band' 
   }
 
   return (
-    <form onSubmit={submit} className={hero ? 'mt-4' : 'mt-3 md:mt-0'}>
+    <form onSubmit={submit} className={hero ? 'mt-4' : 'mt-3 w-full md:mt-0 md:w-auto'}>
       {hero && (
         <div className="font-mono text-[9px] tracking-[0.15em] text-faded md:text-right">
           ONE MODEL IN YOUR INBOX, DAILY
         </div>
       )}
-      <div className={`mt-1.5 flex gap-1.5 ${hero ? 'md:justify-end' : ''}`}>
+      <div className={`flex gap-1.5 ${hero ? 'md:justify-end' : ''}`}>
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className="w-full max-w-[240px] border border-ink/30 md:w-[190px] bg-card px-2.5 py-[7px] font-mono text-[11px] text-ink outline-none placeholder:text-faded focus:border-ink"
+          className={`border border-ink/30 bg-card px-2.5 py-[7px] font-mono text-[11px] text-ink outline-none placeholder:text-faded focus:border-ink ${
+            hero ? 'w-full max-w-[240px] md:w-[190px]' : 'w-full min-w-0 flex-1 md:w-[190px] md:flex-none'
+          }`}
         />
         <button
           type="submit"
           disabled={state === 'busy'}
-          className="cursor-pointer rounded-[2px] bg-ink px-3 py-[7px] font-mono text-[10px] font-medium tracking-[0.1em] text-card transition-colors duration-150 hover:bg-ember disabled:opacity-60"
+          className={`flex-none cursor-pointer whitespace-nowrap rounded-[2px] px-3 py-[7px] font-mono text-[10px] font-medium tracking-[0.1em] transition-colors duration-150 disabled:opacity-60 ${
+            hero
+              ? 'bg-ink text-card hover:bg-ember'
+              : 'bg-ember text-card hover:bg-card hover:text-ink'
+          }`}
         >
           {state === 'busy' ? '…' : 'SUBSCRIBE ▸'}
         </button>
