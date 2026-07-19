@@ -6,7 +6,7 @@
   },
   {
    "context": "The food truck",
-   "text": "He clears $6k a month and calls it profit. But the fryer, the generator, and the truck all die around year six — $60k. The real number is closer to $5k. The truck eats a paycheck quietly."
+   "text": "He clears $6k a month and calls it profit. But the fryer, the generator, and the truck all die around year six, a $60k bill. The real number is closer to $5k. The truck eats a paycheck quietly."
   }
  ],
  "M0783": [
@@ -16,13 +16,13 @@
   },
   {
    "context": "Shift change",
-   "text": "Two nurses count the narcotics separately and both sign. Neither count is more honest than the other — but they have to agree, and that's what makes a missing vial impossible to shrug off."
+   "text": "Two nurses count the narcotics separately and both sign. Neither count is more honest than the other. But they have to agree, and that is what makes a missing vial impossible to shrug off."
   }
  ],
  "M0080": [
   {
    "context": "Your side gig",
-   "text": "\"The rideshare gig makes $2,000 a month\" — before gas, before the car payment, before taxes. Before all the parts that hurt. After them, it's $400 and a tired back."
+   "text": "\"The rideshare gig makes $2,000 a month,\" before gas, before the car payment, before taxes. Before all the parts that hurt. After them, it's $400 and a tired back."
   },
   {
    "context": "Buying a gym",
@@ -32,7 +32,7 @@
  "M0245": [
   {
    "context": "The barber shop",
-   "text": "He sells 200 haircut packages at $180 up front. Now he's holding $36,000 of haircuts he hasn't given yet. He owes it in labor — but today it pays the rent, and nobody charges him interest."
+   "text": "He sells 200 haircut packages at $180 up front. Now he's holding $36,000 of haircuts he hasn't given yet. He owes it in labor, but today it pays the rent, and nobody charges him interest."
   },
   {
    "context": "A drawer at home",
@@ -66,7 +66,7 @@
  "M0803": [
   {
    "context": "Before the wedding",
-   "text": "He makes $95k, which sounds great — until you list it out: $140k in student loans, $9k on cards, $3k saved. The salary is the stream. This is the reservoir, and it's empty."
+   "text": "He makes $95k, which sounds great, until you list it out: $140k in student loans, $9k on cards, $3k saved. The salary is the stream. This is the reservoir, and it's empty."
   },
   {
    "context": "Two neighbors",
@@ -86,7 +86,7 @@
  "M0227": [
   {
    "context": "The cereal aisle",
-   "text": "\"Fat free\" is legally true and tells you nothing — the box is mostly sugar. Every rule was followed. Following the rules and telling you about the food are different jobs."
+   "text": "\"Fat free\" is legally true and tells you nothing. The box is mostly sugar. Every rule was followed. Following the rules and telling you about the food are different jobs."
   },
   {
    "context": "An apartment listing",
@@ -96,27 +96,27 @@
  "M0546": [
   {
    "context": "The freelancer",
-   "text": "She billed $12,000 in March — best month ever. Two clients pay in 90 days and one is about to ghost her. Great month for earning; rough month for eating."
+   "text": "She billed $12,000 in March, her best month ever. Two clients pay in 90 days and one is about to ghost her. Great month for earning; rough month for eating."
   },
   {
    "context": "A busy Saturday",
-   "text": "The truck rang up $3,000 today. Beef $900, propane $60, two helpers $300, the pitch fee $200. The interesting number was never the $3,000 — it's what sits under it."
+   "text": "The truck rang up $3,000 today. Beef $900, propane $60, two helpers $300, the pitch fee $200. The interesting number was never the $3,000. It's what sits under it."
   }
  ],
  "M0030": [
   {
    "context": "The beach house",
-   "text": "You wired $6,000 in January for the whole summer. Cash says January was a catastrophe. The truth is you bought three months, and June used up a third of it."
+   "text": "You wire $6,000 in January for a beach house you'll use in June, July, and August. On a cash basis the whole $6,000 hits January, so that month looks like a catastrophe and summer looks free. Accrual spreads it over the three months you're actually there, $2,000 each. Same money; accrual just shows what each month really cost."
   },
   {
    "context": "December 30th",
-   "text": "The contractor mails his invoices on January 2nd and pays his bills on December 30th. Same work, same money, two very different years — and he picked which one to show."
+   "text": "A contractor pays all his December bills on the 30th but waits until January 2nd to mail his own invoices. On a cash basis the expenses land this year and the income lands next year, so this year shows a loss and next year a profit. The work never changed. He just chose which year each number falls into."
   }
  ],
  "M0404": [
   {
    "context": "The new roof",
-   "text": "$14k on a roof isn't a bad month — it's $700 a year for twenty years. $14k on a party is a bad month. Same cash out the door, two different truths."
+   "text": "$14k on a roof isn't a bad month. It's $700 a year for twenty years. $14k on a party is a bad month. Same cash out the door, two different truths."
   },
   {
    "context": "Two shops, one block",
@@ -130,13 +130,13 @@
   },
   {
    "context": "A spare $20k",
-   "text": "The kitchen reno maybe returns 4%. Paying off the 7% card returns 7%, guaranteed, today. The reno isn't free — it costs 7%, it just doesn't send you a statement."
+   "text": "The kitchen reno maybe returns 4%. Paying off the 7% card returns 7%, guaranteed, today. The reno isn't free. It costs 7%, it just doesn't send you a statement."
   }
  ],
  "M0543": [
   {
    "context": "Two landlords",
-   "text": "Both bought $500k houses. One paid cash; one put down $50k. Prices fall 15% and one is annoyed while the other is wiped out — and the bank, not the market, picks the moment."
+   "text": "Both bought $500k houses. One paid cash; one put down $50k. Prices fall 15% and one is annoyed while the other is wiped out, and the bank, not the market, picks the moment."
   },
   {
    "context": "The margin call",
@@ -170,7 +170,7 @@
   },
   {
    "context": "A warm winter",
-   "text": "The lifts, the patrol, the snowmakers cost the same whether it snows or not. Bad snow doesn't shave the resort's year down a bit — it erases it."
+   "text": "The lifts, the patrol, the snowmakers cost the same whether it snows or not. Bad snow doesn't shave a bit off the resort's year. It erases it."
   }
  ],
  "M0829": [
@@ -210,7 +210,7 @@
   },
   {
    "context": "The magazine",
-   "text": "You pay for twelve issues in January. They print all year using your money. Every new subscriber hands them cash before costing them a cent — growth that funds itself."
+   "text": "You pay for twelve issues in January. They print all year using your money. Every new subscriber hands them cash before costing them a cent. That is growth that funds itself."
   }
  ],
  "M0451": [
@@ -2365,12 +2365,12 @@
  ],
  "M0009": [
   {
-   "context": "The Parking Lot",
-   "text": "Full by 8am at $4, half empty at $9. The 'shortage of spaces' was never about concrete — it was about a number painted on a sign."
+   "context": "The parking lot",
+   "text": "The city lot charges $4 and fills by 8am, so you circle the block for a space that's already gone. Raise it to $9 and it sits half-empty all day. No spaces were added or removed. The 'shortage' was just a price set too low to ration them."
   },
   {
-   "context": "The Two-Hour Wait",
-   "text": "That restaurant isn't more popular than it can handle. It's cheaper than it needs to be, and the queue is the price — paid in minutes instead of dollars."
+   "context": "The two-hour wait",
+   "text": "A line out the door doesn't mean the kitchen can't keep up. It means the food is priced below what people will gladly pay. Demand outruns the seats, so the wait becomes the real price, paid in minutes instead of dollars. Raise prices and the line shrinks."
   }
  ],
  "M0802": [
@@ -9422,11 +9422,11 @@
  "M0403": [
   {
    "context": "Your marriage",
-   "text": "You didn't fight for two months. Then you fought Tuesday, Wednesday, and Saturday. Trouble doesn't sprinkle itself evenly across the calendar — it comes in weeks."
+   "text": "You didn't fight for two months. Then you fought Tuesday, Wednesday, and Saturday. Trouble doesn't sprinkle itself evenly across the calendar. It comes in weeks."
   },
   {
    "context": "Checking your 401k",
-   "text": "The market dropped 3% yesterday, so you tell yourself today will be calm again. It won't. Big days travel in packs — the shaking has just started, not finished."
+   "text": "The market dropped 3% yesterday, so you tell yourself today will be calm again. It won't. Big days travel in packs. The shaking has just started, not finished."
   }
  ],
  "M0081": [
@@ -9774,7 +9774,7 @@
   },
   {
    "context": "A small restaurant",
-   "text": "The fish supplier runs short and calls two buyers. One pays in 10 days, one in 90 and always argues. Guess who gets the fish — and at the better number. No negotiation touches that gap."
+   "text": "The fish supplier runs short and calls two buyers. One pays in 10 days, one in 90 and always argues. Guess who gets the fish, and at the better number. No negotiation touches that gap."
   }
  ]
 }

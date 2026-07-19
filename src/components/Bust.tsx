@@ -1,3 +1,5 @@
+import { PORTRAIT_BY_SLUG } from '../data/portraits'
+
 interface BustProps {
   slug: string
   name: string
@@ -7,16 +9,13 @@ interface BustProps {
   onClick: () => void
 }
 
-/**
- * A thinker's medallion. Portrait art doesn't exist yet, so this follows the
- * same convention as PlatePlaceholder: an engraved silhouette that is honestly
- * a placeholder, not a fake likeness. Swap the <use> target for real art later.
- */
+/** A thinker's medallion — the real stipple portrait when we have it, else an
+ *  honest engraved-silhouette placeholder. */
 export function Bust({ slug, name, count, active, size = 46, onClick }: BustProps) {
-  // deterministic hatch angle per thinker, so the roster reads as a set of
-  // distinct plates rather than 40 identical discs
-  const angle = (slug.charCodeAt(0) * 37 + slug.length * 13) % 180
+  const portrait = PORTRAIT_BY_SLUG[slug]
   const last = name.split(' ').slice(-1)[0]
+  // deterministic hatch angle per thinker, so placeholders read as distinct plates
+  const angle = (slug.charCodeAt(0) * 37 + slug.length * 13) % 180
 
   return (
     <button
@@ -32,37 +31,52 @@ export function Bust({ slug, name, count, active, size = 46, onClick }: BustProp
         className="transition-transform duration-150 group-hover:-translate-y-[2px]"
       >
         <defs>
-          <pattern
-            id={`h-${slug}`}
-            width="4"
-            height="4"
-            patternUnits="userSpaceOnUse"
-            patternTransform={`rotate(${angle})`}
-          >
-            <line x1="0" y1="0" x2="0" y2="4" stroke="rgba(33,29,20,.18)" strokeWidth="1" />
-          </pattern>
+          <clipPath id={`clip-${slug}`}>
+            <circle cx="23" cy="23" r="21" />
+          </clipPath>
+          {!portrait && (
+            <pattern
+              id={`h-${slug}`}
+              width="4"
+              height="4"
+              patternUnits="userSpaceOnUse"
+              patternTransform={`rotate(${angle})`}
+            >
+              <line x1="0" y1="0" x2="0" y2="4" stroke="rgba(33,29,20,.18)" strokeWidth="1" />
+            </pattern>
+          )}
         </defs>
+
+        {portrait ? (
+          <image
+            href={portrait}
+            x="2"
+            y="2"
+            width="42"
+            height="42"
+            clipPath={`url(#clip-${slug})`}
+            preserveAspectRatio="xMidYMid slice"
+            style={{ opacity: active ? 1 : 0.94 }}
+          />
+        ) : (
+          <>
+            <circle cx="23" cy="23" r="21" fill={active ? 'rgba(198,90,46,.12)' : '#fbf8f0'} />
+            <circle cx="23" cy="23" r="21" fill={`url(#h-${slug})`} />
+            <g fill={active ? '#c65a2e' : '#211d14'} opacity={active ? 0.9 : 0.62}>
+              <circle cx="23" cy="18.5" r="6.2" />
+              <path d="M11.5 37.5c1.2-6.6 6-10.2 11.5-10.2s10.3 3.6 11.5 10.2z" />
+            </g>
+          </>
+        )}
+
+        {/* the frame ring — ember when this bust is the active filter */}
         <circle
           cx="23"
           cy="23"
           r="21"
-          fill={active ? 'rgba(198,90,46,.12)' : '#fbf8f0'}
+          fill="none"
           stroke={active ? '#c65a2e' : 'rgba(33,29,20,.45)'}
           strokeWidth={active ? 2 : 1.1}
-        />
-        <circle cx="23" cy="23" r="21" fill={`url(#h-${slug})`} />
-        {/* generic engraved bust silhouette: head + shoulders */}
-        <g fill={active ? '#c65a2e' : '#211d14'} opacity={active ? 0.9 : 0.62}>
-          <circle cx="23" cy="18.5" r="6.2" />
-          <path d="M11.5 37.5c1.2-6.6 6-10.2 11.5-10.2s10.3 3.6 11.5 10.2z" />
-        </g>
-        <circle
-          cx="23"
-          cy="23"
-          r="17.5"
-          fill="none"
-          stroke="rgba(33,29,20,.22)"
-          strokeDasharray="1 3"
         />
       </svg>
       <span

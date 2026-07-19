@@ -362,16 +362,20 @@ export function LatticeView({ studied }: LatticeViewProps) {
               name={p.name}
               count={p.count}
               active={who === p.slug}
-              onClick={() => setParam('who', who === p.slug ? '' : p.slug)}
+              onClick={() => navigate(`/thinkers/${p.slug}`)}
             />
           ))}
         </div>
         {whoM && (
           <div className="mt-1 font-serif text-[13px] italic text-drab">
-            {whoM.name} — {whoM.count} models on the lattice.{' '}
-            <span className="font-mono text-[10px] not-italic text-faded">
-              PORTRAIT ART TO COME
-            </span>
+            {whoM.name} — {whoM.count} models highlighted below.{' '}
+            <button
+              type="button"
+              onClick={() => navigate(`/thinkers/${whoM.slug}`)}
+              className="cursor-pointer font-mono text-[10px] not-italic tracking-[0.12em] text-ember transition-colors duration-150 hover:text-ink"
+            >
+              READ THEM ALL →
+            </button>
           </div>
         )}
       </div>

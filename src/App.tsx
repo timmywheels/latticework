@@ -10,6 +10,7 @@ import { SearchPalette } from "./components/SearchPalette";
 import { Footer } from "./components/Footer";
 import { IndexView } from "./views/IndexView";
 import { LatticeView } from "./views/LatticeView";
+import { ThinkerView } from "./views/ThinkerView";
 import { ColophonView } from "./views/ColophonView";
 import { modelPath, randomModel } from "./data/models";
 
@@ -117,6 +118,7 @@ export default function App() {
                 path="/lattice"
                 element={<LatticeView studied={studied} />}
               />
+              <Route path="/thinkers/:slug" element={<ThinkerView />} />
               <Route
                 path="/saved"
                 element={

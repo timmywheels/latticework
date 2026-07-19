@@ -40,8 +40,8 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'Camping gear', text: 'The list says you need the $200 sleeping pad. What you need is to stop losing heat to the ground. Foam and a flattened box did it for nine dollars.' },
   ],
   M0009: [
-    { context: 'The Parking Lot', text: 'Full by 8am at $4, half empty at $9. The \'shortage of spaces\' was never about concrete — it was about a number painted on a sign.' },
-    { context: 'The Two-Hour Wait', text: 'That restaurant isn\'t more popular than it can handle. It\'s cheaper than it needs to be, and the queue is the price — paid in minutes instead of dollars.' },
+    { context: 'The parking lot', text: 'The city lot charges $4 and fills by 8am, so you circle the block for a space that\'s already gone. Raise it to $9 and it sits half-empty all day. No spaces were added or removed. The \'shortage\' was just a price set too low to ration them.' },
+    { context: 'The two-hour wait', text: 'A line out the door doesn\'t mean the kitchen can\'t keep up. It means the food is priced below what people will gladly pay. Demand outruns the seats, so the wait becomes the real price, paid in minutes instead of dollars. Raise prices and the line shrinks.' },
   ],
   M0010: [
     { context: 'Your Group Chat', text: 'Nobody decided the chat would become all memes. Posts that got laughs got replies; posts that got silence stopped. Six months later it has a personality no one chose.' },
@@ -124,8 +124,8 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'The New Job', text: 'Two hires, same Monday. One learns his tasks. The other keeps asking why the invoices all land on Tuesdays. Four years later, guess which one they\'re all reporting to.' },
   ],
   M0030: [
-    { context: 'The beach house', text: 'You wired $6,000 in January for the whole summer. Cash says January was a catastrophe. The truth is you bought three months, and June used up a third of it.' },
-    { context: 'December 30th', text: 'The contractor mails his invoices on January 2nd and pays his bills on December 30th. Same work, same money, two very different years — and he picked which one to show.' },
+    { context: 'The beach house', text: 'You wire $6,000 in January for a beach house you\'ll use in June, July, and August. On a cash basis the whole $6,000 hits January, so that month looks like a catastrophe and summer looks free. Accrual spreads it over the three months you\'re actually there, $2,000 each. Same money; accrual just shows what each month really cost.' },
+    { context: 'December 30th', text: 'A contractor pays all his December bills on the 30th but waits until January 2nd to mail his own invoices. On a cash basis the expenses land this year and the income lands next year, so this year shows a loss and next year a profit. The work never changed. He just chose which year each number falls into.' },
   ],
   M0031: [
     { context: 'New taco place, new babysitter', text: 'Being wrong about the tacos costs $14 and a bad night. Being wrong about the sitter is unbearable. The same one good review shouldn\'t move both decisions.' },
@@ -265,7 +265,7 @@ export const EXAMPLES: Record<string, Example[]> = {
   ],
   M0065: [
     { context: 'Your car', text: 'The paid-off Civic "costs nothing" now. Except it\'s worth $4k less than last year, and in three years you\'ll need $18k for the next one. That\'s $500 a month you\'re spending without noticing.' },
-    { context: 'The food truck', text: 'He clears $6k a month and calls it profit. But the fryer, the generator, and the truck all die around year six — $60k. The real number is closer to $5k. The truck eats a paycheck quietly.' },
+    { context: 'The food truck', text: 'He clears $6k a month and calls it profit. But the fryer, the generator, and the truck all die around year six, a $60k bill. The real number is closer to $5k. The truck eats a paycheck quietly.' },
   ],
   M0066: [
     { context: 'The hallway lights', text: 'Two switches, either one flips the bulb. You can puzzle at it for an hour, or notice it\'s "on when they disagree" — and now it\'s an equation you can rearrange on paper.' },
@@ -325,7 +325,7 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'Reading the news', text: 'The pundit who called ten of the last two crashes still has his column. The bookmaker who prices badly is gone by spring. Trust the one who pays for being wrong.' },
   ],
   M0080: [
-    { context: 'Your side gig', text: '"The rideshare gig makes $2,000 a month" — before gas, before the car payment, before taxes. Before all the parts that hurt. After them, it\'s $400 and a tired back.' },
+    { context: 'Your side gig', text: '"The rideshare gig makes $2,000 a month," before gas, before the car payment, before taxes. Before all the parts that hurt. After them, it\'s $400 and a tired back.' },
     { context: 'Buying a gym', text: 'The seller leads with $1.2M in "earnings." The loan eats $400k, taxes take a bite, and treadmills die every five years. The owner takes home $200k. Ask why he led with the other number.' },
   ],
   M0081: [
@@ -696,7 +696,7 @@ export const EXAMPLES: Record<string, Example[]> = {
   ],
   M0172: [
     { context: 'The yoga studio', text: 'Rent is $8,000 whether two people show up or forty. Twelve extra regulars in January feels like nothing. It\'s the whole difference between a good year and a padlock.' },
-    { context: 'A warm winter', text: 'The lifts, the patrol, the snowmakers cost the same whether it snows or not. Bad snow doesn\'t shave the resort\'s year down a bit — it erases it.' },
+    { context: 'A warm winter', text: 'The lifts, the patrol, the snowmakers cost the same whether it snows or not. Bad snow doesn\'t shave a bit off the resort\'s year. It erases it.' },
   ],
   M0173: [
     { context: 'Splitting rent', text: 'Four roommates, one shared note. Every payment gets written twice — who paid, and what for. When the totals don\'t match the bank, you know somebody\'s memory is wrong before the fight starts.' },
@@ -917,7 +917,7 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'First date', text: 'He mentions his ex twice, lightly, in passing. He meant nothing by it. Doesn\'t matter — it\'s hanging on the wall now, and she\'s waiting the whole dinner for it to go off.' },
   ],
   M0227: [
-    { context: 'The cereal aisle', text: '"Fat free" is legally true and tells you nothing — the box is mostly sugar. Every rule was followed. Following the rules and telling you about the food are different jobs.' },
+    { context: 'The cereal aisle', text: '"Fat free" is legally true and tells you nothing. The box is mostly sugar. Every rule was followed. Following the rules and telling you about the food are different jobs.' },
     { context: 'An apartment listing', text: '"Cozy, transit-adjacent, recently updated." Every word survives a lawyer. It\'s 340 square feet beside the highway with a new faucet.' },
   ],
   M0228: [
@@ -990,7 +990,7 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'The old Civic', text: 'Collision coverage runs $600 a year on a car worth $2,800. Three years of premiums buys the whole car. Drop it, and put the $600 where a real disaster lives — the liability.' },
   ],
   M0245: [
-    { context: 'The barber shop', text: 'He sells 200 haircut packages at $180 up front. Now he\'s holding $36,000 of haircuts he hasn\'t given yet. He owes it in labor — but today it pays the rent, and nobody charges him interest.' },
+    { context: 'The barber shop', text: 'He sells 200 haircut packages at $180 up front. Now he\'s holding $36,000 of haircuts he hasn\'t given yet. He owes it in labor, but today it pays the rent, and nobody charges him interest.' },
     { context: 'A drawer at home', text: 'That $50 coffee gift card sat unused for eleven months. The company had your $50 the whole time, for free. Now multiply by ten million drawers.' },
   ],
   M0246: [
@@ -1518,7 +1518,7 @@ export const EXAMPLES: Record<string, Example[]> = {
   ],
   M0375: [
     { context: 'The borrowed drill', text: 'You return your neighbor\'s drill Saturday, charged, every time. When your car dies at 11pm, he answers. The favor rate you get was set years ago, one small on-time return at a time.' },
-    { context: 'A small restaurant', text: 'The fish supplier runs short and calls two buyers. One pays in 10 days, one in 90 and always argues. Guess who gets the fish — and at the better number. No negotiation touches that gap.' },
+    { context: 'A small restaurant', text: 'The fish supplier runs short and calls two buyers. One pays in 10 days, one in 90 and always argues. Guess who gets the fish, and at the better number. No negotiation touches that gap.' },
   ],
   M0376: [
     { context: 'The group chat', text: 'Your friend who calls every game a lock tells you nothing — he\'d say it anyway. When the guy who never posts predictions says "take the under," the room goes quiet.' },
@@ -1631,11 +1631,11 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'Hiring a manager', text: '"Will she be good with people?" is unanswerable in an interview. "Who followed her from her last two jobs?" is answerable in one phone call, and it\'s nearly the same question.' },
   ],
   M0403: [
-    { context: 'Your marriage', text: 'You didn\'t fight for two months. Then you fought Tuesday, Wednesday, and Saturday. Trouble doesn\'t sprinkle itself evenly across the calendar — it comes in weeks.' },
-    { context: 'Checking your 401k', text: 'The market dropped 3% yesterday, so you tell yourself today will be calm again. It won\'t. Big days travel in packs — the shaking has just started, not finished.' },
+    { context: 'Your marriage', text: 'You didn\'t fight for two months. Then you fought Tuesday, Wednesday, and Saturday. Trouble doesn\'t sprinkle itself evenly across the calendar. It comes in weeks.' },
+    { context: 'Checking your 401k', text: 'The market dropped 3% yesterday, so you tell yourself today will be calm again. It won\'t. Big days travel in packs. The shaking has just started, not finished.' },
   ],
   M0404: [
-    { context: 'The new roof', text: '$14k on a roof isn\'t a bad month — it\'s $700 a year for twenty years. $14k on a party is a bad month. Same cash out the door, two different truths.' },
+    { context: 'The new roof', text: '$14k on a roof isn\'t a bad month. It\'s $700 a year for twenty years. $14k on a party is a bad month. Same cash out the door, two different truths.' },
     { context: 'Two shops, one block', text: 'Both spend $200k building a website. One calls it this year\'s cost and looks unprofitable. One calls it an asset and looks great. Same website. Watch who writes it off in year three.' },
   ],
   M0405: [
@@ -2196,7 +2196,7 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'Before surgery', text: '"Nine in ten are alive a year later" and "one in ten dies within a year" are one sentence. Patients say yes to the first and no to the second.' },
   ],
   M0543: [
-    { context: 'Two landlords', text: 'Both bought $500k houses. One paid cash; one put down $50k. Prices fall 15% and one is annoyed while the other is wiped out — and the bank, not the market, picks the moment.' },
+    { context: 'Two landlords', text: 'Both bought $500k houses. One paid cash; one put down $50k. Prices fall 15% and one is annoyed while the other is wiped out, and the bank, not the market, picks the moment.' },
     { context: 'The margin call', text: 'Borrowing doubles the gain and doubles the loss. But the gain lets you keep playing, and the loss has your broker selling your shares at the bottom, without asking.' },
   ],
   M0544: [
@@ -2208,8 +2208,8 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'Your teenager', text: 'You said it. They heard nothing. Before concluding they never listen, notice they had one AirPod in and the dishwasher was running. Find where it died first.' },
   ],
   M0546: [
-    { context: 'The freelancer', text: 'She billed $12,000 in March — best month ever. Two clients pay in 90 days and one is about to ghost her. Great month for earning; rough month for eating.' },
-    { context: 'A busy Saturday', text: 'The truck rang up $3,000 today. Beef $900, propane $60, two helpers $300, the pitch fee $200. The interesting number was never the $3,000 — it\'s what sits under it.' },
+    { context: 'The freelancer', text: 'She billed $12,000 in March, her best month ever. Two clients pay in 90 days and one is about to ghost her. Great month for earning; rough month for eating.' },
+    { context: 'A busy Saturday', text: 'The truck rang up $3,000 today. Beef $900, propane $60, two helpers $300, the pitch fee $200. The interesting number was never the $3,000. It\'s what sits under it.' },
   ],
   M0547: [
     { context: 'The old house', text: 'Changing one light switch meant pulling up the floor, because someone ran the wiring through the joists. The new place has a panel: one breaker, one circuit, one afternoon.' },
@@ -3166,7 +3166,7 @@ export const EXAMPLES: Record<string, Example[]> = {
   ],
   M0783: [
     { context: 'Splitting rent', text: 'Your roommate logs what he paid; you log what he says he paid. At month\'s end the lists differ by $80. One list can be wrong by accident or on purpose. Two lists that must match can\'t be, quietly.' },
-    { context: 'Shift change', text: 'Two nurses count the narcotics separately and both sign. Neither count is more honest than the other — but they have to agree, and that\'s what makes a missing vial impossible to shrug off.' },
+    { context: 'Shift change', text: 'Two nurses count the narcotics separately and both sign. Neither count is more honest than the other. But they have to agree, and that is what makes a missing vial impossible to shrug off.' },
   ],
   M0784: [
     { context: 'Your kid asks', text: '\'Why do planes stay up?\' You reach for \'lift\' and \'airfoil\' and watch her eyes go flat. The spot where your voice speeds up is the spot you never understood.' },
@@ -3247,7 +3247,7 @@ export const EXAMPLES: Record<string, Example[]> = {
     { context: 'The Lottery Desk', text: '$1 million today or $50,000 a year for thirty. The second is more money and less money at once, and what settles it is what the million would earn while you waited.' },
   ],
   M0803: [
-    { context: 'Before the wedding', text: 'He makes $95k, which sounds great — until you list it out: $140k in student loans, $9k on cards, $3k saved. The salary is the stream. This is the reservoir, and it\'s empty.' },
+    { context: 'Before the wedding', text: 'He makes $95k, which sounds great, until you list it out: $140k in student loans, $9k on cards, $3k saved. The salary is the stream. This is the reservoir, and it\'s empty.' },
     { context: 'Two neighbors', text: 'Same new SUVs, same beach week in July. One owns his house outright; the other owes more than it\'s worth. The street shows you what they earn. It never shows you what\'s left.' },
   ],
   M0804: [
@@ -3690,7 +3690,7 @@ export const EXAMPLES: Record<string, Example[]> = {
   ],
   M0912: [
     { context: 'The caterer', text: 'She buys food Monday, cooks Saturday, and the corporate client pays in 60 days. Every new booking needs cash she doesn\'t have yet. More business, more broke.' },
-    { context: 'The magazine', text: 'You pay for twelve issues in January. They print all year using your money. Every new subscriber hands them cash before costing them a cent — growth that funds itself.' },
+    { context: 'The magazine', text: 'You pay for twelve issues in January. They print all year using your money. Every new subscriber hands them cash before costing them a cent. That is growth that funds itself.' },
   ],
   M0913: [
     { context: 'The Airport', text: 'You white-knuckle the flight, then drive home at midnight, tired, one hand on the wheel. You\'ve seen crash footage. You\'ve never watched the forty thousand who die on the road.' },
@@ -3782,7 +3782,7 @@ export const EXAMPLES: Record<string, Example[]> = {
   ],
   M0935: [
     { context: 'The second location', text: 'The new store will earn 6%. The loan costs 9%. He\'ll have two stores, more staff, more headaches, and less money. Bigger and better off aren\'t the same sentence.' },
-    { context: 'A spare $20k', text: 'The kitchen reno maybe returns 4%. Paying off the 7% card returns 7%, guaranteed, today. The reno isn\'t free — it costs 7%, it just doesn\'t send you a statement.' },
+    { context: 'A spare $20k', text: 'The kitchen reno maybe returns 4%. Paying off the 7% card returns 7%, guaranteed, today. The reno isn\'t free. It costs 7%, it just doesn\'t send you a statement.' },
   ],
   M0936: [
     { context: 'The sourdough', text: 'You keep opening the oven to check. Every peek drops the heat 30 degrees. The bread doesn\'t need your help — it needs you to sit down.' },

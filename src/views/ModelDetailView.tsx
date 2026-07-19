@@ -213,7 +213,7 @@ export function ModelDetailView({
                   {thinkers.map((t) => (
                     <Link
                       key={t.slug}
-                      to={`/lattice?who=${t.slug}`}
+                      to={`/thinkers/${t.slug}`}
                       className="cursor-pointer rounded-[2px] border border-ink/20 px-1.5 py-[2px] font-mono text-[9.5px] text-drab transition-colors duration-150 hover:border-ember hover:text-ember"
                     >
                       {t.name}
@@ -346,7 +346,7 @@ export function ModelDetailView({
                   {thinkers.map((t) => (
                     <Link
                       key={t.slug}
-                      to={`/lattice?who=${t.slug}`}
+                      to={`/thinkers/${t.slug}`}
                       className="cursor-pointer rounded-[2px] border border-ink/20 px-1.5 py-[2px] font-mono text-[9.5px] text-drab transition-colors duration-150 hover:border-ember hover:text-ember"
                     >
                       {t.name}

@@ -19,6 +19,7 @@ import {
 import { DisciplineThumb, ModelPlate } from '../components/DisciplinePlates'
 import { SubscribeForm } from '../components/SubscribeForm'
 import { useKeys } from '../hooks/useKeys'
+import mungerFrontispiece from '../assets/munger-frontispiece.jpg'
 
 /** past this the preview's link list outgrows the panel and buries the button */
 const PREVIEW_LINKS = 6
@@ -120,8 +121,49 @@ export function IndexView({
     <div>
       {/* hero */}
       <div>
-        <div className="mx-auto max-w-[1280px] px-4 pb-6 pt-8 md:px-7 md:pb-7 md:pt-10">
-          <div className="max-w-[680px]">
+        <div className="relative mx-auto flex max-w-[1280px] items-center gap-8 px-4 pb-6 pt-8 md:px-7 md:pb-7 md:pt-10">
+          {/* a whisper of a trellis in the empty middle-right — the latticework
+              motif itself, angled and dashed, faded so it never fights the text */}
+          <svg
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-0 hidden h-full w-full md:block"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <defs>
+              <pattern
+                id="hero-lattice"
+                width="26"
+                height="26"
+                patternUnits="userSpaceOnUse"
+                patternTransform="rotate(45)"
+              >
+                <path
+                  d="M13 0V26 M0 13H26"
+                  fill="none"
+                  stroke="#211d14"
+                  strokeOpacity="0.7"
+                  strokeWidth="1"
+                  strokeDasharray="5 6"
+                />
+              </pattern>
+              <radialGradient id="hero-lattice-fade" cx="63%" cy="50%" r="30%">
+                <stop offset="0%" stopColor="white" stopOpacity="1" />
+                <stop offset="58%" stopColor="white" stopOpacity="0.72" />
+                <stop offset="100%" stopColor="white" stopOpacity="0" />
+              </radialGradient>
+              <mask id="hero-lattice-mask">
+                <rect width="100%" height="100%" fill="url(#hero-lattice-fade)" />
+              </mask>
+            </defs>
+            <rect
+              width="100%"
+              height="100%"
+              fill="url(#hero-lattice)"
+              mask="url(#hero-lattice-mask)"
+              opacity="0.22"
+            />
+          </svg>
+          <div className="relative z-10 max-w-[680px]">
             <div className="font-serif text-[32px] font-medium leading-[1.08] tracking-[-0.015em] text-pretty md:text-[44px] [font-optical-sizing:none]">
               {MODELS.length} mental models to build your own latticework.
             </div>
@@ -133,6 +175,27 @@ export function IndexView({
               </span>
             </blockquote>
           </div>
+          {/* the patron himself — engraved frontispiece, desktop only so the mobile
+              hero stays lean (the quote already credits him there) */}
+          <figure className="relative z-10 ml-auto hidden flex-none flex-col items-center md:flex">
+            <div className="relative h-[176px] w-[176px] lg:h-[212px] lg:w-[212px]">
+              <div className="absolute inset-0 rounded-full border border-ink/25" />
+              <div className="absolute inset-[6px] overflow-hidden rounded-full border border-ink/15 bg-card shadow-[0_1px_10px_rgba(33,29,20,0.10)]">
+                <img
+                  src={mungerFrontispiece}
+                  alt="Engraved portrait of Charlie Munger"
+                  className="h-full w-full object-cover"
+                  draggable={false}
+                />
+              </div>
+            </div>
+            <figcaption className="mt-3 text-center font-mono text-[8.5px] not-italic tracking-[0.22em] text-stone">
+              AFTER C. T. MUNGER
+              <span className="mt-0.5 block text-[8px] tracking-[0.16em] text-faded">
+                1924 — 2023
+              </span>
+            </figcaption>
+          </figure>
         </div>
         {/* dark utility bar — today's model on the left, subscribe on the right */}
         <div className="mx-auto max-w-[1280px] px-4 pb-8 md:px-7 md:pb-9">
