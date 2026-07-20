@@ -1,5 +1,14 @@
-import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router'
+import {
+  memo,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type MouseEvent as ReactMouseEvent,
+} from 'react'
+import { Link, useNavigate, useSearchParams } from 'react-router'
 import {
   CLUSTER_LABELS,
   DISCIPLINE_ORDER,
@@ -15,6 +24,7 @@ import {
 } from '../data/models'
 import { Bust } from '../components/Bust'
 import { ModelPopover } from '../components/ModelPopover'
+import { portraitFor } from '../data/portraits'
 import { useKeys } from '../hooks/useKeys'
 
 interface LatticeViewProps {
@@ -129,6 +139,22 @@ export function LatticeView({ studied }: LatticeViewProps) {
     else next.set(k, v)
     setParams(next, { replace: true })
   }
+
+  // hovering a bust floats a card with the thinker's portrait + a link to their
+  // page. It's fixed-positioned (the strip's overflow-x clip would eat an anchored
+  // one) and stays open while the cursor is on either the bust or the card.
+  const [bustPop, setBustPop] = useState<{ slug: string; x: number; y: number } | null>(null)
+  const popTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const openBustPop = (slug: string, e: ReactMouseEvent) => {
+    clearTimeout(popTimer.current)
+    const r = e.currentTarget.getBoundingClientRect()
+    setBustPop({ slug, x: r.left + r.width / 2, y: r.bottom })
+  }
+  const closeBustPop = () => {
+    popTimer.current = setTimeout(() => setBustPop(null), 120)
+  }
+  const keepBustPop = () => clearTimeout(popTimer.current)
+  const popPerson = bustPop ? PEOPLE.find((p) => p.slug === bustPop.slug) : null
 
   const matches = useCallback(
     (m: Model) =>
@@ -327,12 +353,20 @@ export function LatticeView({ studied }: LatticeViewProps) {
 
   return (
     <div className="mx-auto w-full max-w-[1280px] box-border px-4 pb-12 pt-6 md:px-7 md:pt-[30px]">
-      <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
-        <div className="font-serif text-[26px] font-medium tracking-[-0.01em] md:text-[32px]">
-          The lattice itself.
+      <div className="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between md:gap-6">
+        <div className="max-w-[620px]">
+          <h1 className="font-serif text-[32px] font-medium tracking-[-0.01em] md:text-[34px]">
+            The lattice.
+          </h1>
+          <p className="mt-2 font-serif text-[14px] italic leading-[1.45] text-drab">
+            “You must know the big ideas in the big disciplines, and use them routinely.”
+            <span className="ml-1.5 font-mono text-[9px] not-italic tracking-[0.14em] text-stone">
+              — CHARLIE MUNGER
+            </span>
+          </p>
         </div>
-        <div className="hidden font-mono text-[10px] tracking-[0.1em] text-stone md:block">
-          {shown.length} OF {MODELS.length} MODELS · SCROLL TO ZOOM · DRAG TO PAN · CLICK A NODE
+        <div className="hidden flex-none font-mono text-[10px] tracking-[0.1em] text-stone md:block">
+          {shown.length} OF {MODELS.length} MODELS · SCROLL TO ZOOM · DRAG TO PAN
         </div>
       </div>
 
@@ -356,29 +390,71 @@ export function LatticeView({ studied }: LatticeViewProps) {
             hover lift + focus ring room instead of shearing the top edge off */}
         <div className="no-scrollbar flex gap-x-1 gap-y-3 overflow-x-auto px-0.5 pt-2 pb-2">
           {PEOPLE.map((p) => (
-            <Bust
+            <span
               key={p.slug}
-              slug={p.slug}
-              name={p.name}
-              count={p.count}
-              active={who === p.slug}
-              onClick={() => navigate(`/thinkers/${p.slug}`)}
-            />
+              onMouseEnter={(e) => openBustPop(p.slug, e)}
+              onMouseLeave={closeBustPop}
+            >
+              <Bust
+                slug={p.slug}
+                name={p.name}
+                count={p.count}
+                active={who === p.slug}
+                onClick={() => setParam('who', who === p.slug ? '' : p.slug)}
+              />
+            </span>
           ))}
         </div>
         {whoM && (
           <div className="mt-1 font-serif text-[13px] italic text-drab">
             {whoM.name} — {whoM.count} models highlighted below.{' '}
-            <button
-              type="button"
-              onClick={() => navigate(`/thinkers/${whoM.slug}`)}
+            <Link
+              to={`/thinkers/${whoM.slug}`}
               className="cursor-pointer font-mono text-[10px] not-italic tracking-[0.12em] text-ember transition-colors duration-150 hover:text-ink"
             >
               READ THEM ALL →
-            </button>
+            </Link>
           </div>
         )}
       </div>
+
+      {/* hover card: a thinker's portrait + a way through to their page. Fixed so
+          it escapes the strip's overflow clip; stays open across the small gap. */}
+      {bustPop && popPerson && (
+        <div
+          className="fixed z-50 -translate-x-1/2"
+          style={{ left: bustPop.x, top: bustPop.y + 6 }}
+          onMouseEnter={keepBustPop}
+          onMouseLeave={closeBustPop}
+        >
+          <div className="mx-auto -mb-1 h-2 w-2 rotate-45 border-l border-t border-ink/15 bg-card" />
+          <Link
+            to={`/thinkers/${popPerson.slug}`}
+            className="group flex items-center gap-2.5 rounded-[3px] border border-ink/15 bg-card px-3 py-2.5 shadow-[0_8px_28px_rgba(33,29,20,0.18)] transition-colors duration-150 hover:border-ember/50"
+          >
+            {portraitFor(popPerson.slug) ? (
+              <img
+                src={portraitFor(popPerson.slug)}
+                alt={popPerson.name}
+                className="h-9 w-9 flex-none rounded-full border border-ink/15 object-cover"
+                draggable={false}
+              />
+            ) : (
+              <span className="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-ink/15 font-serif text-[15px] text-ink/40">
+                {popPerson.name.split(' ').slice(-1)[0][0]}
+              </span>
+            )}
+            <span className="min-w-0">
+              <span className="block whitespace-nowrap font-serif text-[14px] font-medium leading-tight text-ink">
+                {popPerson.name}
+              </span>
+              <span className="mt-0.5 block font-mono text-[9px] tracking-[0.12em] text-stone transition-colors duration-150 group-hover:text-ember">
+                {popPerson.count} MODELS · VIEW PAGE →
+              </span>
+            </span>
+          </Link>
+        </div>
+      )}
 
       <div className="no-scrollbar mt-2.5 flex items-center gap-x-1.5 gap-y-2 overflow-x-auto md:flex-wrap md:overflow-visible">
         <span className="mr-1 flex-none font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
