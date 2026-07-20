@@ -65,7 +65,12 @@
    "sources": [
     "S08",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Depreciation",
+    "url": "https://en.wikipedia.org/wiki/Depreciation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Double-Entry Bookkeeping",
@@ -101,7 +106,12 @@
     "S33",
     "S34",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Double-entry bookkeeping",
+    "url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "EBITDA Critique",
@@ -150,7 +160,12 @@
    ],
    "sources": [
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Float (money supply)",
+    "url": "https://en.wikipedia.org/wiki/Float_(money_supply)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Accounting Numbers vs Economic Reality",
@@ -222,7 +237,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Balance sheet",
+    "url": "https://en.wikipedia.org/wiki/Balance_sheet",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cash Flow Statement",
@@ -241,7 +261,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Cash flow statement",
+    "url": "https://en.wikipedia.org/wiki/Cash_flow_statement",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Generally Accepted Accounting Principles (GAAP)",
@@ -261,7 +286,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Generally Accepted Accounting Principles (United States)",
+    "url": "https://en.wikipedia.org/wiki/Generally_Accepted_Accounting_Principles_(United_States)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Income Statement",
@@ -281,7 +311,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Income statement",
+    "url": "https://en.wikipedia.org/wiki/Income_statement",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Accrual vs Cash Accounting",
@@ -294,7 +329,12 @@
    "listedBy": [],
    "id": "M0030",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Basis of accounting",
+    "url": "https://en.wikipedia.org/wiki/Basis_of_accounting",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Capitalization vs Expensing",
@@ -310,7 +350,12 @@
    "listedBy": [],
    "id": "M0404",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Capitalization",
+    "url": "https://en.wikipedia.org/wiki/Capitalization",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cost of Capital / Opportunity Cost of Capital",
@@ -327,7 +372,12 @@
    "listedBy": [],
    "id": "M0935",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cost of capital",
+    "url": "https://en.wikipedia.org/wiki/Cost_of_capital",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Financial Leverage",
@@ -343,7 +393,12 @@
    "listedBy": [],
    "id": "M0543",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Leverage (finance)",
+    "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Goodwill (accounting vs economic)",
@@ -361,7 +416,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Goodwill (accounting)",
+    "url": "https://en.wikipedia.org/wiki/Goodwill_(accounting)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Off-Balance-Sheet Obligations",
@@ -377,7 +437,12 @@
    "listedBy": [],
    "id": "M0670",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Off-balance-sheet",
+    "url": "https://en.wikipedia.org/wiki/Off-balance-sheet",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Operating Leverage",
@@ -392,7 +457,12 @@
    "listedBy": [],
    "id": "M0172",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Operating leverage",
+    "url": "https://en.wikipedia.org/wiki/Operating_leverage",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Owner Earnings / Free Cash Flow",
@@ -413,7 +483,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Free cash flow",
+    "url": "https://en.wikipedia.org/wiki/Free_cash_flow",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Return on Invested Capital",
@@ -430,7 +505,12 @@
    "listedBy": [],
    "id": "M0339",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Return on capital",
+    "url": "https://en.wikipedia.org/wiki/Return_on_capital",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Revenue Recognition",
@@ -446,7 +526,12 @@
    "listedBy": [],
    "id": "M0858",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Revenue recognition",
+    "url": "https://en.wikipedia.org/wiki/Revenue_recognition",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Working Capital Cycle",
@@ -462,7 +547,12 @@
    "listedBy": [],
    "id": "M0912",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cash conversion cycle",
+    "url": "https://en.wikipedia.org/wiki/Cash_conversion_cycle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Metaphor & Analogy",
@@ -489,7 +579,12 @@
    "sources": [
     "S16",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Metaphor",
+    "url": "https://en.wikipedia.org/wiki/Metaphor",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Audience",
@@ -506,7 +601,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Audience",
+    "url": "https://en.wikipedia.org/wiki/Audience",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Character",
@@ -523,7 +623,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Character (arts)",
+    "url": "https://en.wikipedia.org/wiki/Character_(arts)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Contrast (aesthetic)",
@@ -542,7 +647,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Contrast (vision)",
+    "url": "https://en.wikipedia.org/wiki/Contrast_(vision)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Genre",
@@ -559,7 +669,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Genre",
+    "url": "https://en.wikipedia.org/wiki/Genre",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Melody",
@@ -576,7 +691,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Melody",
+    "url": "https://en.wikipedia.org/wiki/Melody",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Performance",
@@ -593,7 +713,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Performing arts",
+    "url": "https://en.wikipedia.org/wiki/Performing_arts",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Plot",
@@ -610,7 +735,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Plot (narrative)",
+    "url": "https://en.wikipedia.org/wiki/Plot_(narrative)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Representation",
@@ -627,7 +757,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Representation theory",
+    "url": "https://en.wikipedia.org/wiki/Representation_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rhythm",
@@ -644,7 +779,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Rhythm",
+    "url": "https://en.wikipedia.org/wiki/Rhythm",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Setting",
@@ -661,7 +801,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Setting (narrative)",
+    "url": "https://en.wikipedia.org/wiki/Setting_(narrative)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Chekhov's Gun",
@@ -677,7 +822,12 @@
    "listedBy": [],
    "id": "M0226",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Chekhov's gun",
+    "url": "https://en.wikipedia.org/wiki/Chekhov%27s_gun",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Composition",
@@ -695,7 +845,12 @@
    "listedBy": [],
    "id": "M0485",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Composition (visual arts)",
+    "url": "https://en.wikipedia.org/wiki/Composition_(visual_arts)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Curse of Knowledge",
@@ -711,7 +866,12 @@
    "listedBy": [],
    "id": "M0177",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Curse of knowledge",
+    "url": "https://en.wikipedia.org/wiki/Curse_of_knowledge",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Narrative Arc",
@@ -728,7 +888,12 @@
    "listedBy": [],
    "id": "M0702",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Story structure",
+    "url": "https://en.wikipedia.org/wiki/Story_structure",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Narrative Fallacy",
@@ -746,7 +911,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Narrative",
+    "url": "https://en.wikipedia.org/wiki/Narrative",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Negative Space",
@@ -763,7 +933,12 @@
    "listedBy": [],
    "id": "M0812",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Negative space",
+    "url": "https://en.wikipedia.org/wiki/Negative_space",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Point of View",
@@ -780,7 +955,12 @@
    "listedBy": [],
    "id": "M0189",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Narration",
+    "url": "https://en.wikipedia.org/wiki/Narration",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rhetorical Triangle (Ethos, Pathos, Logos)",
@@ -802,7 +982,12 @@
    "thinkers": [
     "aristotle"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Modes of persuasion",
+    "url": "https://en.wikipedia.org/wiki/Modes_of_persuasion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rule of Three / Repetition",
@@ -819,7 +1004,12 @@
    "listedBy": [],
    "id": "M0305",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Rule of three (writing)",
+    "url": "https://en.wikipedia.org/wiki/Rule_of_three_(writing)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Show, Don't Tell",
@@ -835,7 +1025,12 @@
    "listedBy": [],
    "id": "M0703",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Show, don't tell",
+    "url": "https://en.wikipedia.org/wiki/Show,_don%27t_tell",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Suspension of Disbelief",
@@ -851,7 +1046,12 @@
    "listedBy": [],
    "id": "M0112",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Suspension of disbelief",
+    "url": "https://en.wikipedia.org/wiki/Suspension_of_disbelief",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Medium Is the Message",
@@ -868,7 +1068,12 @@
    "listedBy": [],
    "id": "M0892",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The medium is the message",
+    "url": "https://en.wikipedia.org/wiki/The_medium_is_the_message",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Voice & Tone",
@@ -885,7 +1090,12 @@
    "listedBy": [],
    "id": "M0298",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Writing style",
+    "url": "https://en.wikipedia.org/wiki/Writing_style",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bureaucracy as Cancer (Metastasis of Organizational Overhead)",
@@ -930,7 +1140,12 @@
     "S20",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Ecosystem",
+    "url": "https://en.wikipedia.org/wiki/Ecosystem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Effort Minimization (Biological Energy Economy)",
@@ -986,7 +1201,12 @@
     "S16",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Natural selection",
+    "url": "https://en.wikipedia.org/wiki/Natural_selection",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Evolved Neural Preprogramming of Preferences",
@@ -1025,7 +1245,12 @@
    "sources": [
     "S02",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Extinction",
+    "url": "https://en.wikipedia.org/wiki/Extinction",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Interconnectedness / Relatedness of Systems",
@@ -1131,7 +1356,12 @@
    "sources": [
     "S03",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Genetics",
+    "url": "https://en.wikipedia.org/wiki/Genetics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Invasive Species / Introduced Predator (Northern Pike Model)",
@@ -1152,7 +1382,12 @@
    "thinkers": [],
    "sources": [
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Invasive species",
+    "url": "https://en.wikipedia.org/wiki/Invasive_species",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "'Autopsy' Learning (Post-Mortem Study of Failure)",
@@ -1191,7 +1426,12 @@
    "sources": [
     "S07",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Dominance hierarchy",
+    "url": "https://en.wikipedia.org/wiki/Dominance_hierarchy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Adaptation",
@@ -1215,7 +1455,12 @@
    "sources": [
     "S20",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Adaptation",
+    "url": "https://en.wikipedia.org/wiki/Adaptation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Adaptive Market Hypothesis",
@@ -1234,7 +1479,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Adaptive market hypothesis",
+    "url": "https://en.wikipedia.org/wiki/Adaptive_market_hypothesis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cooperation (Reciprocal Altruism)",
@@ -1253,7 +1503,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Cooperation",
+    "url": "https://en.wikipedia.org/wiki/Cooperation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fitness Landscapes",
@@ -1272,7 +1527,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Fitness (biology)",
+    "url": "https://en.wikipedia.org/wiki/Fitness_(biology)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Physiology",
@@ -1289,7 +1549,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Physiology",
+    "url": "https://en.wikipedia.org/wiki/Physiology",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Population Dynamics",
@@ -1306,7 +1571,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Population dynamics",
+    "url": "https://en.wikipedia.org/wiki/Population_dynamics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Punctuated Equilibrium",
@@ -1325,7 +1595,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Punctuated equilibrium",
+    "url": "https://en.wikipedia.org/wiki/Punctuated_equilibrium",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Red Queen Effect",
@@ -1346,7 +1621,12 @@
    "sources": [
     "S20",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Red Queen hypothesis",
+    "url": "https://en.wikipedia.org/wiki/Red_Queen_hypothesis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Replication",
@@ -1363,7 +1643,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Self-replication",
+    "url": "https://en.wikipedia.org/wiki/Self-replication",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Self-Preservation",
@@ -1380,7 +1665,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Self-preservation",
+    "url": "https://en.wikipedia.org/wiki/Self-preservation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Allometric Scaling (Kleiber's Law)",
@@ -1397,7 +1687,12 @@
    "listedBy": [],
    "id": "M0686",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Kleiber's law",
+    "url": "https://en.wikipedia.org/wiki/Kleiber%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Carrying Capacity",
@@ -1415,7 +1710,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Carrying capacity",
+    "url": "https://en.wikipedia.org/wiki/Carrying_capacity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Contagion and Epidemic Dynamics (R0)",
@@ -1433,7 +1733,12 @@
    "listedBy": [],
    "id": "M0048",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Basic reproduction number",
+    "url": "https://en.wikipedia.org/wiki/Basic_reproduction_number",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Convergent Evolution",
@@ -1448,7 +1753,12 @@
    "listedBy": [],
    "id": "M0284",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Convergent evolution",
+    "url": "https://en.wikipedia.org/wiki/Convergent_evolution",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Exaptation",
@@ -1465,7 +1775,12 @@
    "listedBy": [],
    "id": "M0105",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Exaptation",
+    "url": "https://en.wikipedia.org/wiki/Exaptation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Genetic Drift",
@@ -1481,7 +1796,12 @@
    "listedBy": [],
    "id": "M0361",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Genetic drift",
+    "url": "https://en.wikipedia.org/wiki/Genetic_drift",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Homeostasis",
@@ -1499,7 +1819,12 @@
    "listedBy": [],
    "id": "M0306",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Homeostasis",
+    "url": "https://en.wikipedia.org/wiki/Homeostasis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hormesis",
@@ -1516,7 +1841,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hormesis",
+    "url": "https://en.wikipedia.org/wiki/Hormesis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Immune Response",
@@ -1532,7 +1862,12 @@
    "listedBy": [],
    "id": "M0247",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Immune response",
+    "url": "https://en.wikipedia.org/wiki/Immune_response",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Keystone Species and Trophic Cascades",
@@ -1548,7 +1883,12 @@
    "listedBy": [],
    "id": "M0314",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Keystone species",
+    "url": "https://en.wikipedia.org/wiki/Keystone_species",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Kin Selection / Inclusive Fitness",
@@ -1566,7 +1906,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Kin selection",
+    "url": "https://en.wikipedia.org/wiki/Kin_selection",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sexual Selection",
@@ -1585,7 +1930,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Sexual selection",
+    "url": "https://en.wikipedia.org/wiki/Sexual_selection",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Symbiosis and Mutualism",
@@ -1602,7 +1952,12 @@
    "listedBy": [],
    "id": "M0502",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Mutualism (biology)",
+    "url": "https://en.wikipedia.org/wiki/Mutualism_(biology)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "r/K Selection",
@@ -1620,7 +1975,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "R/K selection theory",
+    "url": "https://en.wikipedia.org/wiki/R/K_selection_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Advantages of Scale",
@@ -1654,7 +2014,12 @@
     "S19",
     "S30",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Economies of scale",
+    "url": "https://en.wikipedia.org/wiki/Economies_of_scale",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cancer Surgery Formula",
@@ -1709,7 +2074,12 @@
     "S20",
     "S19",
     "S30"
-   ]
+   ],
+   "ref": {
+    "title": "Diseconomies of scale",
+    "url": "https://en.wikipedia.org/wiki/Diseconomies_of_scale",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Economic Moats",
@@ -1749,7 +2119,12 @@
     "S19",
     "S37",
     "S30"
-   ]
+   ],
+   "ref": {
+    "title": "Economic moat",
+    "url": "https://en.wikipedia.org/wiki/Economic_moat",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Surfing (Riding a Long Wave)",
@@ -1776,7 +2151,12 @@
     "S02",
     "S19",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Surfing",
+    "url": "https://en.wikipedia.org/wiki/Surfing",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Rare Exceptional Manager",
@@ -1823,7 +2203,12 @@
     "S30",
     "S18",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Brand",
+    "url": "https://en.wikipedia.org/wiki/Brand",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rational vs. Cutthroat Competition",
@@ -1887,7 +2272,12 @@
    "sources": [
     "S02",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Winner-take-all market",
+    "url": "https://en.wikipedia.org/wiki/Winner-take-all_market",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Capacity & Supply Discipline",
@@ -1964,7 +2354,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Experience curve effect",
+    "url": "https://en.wikipedia.org/wiki/Experience_curve_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Lock-In via Distribution / Physical Network",
@@ -2069,7 +2464,12 @@
    "sources": [
     "S06",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Intellectual property",
+    "url": "https://en.wikipedia.org/wiki/Intellectual_property",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Regulation as a Moat",
@@ -2132,7 +2532,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Two-sided market",
+    "url": "https://en.wikipedia.org/wiki/Two-sided_market",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Switching Costs",
@@ -2170,7 +2575,12 @@
    "listedBy": [],
    "id": "M0517",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Ben Thompson (analyst)",
+    "url": "https://en.wikipedia.org/wiki/Ben_Thompson_(analyst)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Capital Cycle",
@@ -2185,7 +2595,12 @@
    "listedBy": [],
    "id": "M0549",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Pork cycle",
+    "url": "https://en.wikipedia.org/wiki/Pork_cycle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Commoditization",
@@ -2200,7 +2615,12 @@
    "listedBy": [],
    "id": "M0687",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Commoditization",
+    "url": "https://en.wikipedia.org/wiki/Commoditization",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Core Competence",
@@ -2213,7 +2633,12 @@
    "listedBy": [],
    "id": "M0428",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Core competency",
+    "url": "https://en.wikipedia.org/wiki/Core_competency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cornered Resource",
@@ -2228,7 +2653,12 @@
    "listedBy": [],
    "id": "M0408",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Barriers to entry",
+    "url": "https://en.wikipedia.org/wiki/Barriers_to_entry",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Counter-Positioning",
@@ -2243,7 +2673,12 @@
    "listedBy": [],
    "id": "M0304",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Competitive advantage",
+    "url": "https://en.wikipedia.org/wiki/Competitive_advantage",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Disruptive Innovation (Christensen)",
@@ -2262,7 +2697,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Disruptive innovation",
+    "url": "https://en.wikipedia.org/wiki/Disruptive_innovation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Flywheel / Autocatalysis",
@@ -2282,7 +2722,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Autocatalysis",
+    "url": "https://en.wikipedia.org/wiki/Autocatalysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Generic Strategies (Cost Leadership vs. Differentiation)",
@@ -2300,7 +2745,12 @@
    "thinkers": [
     "porter"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Porter's generic strategies",
+    "url": "https://en.wikipedia.org/wiki/Porter%27s_generic_strategies",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Pricing Power",
@@ -2317,7 +2767,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Market power",
+    "url": "https://en.wikipedia.org/wiki/Market_power",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Process Power",
@@ -2332,7 +2787,12 @@
    "listedBy": [],
    "id": "M0273",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Competitive advantage",
+    "url": "https://en.wikipedia.org/wiki/Competitive_advantage",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Unit Economics",
@@ -2348,7 +2808,12 @@
    "listedBy": [],
    "id": "M0093",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Contribution margin",
+    "url": "https://en.wikipedia.org/wiki/Contribution_margin",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Value Chain",
@@ -2366,7 +2831,12 @@
    "thinkers": [
     "porter"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Value chain",
+    "url": "https://en.wikipedia.org/wiki/Value_chain",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Vertical Integration",
@@ -2383,7 +2853,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Vertical integration",
+    "url": "https://en.wikipedia.org/wiki/Vertical_integration",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Abstraction Layers",
@@ -2402,7 +2877,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Abstraction layer",
+    "url": "https://en.wikipedia.org/wiki/Abstraction_layer",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Algorithms",
@@ -2423,7 +2903,12 @@
    "sources": [
     "S20",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Algorithm",
+    "url": "https://en.wikipedia.org/wiki/Algorithm",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conditional Logic (If-Statements)",
@@ -2444,7 +2929,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Conditional logic",
+    "url": "https://en.wikipedia.org/wiki/Conditional_logic",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Recursion",
@@ -2463,7 +2953,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Recursion",
+    "url": "https://en.wikipedia.org/wiki/Recursion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Amdahl's Law and Bottlenecks",
@@ -2480,7 +2975,12 @@
    "listedBy": [],
    "id": "M0894",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Amdahl's law",
+    "url": "https://en.wikipedia.org/wiki/Amdahl%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Brute Force vs. Heuristics",
@@ -2498,7 +2998,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Heuristic",
+    "url": "https://en.wikipedia.org/wiki/Heuristic",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Caching and Memoization",
@@ -2514,7 +3019,12 @@
    "listedBy": [],
    "id": "M0734",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Memoization",
+    "url": "https://en.wikipedia.org/wiki/Memoization",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Combinatorial Explosion",
@@ -2530,7 +3040,12 @@
    "listedBy": [],
    "id": "M0616",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Combinatorial explosion",
+    "url": "https://en.wikipedia.org/wiki/Combinatorial_explosion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Compression and Kolmogorov Complexity",
@@ -2547,7 +3062,12 @@
    "listedBy": [],
    "id": "M0901",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Kolmogorov complexity",
+    "url": "https://en.wikipedia.org/wiki/Kolmogorov_complexity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Divide and Conquer",
@@ -2564,7 +3084,12 @@
    "listedBy": [],
    "id": "M0145",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Divide and conquer",
+    "url": "https://en.wikipedia.org/wiki/Divide_and_conquer",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Exploration vs. Exploitation",
@@ -2580,7 +3105,12 @@
    "listedBy": [],
    "id": "M0353",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Exploration–exploitation dilemma",
+    "url": "https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Garbage In, Garbage Out",
@@ -2595,7 +3125,12 @@
    "listedBy": [],
    "id": "M0729",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Garbage in, garbage out",
+    "url": "https://en.wikipedia.org/wiki/Garbage_in,_garbage_out",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Greedy Algorithms and Local Optima",
@@ -2612,7 +3147,12 @@
    "listedBy": [],
    "id": "M0193",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Greedy algorithm",
+    "url": "https://en.wikipedia.org/wiki/Greedy_algorithm",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Information and Entropy (Shannon)",
@@ -2631,7 +3171,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Information theory",
+    "url": "https://en.wikipedia.org/wiki/Information_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Redundancy and Error Correction",
@@ -2652,7 +3197,12 @@
     "shannon",
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Error detection and correction",
+    "url": "https://en.wikipedia.org/wiki/Error_detection_and_correction",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Signal-to-Noise Ratio",
@@ -2672,7 +3222,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Signal-to-noise ratio",
+    "url": "https://en.wikipedia.org/wiki/Signal-to-noise_ratio",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Technical Debt",
@@ -2688,7 +3243,12 @@
    "listedBy": [],
    "id": "M0258",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Technical debt",
+    "url": "https://en.wikipedia.org/wiki/Technical_debt",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Undecidability and the Halting Problem",
@@ -2707,7 +3267,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Halting problem",
+    "url": "https://en.wikipedia.org/wiki/Halting_problem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "A great business at a fair price beats a fair business at a great price",
@@ -2772,7 +3337,12 @@
     "S32",
     "S33",
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Agency cost",
+    "url": "https://en.wikipedia.org/wiki/Agency_cost",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Avoid style companies (fashion risk)",
@@ -2821,7 +3391,12 @@
     "S18",
     "S30",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Behavioral law and economics",
+    "url": "https://en.wikipedia.org/wiki/Behavioral_law_and_economics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Beta-as-risk / CAPM / modern portfolio theory critique",
@@ -2854,7 +3429,12 @@
     "S37",
     "S33",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Capital asset pricing model",
+    "url": "https://en.wikipedia.org/wiki/Capital_asset_pricing_model",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bezzle (Galbraith)",
@@ -2879,7 +3459,12 @@
     "S33",
     "S32",
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "The bezzle",
+    "url": "https://en.wikipedia.org/wiki/The_bezzle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bureaucratic dysfunction (bureaucracy as a cancer)",
@@ -2947,7 +3532,12 @@
     "S35",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Comparative advantage",
+    "url": "https://en.wikipedia.org/wiki/Comparative_advantage",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Creative / competitive destruction",
@@ -2979,7 +3569,12 @@
     "S16",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Creative destruction",
+    "url": "https://en.wikipedia.org/wiki/Creative_destruction",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Culture as a compounding competitive force",
@@ -3093,7 +3688,12 @@
    "thinkers": [],
    "sources": [
     "S11"
-   ]
+   ],
+   "ref": {
+    "title": "Double-entry bookkeeping",
+    "url": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "EBITDA and adjusted earnings as corrupted accounting",
@@ -3142,7 +3742,12 @@
    "thinkers": [],
    "sources": [
     "S10"
-   ]
+   ],
+   "ref": {
+    "title": "Complex adaptive system",
+    "url": "https://en.wikipedia.org/wiki/Complex_adaptive_system",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Economies of scale / advantages of scale",
@@ -3161,7 +3766,12 @@
    "thinkers": [],
    "sources": [
     "S08"
-   ]
+   ],
+   "ref": {
+    "title": "Economies of scale",
+    "url": "https://en.wikipedia.org/wiki/Economies_of_scale",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Extreme maximization or minimization of one or two variables",
@@ -3315,7 +3925,12 @@
    ],
    "sources": [
     "S31"
-   ]
+   ],
+   "ref": {
+    "title": "Game theory",
+    "url": "https://en.wikipedia.org/wiki/Game_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gresham's law (bad drives out good)",
@@ -3340,7 +3955,12 @@
     "S35",
     "S20",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Gresham's law",
+    "url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hard-form efficient market theory (named and rejected)",
@@ -3377,7 +3997,12 @@
     "S32",
     "S33",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Efficient-market hypothesis",
+    "url": "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Herb Stein's law",
@@ -3419,7 +4044,12 @@
     "S32",
     "S37",
     "S33"
-   ]
+   ],
+   "ref": {
+    "title": "Index fund",
+    "url": "https://en.wikipedia.org/wiki/Index_fund",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Invisible foot (Hardin)",
@@ -3465,7 +4095,12 @@
    "sources": [
     "S31",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Invisible hand",
+    "url": "https://en.wikipedia.org/wiki/Invisible_hand",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Keynesian multiplier",
@@ -3534,7 +4169,12 @@
    "sources": [
     "S13",
     "S08"
-   ]
+   ],
+   "ref": {
+    "title": "Margin of safety (financial)",
+    "url": "https://en.wikipedia.org/wiki/Margin_of_safety_(financial)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Marginal utility / diminishing returns",
@@ -3563,7 +4203,12 @@
     "S20",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Marginal utility",
+    "url": "https://en.wikipedia.org/wiki/Marginal_utility",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Microeconomics before macroeconomics",
@@ -3614,7 +4259,12 @@
     "S10",
     "S08",
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Moat",
+    "url": "https://en.wikipedia.org/wiki/Moat",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Modern financial engineering (anti-model)",
@@ -3635,7 +4285,12 @@
    ],
    "sources": [
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Financial engineering",
+    "url": "https://en.wikipedia.org/wiki/Financial_engineering",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Modern monetary theory",
@@ -3654,7 +4309,12 @@
    "thinkers": [],
    "sources": [
     "S15"
-   ]
+   ],
+   "ref": {
+    "title": "Modern Monetary Theory",
+    "url": "https://en.wikipedia.org/wiki/Modern_Monetary_Theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Monetary depreciation / long-run inflation",
@@ -3698,7 +4358,12 @@
    "sources": [
     "S06",
     "S08"
-   ]
+   ],
+   "ref": {
+    "title": "Mr. Market",
+    "url": "https://en.wikipedia.org/wiki/Mr._Market",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Niche capacity (crowded strategies leach away)",
@@ -3776,7 +4441,12 @@
     "S18",
     "S37",
     "S30"
-   ]
+   ],
+   "ref": {
+    "title": "Opportunity cost",
+    "url": "https://en.wikipedia.org/wiki/Opportunity_cost",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Pick a tailwind",
@@ -3863,7 +4533,12 @@
    "sources": [
     "S32",
     "S33"
-   ]
+   ],
+   "ref": {
+    "title": "Self-insurance",
+    "url": "https://en.wikipedia.org/wiki/Self-insurance",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sit-on-your-ass investing",
@@ -3966,7 +4641,12 @@
    "thinkers": [],
    "sources": [
     "S11"
-   ]
+   ],
+   "ref": {
+    "title": "Peter principle",
+    "url": "https://en.wikipedia.org/wiki/Peter_principle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Tragedy of the commons",
@@ -3995,7 +4675,12 @@
     "S31",
     "S18",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Tragedy of the commons",
+    "url": "https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Transaction costs / boundaries of the firm (Coase)",
@@ -4038,7 +4723,12 @@
    "thinkers": [],
    "sources": [
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Vicious circle",
+    "url": "https://en.wikipedia.org/wiki/Vicious_circle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Wealth effect",
@@ -4061,7 +4751,12 @@
     "S33",
     "S32",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Wealth effect",
+    "url": "https://en.wikipedia.org/wiki/Wealth_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Asymmetric wealth effects",
@@ -4179,7 +4874,12 @@
    "thinkers": [],
    "sources": [
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Diseconomies of scale",
+    "url": "https://en.wikipedia.org/wiki/Diseconomies_of_scale",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Distrust of formal projections",
@@ -4286,7 +4986,12 @@
    "thinkers": [],
    "sources": [
     "S11"
-   ]
+   ],
+   "ref": {
+    "title": "Goodhart's law",
+    "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Incentive system design (tailored rewards vs. indiscriminate options)",
@@ -4307,7 +5012,12 @@
    ],
    "sources": [
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Incentive system",
+    "url": "https://en.wikipedia.org/wiki/Incentive_system",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Investor behavior gap (manager churning)",
@@ -4368,7 +5078,12 @@
    "sources": [
     "S37",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Debt",
+    "url": "https://en.wikipedia.org/wiki/Debt",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Market's premium for smooth earnings growth",
@@ -4431,7 +5146,12 @@
     "S06",
     "S19",
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Moral hazard",
+    "url": "https://en.wikipedia.org/wiki/Moral_hazard",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Obsolescence risk",
@@ -4507,7 +5227,12 @@
    "thinkers": [],
    "sources": [
     "S31"
-   ]
+   ],
+   "ref": {
+    "title": "Conspiracies against the laity",
+    "url": "https://en.wikipedia.org/wiki/Conspiracies_against_the_laity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Racetrack tout (conflicted helpers)",
@@ -4584,7 +5309,12 @@
    "thinkers": [],
    "sources": [
     "S10"
-   ]
+   ],
+   "ref": {
+    "title": "Rent-seeking",
+    "url": "https://en.wikipedia.org/wiki/Rent-seeking",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Scarcity",
@@ -4602,7 +5332,12 @@
    "sources": [
     "S35",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Scarcity",
+    "url": "https://en.wikipedia.org/wiki/Scarcity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Synergy-claims skepticism",
@@ -4662,7 +5397,12 @@
    "sources": [
     "S37",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Trade-off",
+    "url": "https://en.wikipedia.org/wiki/Trade-off",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Zero-based budgeting (justify every cost from zero)",
@@ -4682,7 +5422,12 @@
    "thinkers": [],
    "sources": [
     "S10"
-   ]
+   ],
+   "ref": {
+    "title": "Zero-based budgeting",
+    "url": "https://en.wikipedia.org/wiki/Zero-based_budgeting",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Adverse selection",
@@ -4699,7 +5444,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Adverse selection",
+    "url": "https://en.wikipedia.org/wiki/Adverse_selection",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bubbles",
@@ -4719,7 +5469,12 @@
    "sources": [
     "S06",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Economic bubble",
+    "url": "https://en.wikipedia.org/wiki/Economic_bubble",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Elasticity",
@@ -4738,7 +5493,12 @@
    "sources": [
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Elasticity (economics)",
+    "url": "https://en.wikipedia.org/wiki/Elasticity_(economics)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Information asymmetry",
@@ -4760,7 +5520,12 @@
    "sources": [
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Information asymmetry",
+    "url": "https://en.wikipedia.org/wiki/Information_asymmetry",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Marginal cost / marginal analysis",
@@ -4780,7 +5545,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Marginal cost",
+    "url": "https://en.wikipedia.org/wiki/Marginal_cost",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Monopoly, oligopoly and competition",
@@ -4804,7 +5574,12 @@
     "S02",
     "S20",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Market structure",
+    "url": "https://en.wikipedia.org/wiki/Market_structure",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Supply and demand",
@@ -4826,7 +5601,12 @@
     "S20",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Supply and demand",
+    "url": "https://en.wikipedia.org/wiki/Supply_and_demand",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Time value of money / discounting",
@@ -4848,7 +5628,12 @@
    "sources": [
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Time value of money",
+    "url": "https://en.wikipedia.org/wiki/Time_value_of_money",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cumulative advantage (Matthew effect)",
@@ -4888,7 +5673,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Economic efficiency",
+    "url": "https://en.wikipedia.org/wiki/Economic_efficiency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Externalities",
@@ -4909,7 +5699,12 @@
    ],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Externality",
+    "url": "https://en.wikipedia.org/wiki/Externality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Interdependence",
@@ -4926,7 +5721,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Interdependence theory",
+    "url": "https://en.wikipedia.org/wiki/Interdependence_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Optimization under constraints",
@@ -4965,7 +5765,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Pareto principle",
+    "url": "https://en.wikipedia.org/wiki/Pareto_principle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Price discrimination",
@@ -4982,7 +5787,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Price discrimination",
+    "url": "https://en.wikipedia.org/wiki/Price_discrimination",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Prisoner's dilemma",
@@ -4999,7 +5809,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Prisoner's dilemma",
+    "url": "https://en.wikipedia.org/wiki/Prisoner%27s_dilemma",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Public and private goods",
@@ -5018,7 +5833,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Public good",
+    "url": "https://en.wikipedia.org/wiki/Public_good",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Baumol's cost disease",
@@ -5031,7 +5851,12 @@
    "listedBy": [],
    "id": "M0143",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Baumol effect",
+    "url": "https://en.wikipedia.org/wiki/Baumol_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deadweight loss",
@@ -5046,7 +5871,12 @@
    "listedBy": [],
    "id": "M0078",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Deadweight loss",
+    "url": "https://en.wikipedia.org/wiki/Deadweight_loss",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Free-rider problem",
@@ -5061,7 +5891,12 @@
    "listedBy": [],
    "id": "M0740",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Free-rider problem",
+    "url": "https://en.wikipedia.org/wiki/Free-rider_problem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Jevons paradox",
@@ -5076,7 +5911,12 @@
    "listedBy": [],
    "id": "M0290",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Jevons paradox",
+    "url": "https://en.wikipedia.org/wiki/Jevons_paradox",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Price signals and the knowledge problem (Hayek)",
@@ -5092,7 +5932,12 @@
    "listedBy": [],
    "id": "M0861",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Use of Knowledge in Society",
+    "url": "https://en.wikipedia.org/wiki/The_Use_of_Knowledge_in_Society",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Regulatory capture (Stigler)",
@@ -5109,7 +5954,12 @@
    "listedBy": [],
    "id": "M0849",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Regulatory capture",
+    "url": "https://en.wikipedia.org/wiki/Regulatory_capture",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Margin of Safety",
@@ -5148,7 +5998,12 @@
     "S20",
     "S18",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Margin of safety (financial)",
+    "url": "https://en.wikipedia.org/wiki/Margin_of_safety_(financial)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Redundancy / Backup Systems",
@@ -5177,7 +6032,12 @@
     "S20",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "N+1 redundancy",
+    "url": "https://en.wikipedia.org/wiki/N%2B1_redundancy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Technology Is a Killer as Well as an Opportunity",
@@ -5247,7 +6107,12 @@
    ],
    "sources": [
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Skin in the game",
+    "url": "https://en.wikipedia.org/wiki/Skin_in_the_game",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Steel Out of the Concrete (Removing Hidden Safety Margin)",
@@ -5309,7 +6174,12 @@
    "listedBy": [],
    "id": "M0952",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Mean time between failures",
+    "url": "https://en.wikipedia.org/wiki/Mean_time_between_failures",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Defense in Depth (Swiss Cheese Model)",
@@ -5326,7 +6196,12 @@
    "listedBy": [],
    "id": "M0405",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Swiss cheese model",
+    "url": "https://en.wikipedia.org/wiki/Swiss_cheese_model",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Design Limits and Stress Testing",
@@ -5344,7 +6219,12 @@
    "listedBy": [],
    "id": "M0176",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stress testing",
+    "url": "https://en.wikipedia.org/wiki/Stress_testing",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Failure Modes and Effects Analysis (FMEA)",
@@ -5361,7 +6241,12 @@
    "listedBy": [],
    "id": "M0667",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Failure mode and effects analysis",
+    "url": "https://en.wikipedia.org/wiki/Failure_mode_and_effects_analysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fault Tolerance and Graceful Degradation",
@@ -5379,7 +6264,12 @@
    "listedBy": [],
    "id": "M0769",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Fault tolerance",
+    "url": "https://en.wikipedia.org/wiki/Fault_tolerance",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Feedback Control (Closed-Loop Systems)",
@@ -5398,7 +6288,12 @@
    "listedBy": [],
    "id": "M0426",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Control theory",
+    "url": "https://en.wikipedia.org/wiki/Control_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Kaizen (Continuous Incremental Improvement)",
@@ -5415,7 +6310,12 @@
    "listedBy": [],
    "id": "M0774",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Kaizen",
+    "url": "https://en.wikipedia.org/wiki/Kaizen",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Modularity and Loose Coupling",
@@ -5436,7 +6336,12 @@
    "listedBy": [],
    "id": "M0547",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Modular design",
+    "url": "https://en.wikipedia.org/wiki/Modular_design",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Normal Accidents (Tight Coupling and Interactive Complexity)",
@@ -5453,7 +6358,12 @@
    "listedBy": [],
    "id": "M0399",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Normal Accidents",
+    "url": "https://en.wikipedia.org/wiki/Normal_Accidents",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Over-Engineering",
@@ -5470,7 +6380,12 @@
    "listedBy": [],
    "id": "M0898",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Overengineering",
+    "url": "https://en.wikipedia.org/wiki/Overengineering",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Root Cause Analysis",
@@ -5487,7 +6402,12 @@
    "listedBy": [],
    "id": "M0709",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Root-cause analysis",
+    "url": "https://en.wikipedia.org/wiki/Root-cause_analysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Single Point of Failure",
@@ -5504,7 +6424,12 @@
    "listedBy": [],
    "id": "M0182",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Single point of failure",
+    "url": "https://en.wikipedia.org/wiki/Single_point_of_failure",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Statistical Quality Control",
@@ -5522,7 +6447,12 @@
    "listedBy": [],
    "id": "M0452",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Quality control",
+    "url": "https://en.wikipedia.org/wiki/Quality_control",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Tolerance Stacking",
@@ -5539,7 +6469,12 @@
    "listedBy": [],
    "id": "M0171",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Engineering tolerance",
+    "url": "https://en.wikipedia.org/wiki/Engineering_tolerance",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "'Then I'll do it myself' (Little Red Hen self-education)",
@@ -5559,7 +6494,12 @@
    "thinkers": [],
    "sources": [
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "The Little Red Hen",
+    "url": "https://en.wikipedia.org/wiki/The_Little_Red_Hen",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "A problem thoroughly understood is half solved",
@@ -5703,7 +6643,12 @@
     "S36",
     "S30",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Checklist",
+    "url": "https://en.wikipedia.org/wiki/Checklist",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Circle of competence",
@@ -5736,7 +6681,12 @@
     "S18",
     "S19",
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Circle of competence",
+    "url": "https://en.wikipedia.org/wiki/Circle_of_competence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Darwinian objectivity — destroy your own best-loved ideas",
@@ -5812,7 +6762,12 @@
    "sources": [
     "S37",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Decision quality",
+    "url": "https://en.wikipedia.org/wiki/Decision_quality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Don't risk what you have and need for what you don't have and don't need",
@@ -6044,7 +6999,12 @@
    "thinkers": [],
    "sources": [
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Gold nugget",
+    "url": "https://en.wikipedia.org/wiki/Gold_nugget",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "If it's trite it's right",
@@ -6215,7 +7175,12 @@
     "S36",
     "S18",
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Machine learning",
+    "url": "https://en.wikipedia.org/wiki/Machine_learning",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Luck vs. skill (the duck on the rising pond)",
@@ -6235,7 +7200,12 @@
    "thinkers": [],
    "sources": [
     "S12"
-   ]
+   ],
+   "ref": {
+    "title": "Luck",
+    "url": "https://en.wikipedia.org/wiki/Luck",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Method of invention → method of learning (Whitehead)",
@@ -6415,7 +7385,12 @@
     "S37",
     "S32",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Physics envy",
+    "url": "https://en.wikipedia.org/wiki/Physics_envy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Pilot-training education system (six-element model)",
@@ -6778,7 +7753,12 @@
     "S33",
     "S20",
     "S32"
-   ]
+   ],
+   "ref": {
+    "title": "Thought experiment",
+    "url": "https://en.wikipedia.org/wiki/Thought_experiment",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Trial and error (empirical iteration)",
@@ -6797,7 +7777,12 @@
    "thinkers": [],
    "sources": [
     "S30"
-   ]
+   ],
+   "ref": {
+    "title": "Trial and error",
+    "url": "https://en.wikipedia.org/wiki/Trial_and_error",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Two-track analysis",
@@ -7095,7 +8080,12 @@
    "thinkers": [],
    "sources": [
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Pre-mortem",
+    "url": "https://en.wikipedia.org/wiki/Pre-mortem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Push the insight to its next logical level",
@@ -7161,7 +8151,12 @@
     "S20",
     "S18",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Occam's razor",
+    "url": "https://en.wikipedia.org/wiki/Occam%27s_razor",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Vivification",
@@ -7178,7 +8173,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Vivification",
+    "url": "https://en.wikipedia.org/wiki/Vivification",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Base rates / outside view",
@@ -7229,7 +8229,12 @@
    ],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Black swan theory",
+    "url": "https://en.wikipedia.org/wiki/Black_swan_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Connectionism (network model of learning)",
@@ -7248,7 +8253,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Connectionism",
+    "url": "https://en.wikipedia.org/wiki/Connectionism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deduction, induction, abduction",
@@ -7270,7 +8280,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Abductive reasoning",
+    "url": "https://en.wikipedia.org/wiki/Abductive_reasoning",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dysrationalia and mindware gaps",
@@ -7331,7 +8346,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "The Hedgehog and the Fox",
+    "url": "https://en.wikipedia.org/wiki/The_Hedgehog_and_the_Fox",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Goals (clear, achievable objectives)",
@@ -7350,7 +8370,12 @@
    "thinkers": [],
    "sources": [
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Goal",
+    "url": "https://en.wikipedia.org/wiki/Goal",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gray rhino events",
@@ -7386,7 +8411,12 @@
    "sources": [
     "S20",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Hanlon's razor",
+    "url": "https://en.wikipedia.org/wiki/Hanlon%27s_razor",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The map is not the territory",
@@ -7403,7 +8433,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "The Map and the Territory",
+    "url": "https://en.wikipedia.org/wiki/The_Map_and_the_Territory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Chesterton's fence",
@@ -7421,7 +8456,12 @@
    "listedBy": [],
    "id": "M0025",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "G. K. Chesterton",
+    "url": "https://en.wikipedia.org/wiki/G._K._Chesterton",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Decision journal",
@@ -7437,7 +8477,12 @@
    "listedBy": [],
    "id": "M0294",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Decision-making",
+    "url": "https://en.wikipedia.org/wiki/Decision-making",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Falsifiability (Popper)",
@@ -7453,7 +8498,12 @@
    "listedBy": [],
    "id": "M0704",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Falsifiability",
+    "url": "https://en.wikipedia.org/wiki/Falsifiability",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Feynman technique",
@@ -7471,7 +8521,12 @@
    "thinkers": [
     "feynman"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Learning by teaching",
+    "url": "https://en.wikipedia.org/wiki/Learning_by_teaching",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hamming questions",
@@ -7487,7 +8542,12 @@
    "listedBy": [],
    "id": "M0756",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Richard Hamming",
+    "url": "https://en.wikipedia.org/wiki/Richard_Hamming",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Illusion of explanatory depth",
@@ -7502,7 +8562,12 @@
    "listedBy": [],
    "id": "M0108",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Illusion of explanatory depth",
+    "url": "https://en.wikipedia.org/wiki/Illusion_of_explanatory_depth",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Necessary vs. sufficient conditions",
@@ -7517,7 +8582,12 @@
    "listedBy": [],
    "id": "M0120",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Necessity and sufficiency",
+    "url": "https://en.wikipedia.org/wiki/Necessity_and_sufficiency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Overton window",
@@ -7532,7 +8602,12 @@
    "listedBy": [],
    "id": "M0224",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Overton window",
+    "url": "https://en.wikipedia.org/wiki/Overton_window",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Regret minimization framework",
@@ -7547,7 +8622,12 @@
    "listedBy": [],
    "id": "M0880",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Jeff Bezos",
+    "url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Via negativa",
@@ -7565,7 +8645,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Apophatic theology",
+    "url": "https://en.wikipedia.org/wiki/Apophatic_theology",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cicero's History Rule (ignorance of what came before you were born)",
@@ -7865,7 +8950,12 @@
    ],
    "sources": [
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Alfred North Whitehead",
+    "url": "https://en.wikipedia.org/wiki/Alfred_North_Whitehead",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "\"This Time Is Different\" Fallacy",
@@ -7882,7 +8972,12 @@
    "listedBy": [],
    "id": "M0682",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Economic bubble",
+    "url": "https://en.wikipedia.org/wiki/Economic_bubble",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Contingency vs. Determinism",
@@ -7900,7 +8995,12 @@
    "listedBy": [],
    "id": "M0133",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Determinism",
+    "url": "https://en.wikipedia.org/wiki/Determinism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Counterfactual Reasoning",
@@ -7917,7 +9017,12 @@
    "listedBy": [],
    "id": "M0886",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Counterfactual history",
+    "url": "https://en.wikipedia.org/wiki/Counterfactual_history",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cycles vs. Linear Progress",
@@ -7934,7 +9039,12 @@
    "listedBy": [],
    "id": "M0923",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Social cycle theory",
+    "url": "https://en.wikipedia.org/wiki/Social_cycle_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Great Man vs. Structural Forces",
@@ -7951,7 +9061,12 @@
    "listedBy": [],
    "id": "M0212",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Great man theory",
+    "url": "https://en.wikipedia.org/wiki/Great_man_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "History Is Written by the Victors (source bias)",
@@ -7968,7 +9083,12 @@
    "listedBy": [],
    "id": "M0609",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Historiography",
+    "url": "https://en.wikipedia.org/wiki/Historiography",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Institutional Sclerosis (Olson's rise and decline of nations)",
@@ -7985,7 +9105,12 @@
    "listedBy": [],
    "id": "M0792",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Institutional sclerosis",
+    "url": "https://en.wikipedia.org/wiki/Institutional_sclerosis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Lindy Effect",
@@ -8004,7 +9129,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Lindy effect",
+    "url": "https://en.wikipedia.org/wiki/Lindy_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Presentism",
@@ -8021,7 +9151,12 @@
    "listedBy": [],
    "id": "M0478",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Presentism (historical analysis)",
+    "url": "https://en.wikipedia.org/wiki/Presentism_(historical_analysis)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Revolution of Rising Expectations (Tocqueville Effect)",
@@ -8039,7 +9174,12 @@
    "listedBy": [],
    "id": "M0916",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Relative deprivation",
+    "url": "https://en.wikipedia.org/wiki/Relative_deprivation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Santayana's Dictum (those who forget the past repeat it)",
@@ -8056,7 +9196,12 @@
    "listedBy": [],
    "id": "M0123",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "George Santayana",
+    "url": "https://en.wikipedia.org/wiki/George_Santayana",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Survivorship Bias in the Historical Record",
@@ -8075,7 +9220,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Survivorship bias",
+    "url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bet sizing on mispricing (bet seldom, bet big)",
@@ -8232,7 +9382,12 @@
     "S19",
     "S37",
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Instrumental and intrinsic value",
+    "url": "https://en.wikipedia.org/wiki/Instrumental_and_intrinsic_value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mr. Market",
@@ -8262,7 +9417,12 @@
     "S18",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Mr. Market",
+    "url": "https://en.wikipedia.org/wiki/Mr._Market",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rationality as a duty (be objective and dispassionate)",
@@ -8287,7 +9447,12 @@
    "sources": [
     "S36",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Rationality",
+    "url": "https://en.wikipedia.org/wiki/Rationality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Stock as proportional ownership of a business",
@@ -8436,7 +9601,12 @@
    "sources": [
     "S34",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Capital allocation line",
+    "url": "https://en.wikipedia.org/wiki/Capital_allocation_line",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Buyback arithmetic",
@@ -8454,7 +9624,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Share repurchase",
+    "url": "https://en.wikipedia.org/wiki/Share_repurchase",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cigar-butt investing (net-nets)",
@@ -8474,7 +9649,12 @@
     "graham",
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Net current asset value",
+    "url": "https://en.wikipedia.org/wiki/Net_current_asset_value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cloning (shameless copying of proven ideas)",
@@ -8491,7 +9671,12 @@
    "listedBy": [],
    "id": "M0388",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cloning",
+    "url": "https://en.wikipedia.org/wiki/Cloning",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dividend policy",
@@ -8509,7 +9694,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Dividend policy",
+    "url": "https://en.wikipedia.org/wiki/Dividend_policy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Look-through earnings",
@@ -8527,7 +9717,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Look-through earnings",
+    "url": "https://en.wikipedia.org/wiki/Look-through_earnings",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Reinvestment runway (compounding at high ROIC)",
@@ -8544,7 +9739,12 @@
    "listedBy": [],
    "id": "M0541",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Return on capital",
+    "url": "https://en.wikipedia.org/wiki/Return_on_capital",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Risk of ruin (survival first)",
@@ -8561,7 +9761,12 @@
    "listedBy": [],
    "id": "M0919",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Risk of ruin",
+    "url": "https://en.wikipedia.org/wiki/Risk_of_ruin",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Time arbitrage (long horizon as a structural edge)",
@@ -8578,7 +9783,12 @@
    "listedBy": [],
    "id": "M0712",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Arbitrage",
+    "url": "https://en.wikipedia.org/wiki/Arbitrage",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deliberate Unfairness to Individuals for Greater Average Fairness",
@@ -8639,7 +9849,12 @@
    "thinkers": [],
    "sources": [
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Conduct unbecoming",
+    "url": "https://en.wikipedia.org/wiki/Conduct_unbecoming",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fiduciary Standard / Punctilio of Honor",
@@ -8718,7 +9933,12 @@
    "thinkers": [],
    "sources": [
     "S11"
-   ]
+   ],
+   "ref": {
+    "title": "Regulatory capture",
+    "url": "https://en.wikipedia.org/wiki/Regulatory_capture",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Stay Far From the Legal Line",
@@ -8796,7 +10016,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Burden of proof (law)",
+    "url": "https://en.wikipedia.org/wiki/Burden_of_proof_(law)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Common Law",
@@ -8813,7 +10038,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Common law",
+    "url": "https://en.wikipedia.org/wiki/Common_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Due Process",
@@ -8830,7 +10060,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Due process",
+    "url": "https://en.wikipedia.org/wiki/Due_process",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Duty of Care",
@@ -8847,7 +10082,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Duty of care",
+    "url": "https://en.wikipedia.org/wiki/Duty_of_care",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Good Faith",
@@ -8864,7 +10104,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Good faith",
+    "url": "https://en.wikipedia.org/wiki/Good_faith",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Negligence",
@@ -8881,7 +10126,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Negligence",
+    "url": "https://en.wikipedia.org/wiki/Negligence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Presumption of Innocence",
@@ -8898,7 +10148,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Presumption of innocence",
+    "url": "https://en.wikipedia.org/wiki/Presumption_of_innocence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Reasonable Doubt",
@@ -8917,7 +10172,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Reasonable doubt",
+    "url": "https://en.wikipedia.org/wiki/Reasonable_doubt",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Adversarial System",
@@ -8933,7 +10193,12 @@
    "listedBy": [],
    "id": "M0076",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Adversarial system",
+    "url": "https://en.wikipedia.org/wiki/Adversarial_system",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bright-Line Rules vs Standards",
@@ -8949,7 +10214,12 @@
    "listedBy": [],
    "id": "M0607",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bright-line rule",
+    "url": "https://en.wikipedia.org/wiki/Bright-line_rule",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Civil Law (Codified) Tradition",
@@ -8965,7 +10235,12 @@
    "listedBy": [],
    "id": "M0950",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Civil law (legal system)",
+    "url": "https://en.wikipedia.org/wiki/Civil_law_(legal_system)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Constitutional Pre-Commitment",
@@ -8982,7 +10257,12 @@
    "listedBy": [],
    "id": "M0279",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Entrenched clause",
+    "url": "https://en.wikipedia.org/wiki/Entrenched_clause",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Contract / Enforceable Promise",
@@ -8998,7 +10278,12 @@
    "listedBy": [],
    "id": "M0654",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Contract",
+    "url": "https://en.wikipedia.org/wiki/Contract",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Liability (Strict vs Fault-Based)",
@@ -9014,7 +10299,12 @@
    "listedBy": [],
    "id": "M0217",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Strict liability",
+    "url": "https://en.wikipedia.org/wiki/Strict_liability",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Limited Liability",
@@ -9030,7 +10320,12 @@
    "listedBy": [],
    "id": "M0401",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Limited liability",
+    "url": "https://en.wikipedia.org/wiki/Limited_liability",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Precedent / Stare Decisis",
@@ -9046,7 +10341,12 @@
    "listedBy": [],
    "id": "M0449",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Precedent",
+    "url": "https://en.wikipedia.org/wiki/Precedent",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Property Rights",
@@ -9059,7 +10359,12 @@
    "listedBy": [],
    "id": "M0185",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Right to property",
+    "url": "https://en.wikipedia.org/wiki/Right_to_property",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Property Rules vs Liability Rules",
@@ -9075,7 +10380,12 @@
    "listedBy": [],
    "id": "M0794",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Property Rules, Liability Rules and Inalienability: One View of the Cathedral",
+    "url": "https://en.wikipedia.org/wiki/Property_Rules,_Liability_Rules_and_Inalienability:_One_View_of_the_Cathedral",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rule of Law",
@@ -9088,7 +10398,12 @@
    "listedBy": [],
    "id": "M0795",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Rule of law",
+    "url": "https://en.wikipedia.org/wiki/Rule_of_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Separation of Powers / Checks and Balances",
@@ -9104,7 +10419,12 @@
    "listedBy": [],
    "id": "M0714",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Separation of powers",
+    "url": "https://en.wikipedia.org/wiki/Separation_of_powers",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Statute of Limitations",
@@ -9121,7 +10441,12 @@
    "listedBy": [],
    "id": "M0817",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Statute of limitations",
+    "url": "https://en.wikipedia.org/wiki/Statute_of_limitations",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "All human systems are gamed (game theory)",
@@ -9142,7 +10467,12 @@
    ],
    "sources": [
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Game theory",
+    "url": "https://en.wikipedia.org/wiki/Game_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Be the house, not the punter",
@@ -9228,7 +10558,12 @@
     "S19",
     "S18",
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Compound interest",
+    "url": "https://en.wikipedia.org/wiki/Compound_interest",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Decision tree theory",
@@ -9250,7 +10585,12 @@
     "S02",
     "S16",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Decision tree model",
+    "url": "https://en.wikipedia.org/wiki/Decision_tree_model",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fat tails and extreme events",
@@ -9276,7 +10616,12 @@
     "S35",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Black swan theory",
+    "url": "https://en.wikipedia.org/wiki/Black_swan_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fundamental principle of algebra — seek functional equivalents",
@@ -9298,7 +10643,12 @@
    "sources": [
     "S35",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Fundamental theorem of algebra",
+    "url": "https://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gödel incompleteness / irremovable paradox",
@@ -9352,7 +10702,12 @@
     "S16",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Kelly criterion",
+    "url": "https://en.wikipedia.org/wiki/Kelly_criterion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mathematics of the chain letter / Ponzi scheme",
@@ -9389,7 +10744,12 @@
    "thinkers": [],
    "sources": [
     "S11"
-   ]
+   ],
+   "ref": {
+    "title": "Monte Carlo method",
+    "url": "https://en.wikipedia.org/wiki/Monte_Carlo_method",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Normal (Gaussian) distribution and its abuse",
@@ -9495,7 +10855,12 @@
    "sources": [
     "S32",
     "S33"
-   ]
+   ],
+   "ref": {
+    "title": "Active management",
+    "url": "https://en.wikipedia.org/wiki/Active_management",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Correlation versus causation",
@@ -9521,7 +10886,12 @@
     "S07",
     "S17",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Correlation",
+    "url": "https://en.wikipedia.org/wiki/Correlation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Expected value",
@@ -9543,7 +10913,12 @@
    "sources": [
     "S17",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Expected value",
+    "url": "https://en.wikipedia.org/wiki/Expected_value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Limits of geometric (exponential) progressions on a finite base",
@@ -9685,7 +11060,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Cost–benefit analysis",
+    "url": "https://en.wikipedia.org/wiki/Cost%E2%80%93benefit_analysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Law of large numbers",
@@ -9702,7 +11082,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Law of large numbers",
+    "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Randomness (mistaking noise for signal)",
@@ -9723,7 +11108,12 @@
    ],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Randomness",
+    "url": "https://en.wikipedia.org/wiki/Randomness",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Regression to the mean",
@@ -9751,7 +11141,12 @@
     "S16",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Regression toward the mean",
+    "url": "https://en.wikipedia.org/wiki/Regression_toward_the_mean",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Scenario analysis (best/worst case)",
@@ -9799,7 +11194,12 @@
    "sources": [
     "S20",
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Survivorship bias",
+    "url": "https://en.wikipedia.org/wiki/Survivorship_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Agent-based models",
@@ -9816,7 +11216,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Agent-based model",
+    "url": "https://en.wikipedia.org/wiki/Agent-based_model",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bayes' theorem / Bayesian updating",
@@ -9846,7 +11251,12 @@
     "S16",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Bayes' theorem",
+    "url": "https://en.wikipedia.org/wiki/Bayes%27_theorem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Central limit theorem",
@@ -9863,7 +11273,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Central limit theorem",
+    "url": "https://en.wikipedia.org/wiki/Central_limit_theorem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Coincidences and miracles (law of truly large numbers)",
@@ -9883,7 +11298,12 @@
    "thinkers": [],
    "sources": [
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Littlewood's law",
+    "url": "https://en.wikipedia.org/wiki/Littlewood%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Global and local maxima",
@@ -9907,7 +11327,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Maximum and minimum",
+    "url": "https://en.wikipedia.org/wiki/Maximum_and_minimum",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mean, median, and mode",
@@ -9927,7 +11352,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Central tendency",
+    "url": "https://en.wikipedia.org/wiki/Central_tendency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Optionality / asymmetric payoffs",
@@ -9948,7 +11378,12 @@
    ],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Asymmetric payoff",
+    "url": "https://en.wikipedia.org/wiki/Asymmetric_payoff",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Regression analysis",
@@ -9965,7 +11400,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Regression analysis",
+    "url": "https://en.wikipedia.org/wiki/Regression_analysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Reliability of case evidence (anecdote vs. systematic evidence)",
@@ -10007,7 +11447,12 @@
    "sources": [
     "S20",
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Sample size determination",
+    "url": "https://en.wikipedia.org/wiki/Sample_size_determination",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sensitivity analysis",
@@ -10024,7 +11469,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Sensitivity analysis",
+    "url": "https://en.wikipedia.org/wiki/Sensitivity_analysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Variation vs. central tendency ('the trend of the system vs. trends in the system')",
@@ -10043,7 +11493,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Central tendency",
+    "url": "https://en.wikipedia.org/wiki/Central_tendency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bayesian vs. frequentist inference",
@@ -10058,7 +11513,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bayesian inference",
+    "url": "https://en.wikipedia.org/wiki/Bayesian_inference",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Benford's law",
@@ -10071,7 +11531,12 @@
    "listedBy": [],
    "id": "M0317",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Benford's law",
+    "url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conditional probability and independence",
@@ -10087,7 +11552,12 @@
    "listedBy": [],
    "id": "M0539",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Conditional probability",
+    "url": "https://en.wikipedia.org/wiki/Conditional_probability",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ergodicity (time average vs. ensemble average)",
@@ -10105,7 +11575,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Ergodicity",
+    "url": "https://en.wikipedia.org/wiki/Ergodicity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fermi estimation (order-of-magnitude reasoning)",
@@ -10123,7 +11598,12 @@
    "listedBy": [],
    "id": "M0243",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Estimation",
+    "url": "https://en.wikipedia.org/wiki/Estimation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Jensen's inequality / nonlinearity of averages",
@@ -10138,7 +11618,12 @@
    "listedBy": [],
    "id": "M0669",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Jensen's inequality",
+    "url": "https://en.wikipedia.org/wiki/Jensen%27s_inequality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Random walk",
@@ -10153,7 +11638,12 @@
    "listedBy": [],
    "id": "M0194",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Random walk",
+    "url": "https://en.wikipedia.org/wiki/Random_walk",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Selection bias",
@@ -10166,7 +11656,12 @@
    "listedBy": [],
    "id": "M0354",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Selection bias",
+    "url": "https://en.wikipedia.org/wiki/Selection_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Simpson's paradox",
@@ -10179,7 +11674,12 @@
    "listedBy": [],
    "id": "M0237",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Simpson's paradox",
+    "url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Statistical significance, p-values, and multiple comparisons",
@@ -10195,7 +11695,12 @@
    "listedBy": [],
    "id": "M0602",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "P-value",
+    "url": "https://en.wikipedia.org/wiki/P-value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Volatility drag (geometric vs. arithmetic mean)",
@@ -10211,7 +11716,12 @@
    "listedBy": [],
    "id": "M0922",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Geometric mean",
+    "url": "https://en.wikipedia.org/wiki/Geometric_mean",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Asymmetric Warfare",
@@ -10232,7 +11742,12 @@
    ],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Asymmetric warfare",
+    "url": "https://en.wikipedia.org/wiki/Asymmetric_warfare",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Counterinsurgency",
@@ -10251,7 +11766,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Counterinsurgency",
+    "url": "https://en.wikipedia.org/wiki/Counterinsurgency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mutually Assured Destruction",
@@ -10270,7 +11790,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Mutually assured destruction",
+    "url": "https://en.wikipedia.org/wiki/Mutually_assured_destruction",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Seeing the Front",
@@ -10306,7 +11831,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Two-front war",
+    "url": "https://en.wikipedia.org/wiki/Two-front_war",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Arms Race",
@@ -10323,7 +11853,12 @@
    "listedBy": [],
    "id": "M0324",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Arms race",
+    "url": "https://en.wikipedia.org/wiki/Arms_race",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Attrition vs. Maneuver Warfare",
@@ -10343,7 +11878,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Attrition warfare",
+    "url": "https://en.wikipedia.org/wiki/Attrition_warfare",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Center of Gravity",
@@ -10361,7 +11901,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Center of gravity (military)",
+    "url": "https://en.wikipedia.org/wiki/Center_of_gravity_(military)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Defender's Advantage",
@@ -10382,7 +11927,12 @@
     "clausewitz",
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "On War",
+    "url": "https://en.wikipedia.org/wiki/On_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deterrence",
@@ -10403,7 +11953,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Deterrence theory",
+    "url": "https://en.wikipedia.org/wiki/Deterrence_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Escalation Ladder",
@@ -10420,7 +11975,12 @@
    "listedBy": [],
    "id": "M0552",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Conflict escalation",
+    "url": "https://en.wikipedia.org/wiki/Conflict_escalation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fog of War",
@@ -10438,7 +11998,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Fog of war",
+    "url": "https://en.wikipedia.org/wiki/Fog_of_war",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Force Concentration",
@@ -10456,7 +12021,12 @@
    "listedBy": [],
    "id": "M0737",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Force concentration",
+    "url": "https://en.wikipedia.org/wiki/Force_concentration",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Friction",
@@ -10474,7 +12044,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Friction",
+    "url": "https://en.wikipedia.org/wiki/Friction",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Golden Bridge",
@@ -10493,7 +12068,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Guerrilla Warfare",
@@ -10509,7 +12089,12 @@
    "listedBy": [],
    "id": "M0819",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Guerrilla warfare",
+    "url": "https://en.wikipedia.org/wiki/Guerrilla_warfare",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Logistics",
@@ -10525,7 +12110,12 @@
    "listedBy": [],
    "id": "M0268",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Logistics",
+    "url": "https://en.wikipedia.org/wiki/Logistics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "OODA Loop",
@@ -10543,7 +12133,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "OODA loop",
+    "url": "https://en.wikipedia.org/wiki/OODA_loop",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Pyrrhic Victory",
@@ -10559,7 +12154,12 @@
    "listedBy": [],
    "id": "M0041",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Pyrrhic victory",
+    "url": "https://en.wikipedia.org/wiki/Pyrrhic_victory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Scorched Earth",
@@ -10575,7 +12175,12 @@
    "listedBy": [],
    "id": "M0958",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Scorched earth",
+    "url": "https://en.wikipedia.org/wiki/Scorched_earth",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Aristotle on deserved inequality and envy",
@@ -10690,7 +12295,12 @@
    ],
    "sources": [
     "S10"
-   ]
+   ],
+   "ref": {
+    "title": "Arthur Quiller-Couch",
+    "url": "https://en.wikipedia.org/wiki/Arthur_Quiller-Couch",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Filial piety and intergenerational value transfer",
@@ -10730,7 +12340,12 @@
    "thinkers": [],
    "sources": [
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Honesty",
+    "url": "https://en.wikipedia.org/wiki/Honesty",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Moral duty to be underpaid",
@@ -10964,7 +12579,12 @@
    "thinkers": [],
    "sources": [
     "S15"
-   ]
+   ],
+   "ref": {
+    "title": "Robinson Crusoe economy",
+    "url": "https://en.wikipedia.org/wiki/Robinson_Crusoe_economy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The iron rule of life",
@@ -11004,7 +12624,12 @@
    "thinkers": [],
    "sources": [
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "The Tortoise and the Hare",
+    "url": "https://en.wikipedia.org/wiki/The_Tortoise_and_the_Hare",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Tragic-flaw structure",
@@ -11027,7 +12652,12 @@
    ],
    "sources": [
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Hamartia",
+    "url": "https://en.wikipedia.org/wiki/Hamartia",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Virtue effects and vice effects in economics",
@@ -11281,7 +12911,12 @@
    "thinkers": [],
    "sources": [
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Attitude (psychology)",
+    "url": "https://en.wikipedia.org/wiki/Attitude_(psychology)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Critical and analytical reading",
@@ -11325,7 +12960,12 @@
    "sources": [
     "S16",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Pragmatism",
+    "url": "https://en.wikipedia.org/wiki/Pragmatism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Simile",
@@ -11344,7 +12984,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Simile",
+    "url": "https://en.wikipedia.org/wiki/Simile",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Meaning as use; description precedes explanation",
@@ -11408,7 +13053,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Epistemology",
+    "url": "https://en.wikipedia.org/wiki/Epistemology",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Paradigm shifts",
@@ -11428,7 +13078,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Paradigm shift",
+    "url": "https://en.wikipedia.org/wiki/Paradigm_shift",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Realism",
@@ -11484,7 +13139,12 @@
    "listedBy": [],
    "id": "M0941",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Allegory",
+    "url": "https://en.wikipedia.org/wiki/Allegory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Categorical imperative",
@@ -11501,7 +13161,12 @@
    "listedBy": [],
    "id": "M0495",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Categorical imperative",
+    "url": "https://en.wikipedia.org/wiki/Categorical_imperative",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dichotomy of control",
@@ -11519,7 +13184,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Enchiridion of Epictetus",
+    "url": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hero's journey",
@@ -11535,7 +13205,12 @@
    "listedBy": [],
    "id": "M0286",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hero's journey",
+    "url": "https://en.wikipedia.org/wiki/Hero%27s_journey",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hubris and nemesis",
@@ -11552,7 +13227,12 @@
    "listedBy": [],
    "id": "M0407",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hubris",
+    "url": "https://en.wikipedia.org/wiki/Hubris",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Irony",
@@ -11569,7 +13249,12 @@
    "listedBy": [],
    "id": "M0360",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Irony",
+    "url": "https://en.wikipedia.org/wiki/Irony",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Is–ought problem",
@@ -11586,7 +13271,12 @@
    "listedBy": [],
    "id": "M0635",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Is–ought problem",
+    "url": "https://en.wikipedia.org/wiki/Is%E2%80%93ought_problem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ship of Theseus",
@@ -11602,7 +13292,12 @@
    "listedBy": [],
    "id": "M0842",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Ship of Theseus",
+    "url": "https://en.wikipedia.org/wiki/Ship_of_Theseus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Socratic method",
@@ -11618,7 +13313,12 @@
    "listedBy": [],
    "id": "M0631",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Socratic method",
+    "url": "https://en.wikipedia.org/wiki/Socratic_method",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The examined life",
@@ -11634,7 +13334,12 @@
    "listedBy": [],
    "id": "M0565",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Socrates",
+    "url": "https://en.wikipedia.org/wiki/Socrates",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Utilitarianism",
@@ -11651,7 +13356,12 @@
    "listedBy": [],
    "id": "M0366",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Utilitarianism",
+    "url": "https://en.wikipedia.org/wiki/Utilitarianism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Veil of ignorance",
@@ -11667,7 +13377,12 @@
    "listedBy": [],
    "id": "M0727",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Original position",
+    "url": "https://en.wikipedia.org/wiki/Original_position",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Virtue ethics",
@@ -11687,7 +13402,12 @@
    "thinkers": [
     "aristotle"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Virtue ethics",
+    "url": "https://en.wikipedia.org/wiki/Virtue_ethics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Autocatalysis (self-accelerating reaction)",
@@ -11719,7 +13439,12 @@
     "S17",
     "S19",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Autocatalysis",
+    "url": "https://en.wikipedia.org/wiki/Autocatalysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Breakpoints / phase transitions",
@@ -11754,7 +13479,12 @@
     "S19",
     "S18",
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Phase transition",
+    "url": "https://en.wikipedia.org/wiki/Phase_transition",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Critical mass",
@@ -11785,7 +13515,12 @@
     "S18",
     "S37",
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Critical mass",
+    "url": "https://en.wikipedia.org/wiki/Critical_mass",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Feynman's first principle — do not fool yourself",
@@ -11917,7 +13652,12 @@
    "sources": [
     "S06",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Thermodynamics",
+    "url": "https://en.wikipedia.org/wiki/Thermodynamics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Equilibrium",
@@ -11942,7 +13682,12 @@
     "S20",
     "S16",
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Hydrostatic equilibrium",
+    "url": "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Friction & efficiency losses",
@@ -11976,7 +13721,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Lever",
+    "url": "https://en.wikipedia.org/wiki/Lever",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bohr model",
@@ -11993,7 +13743,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Bohr model",
+    "url": "https://en.wikipedia.org/wiki/Bohr_model",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Econophysics",
@@ -12012,7 +13767,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Econophysics",
+    "url": "https://en.wikipedia.org/wiki/Econophysics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Electromagnetism",
@@ -12029,7 +13789,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Electromagnetism",
+    "url": "https://en.wikipedia.org/wiki/Electromagnetism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Inertia",
@@ -12048,7 +13813,12 @@
    ],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Inertia",
+    "url": "https://en.wikipedia.org/wiki/Inertia",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Kinetics (reaction rates)",
@@ -12067,7 +13837,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Chemical kinetics",
+    "url": "https://en.wikipedia.org/wiki/Chemical_kinetics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mechanistic (Newtonian) worldview and physics envy",
@@ -12105,7 +13880,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Momentum",
+    "url": "https://en.wikipedia.org/wiki/Momentum",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Newton's laws of motion",
@@ -12126,7 +13906,12 @@
    ],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Newton's laws of motion",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Nonlinearity",
@@ -12143,7 +13928,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Nonlinear system",
+    "url": "https://en.wikipedia.org/wiki/Nonlinear_system",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Quantum mechanics",
@@ -12160,7 +13950,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Quantum mechanics",
+    "url": "https://en.wikipedia.org/wiki/Quantum_mechanics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Relativity",
@@ -12179,7 +13974,12 @@
    ],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Theory of relativity",
+    "url": "https://en.wikipedia.org/wiki/Theory_of_relativity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Resilience vs. fragility",
@@ -12200,7 +14000,12 @@
    ],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Antifragility",
+    "url": "https://en.wikipedia.org/wiki/Antifragility",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Shannon's law (channel capacity)",
@@ -12238,7 +14043,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Uncertainty principle",
+    "url": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Viscosity",
@@ -12255,7 +14065,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Viscosity",
+    "url": "https://en.wikipedia.org/wiki/Viscosity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Activation energy",
@@ -12268,7 +14083,12 @@
    "listedBy": [],
    "id": "M0357",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Activation energy",
+    "url": "https://en.wikipedia.org/wiki/Activation_energy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Catalysis",
@@ -12281,7 +14101,12 @@
    "listedBy": [],
    "id": "M0853",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Catalysis",
+    "url": "https://en.wikipedia.org/wiki/Catalysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conservation laws",
@@ -12294,7 +14119,12 @@
    "listedBy": [],
    "id": "M0576",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Conservation law",
+    "url": "https://en.wikipedia.org/wiki/Conservation_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Diffusion",
@@ -12307,7 +14137,12 @@
    "listedBy": [],
    "id": "M0256",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Diffusion",
+    "url": "https://en.wikipedia.org/wiki/Diffusion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Entropy and the second law",
@@ -12320,7 +14155,12 @@
    "listedBy": [],
    "id": "M0022",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Entropy",
+    "url": "https://en.wikipedia.org/wiki/Entropy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Escape velocity",
@@ -12333,7 +14173,12 @@
    "listedBy": [],
    "id": "M0483",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Escape velocity",
+    "url": "https://en.wikipedia.org/wiki/Escape_velocity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Half-life / exponential decay",
@@ -12346,7 +14191,12 @@
    "listedBy": [],
    "id": "M0537",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Exponential decay",
+    "url": "https://en.wikipedia.org/wiki/Exponential_decay",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hysteresis",
@@ -12359,7 +14209,12 @@
    "listedBy": [],
    "id": "M0319",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hysteresis",
+    "url": "https://en.wikipedia.org/wiki/Hysteresis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Laminar vs. turbulent flow",
@@ -12372,7 +14227,12 @@
    "listedBy": [],
    "id": "M0195",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Laminar flow",
+    "url": "https://en.wikipedia.org/wiki/Laminar_flow",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Le Chatelier's principle",
@@ -12385,7 +14245,12 @@
    "listedBy": [],
    "id": "M0846",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Le Chatelier's principle",
+    "url": "https://en.wikipedia.org/wiki/Le_Chatelier%27s_principle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Potential vs. kinetic energy",
@@ -12398,7 +14263,12 @@
    "listedBy": [],
    "id": "M0721",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Kinetic energy",
+    "url": "https://en.wikipedia.org/wiki/Kinetic_energy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Resonance",
@@ -12411,7 +14281,12 @@
    "listedBy": [],
    "id": "M0578",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Resonance",
+    "url": "https://en.wikipedia.org/wiki/Resonance",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "'Dollop-by-Dollop' Gradualism",
@@ -12630,7 +14505,12 @@
     "S20",
     "S18",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Availability heuristic",
+    "url": "https://en.wikipedia.org/wiki/Availability_heuristic",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conditioned Reflexes in Brand Building",
@@ -12707,7 +14587,12 @@
     "S20",
     "S18",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Curiosity",
+    "url": "https://en.wikipedia.org/wiki/Curiosity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deferred Gratification",
@@ -12731,7 +14616,12 @@
    "sources": [
     "S13",
     "S10"
-   ]
+   ],
+   "ref": {
+    "title": "Delayed gratification",
+    "url": "https://en.wikipedia.org/wiki/Delayed_gratification",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deprival-Superreaction Tendency",
@@ -12961,7 +14851,12 @@
     "S31",
     "S32",
     "S33"
-   ]
+   ],
+   "ref": {
+    "title": "Illusory superiority",
+    "url": "https://en.wikipedia.org/wiki/Illusory_superiority",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Extinction of Conditioned Reflexes",
@@ -13049,7 +14944,12 @@
    "thinkers": [],
    "sources": [
     "S12"
-   ]
+   ],
+   "ref": {
+    "title": "Groupthink",
+    "url": "https://en.wikipedia.org/wiki/Groupthink",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ideology as Mind-Fetter",
@@ -13416,7 +15316,12 @@
    ],
    "sources": [
     "S30"
-   ]
+   ],
+   "ref": {
+    "title": "Operant conditioning",
+    "url": "https://en.wikipedia.org/wiki/Operant_conditioning",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Overconfidence (including procedure-induced overconfidence)",
@@ -13439,7 +15344,12 @@
     "S32",
     "S16",
     "S33"
-   ]
+   ],
+   "ref": {
+    "title": "Overconfidence effect",
+    "url": "https://en.wikipedia.org/wiki/Overconfidence_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Overoptimism Tendency",
@@ -13679,7 +15589,12 @@
    ],
    "sources": [
     "S36"
-   ]
+   ],
+   "ref": {
+    "title": "Self-pity",
+    "url": "https://en.wikipedia.org/wiki/Self-pity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Self-Serving Bias",
@@ -13703,7 +15618,12 @@
     "S34",
     "S17",
     "S36"
-   ]
+   ],
+   "ref": {
+    "title": "Self-serving bias",
+    "url": "https://en.wikipedia.org/wiki/Self-serving_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Senescence-Misinfluence Tendency",
@@ -13752,7 +15672,12 @@
    ],
    "sources": [
     "S37"
-   ]
+   ],
+   "ref": {
+    "title": "Whistleblowing",
+    "url": "https://en.wikipedia.org/wiki/Whistleblowing",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Simple, Pain-Avoiding Psychological Denial",
@@ -13782,7 +15707,12 @@
     "S20",
     "S18",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Denial",
+    "url": "https://en.wikipedia.org/wiki/Denial",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Social-Proof Tendency",
@@ -13833,7 +15763,12 @@
     "S32",
     "S33",
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Social proof",
+    "url": "https://en.wikipedia.org/wiki/Social_proof",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Stress-Influence Tendency",
@@ -13937,7 +15872,12 @@
    "sources": [
     "S11",
     "S06"
-   ]
+   ],
+   "ref": {
+    "title": "Upton Sinclair",
+    "url": "https://en.wikipedia.org/wiki/Upton_Sinclair",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Use-It-or-Lose-It Tendency",
@@ -13982,7 +15922,12 @@
    "thinkers": [],
    "sources": [
     "S01"
-   ]
+   ],
+   "ref": {
+    "title": "Habit",
+    "url": "https://en.wikipedia.org/wiki/Habit",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Chunked Basic Knowledge (pattern recognition through fluency)",
@@ -14008,7 +15953,12 @@
    "sources": [
     "S37",
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Chunking (psychology)",
+    "url": "https://en.wikipedia.org/wiki/Chunking_(psychology)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cult Conversion Methods (extreme persuasion)",
@@ -14051,7 +16001,12 @@
    "sources": [
     "S15",
     "S08"
-   ]
+   ],
+   "ref": {
+    "title": "Decision fatigue",
+    "url": "https://en.wikipedia.org/wiki/Decision_fatigue",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Extrapolating the Recent Past",
@@ -14095,7 +16050,12 @@
    "thinkers": [],
    "sources": [
     "S36"
-   ]
+   ],
+   "ref": {
+    "title": "Face (sociological concept)",
+    "url": "https://en.wikipedia.org/wiki/Face_(sociological_concept)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hedonic Adaptation",
@@ -14115,7 +16075,12 @@
    "thinkers": [],
    "sources": [
     "S15"
-   ]
+   ],
+   "ref": {
+    "title": "Hedonic treadmill",
+    "url": "https://en.wikipedia.org/wiki/Hedonic_treadmill",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Memory Limitations",
@@ -14180,7 +16145,12 @@
    "thinkers": [],
    "sources": [
     "S35"
-   ]
+   ],
+   "ref": {
+    "title": "Near-miss effect",
+    "url": "https://en.wikipedia.org/wiki/Near-miss_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Situational Determinism ('maelstrom of regrettable forces')",
@@ -14200,7 +16170,12 @@
    "thinkers": [],
    "sources": [
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Determinism",
+    "url": "https://en.wikipedia.org/wiki/Determinism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Slippery Slope of Small Ethical Compromises",
@@ -14245,7 +16220,12 @@
     "S31",
     "S17",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Status quo bias",
+    "url": "https://en.wikipedia.org/wiki/Status_quo_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Truth Opposed by Interest (Samuel Johnson's maxim)",
@@ -14294,7 +16274,12 @@
     "S17",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Anchoring effect",
+    "url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Believing First and Doubting Later (Spinozan belief)",
@@ -14339,7 +16324,12 @@
     "S20",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Confirmation bias",
+    "url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Do-Something Tendency (action bias)",
@@ -14362,7 +16352,12 @@
    "sources": [
     "S17",
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Action bias",
+    "url": "https://en.wikipedia.org/wiki/Action_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Emotional Arousal",
@@ -14382,7 +16377,12 @@
    "thinkers": [],
    "sources": [
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Arousal",
+    "url": "https://en.wikipedia.org/wiki/Arousal",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Law of Small Numbers (overgeneralizing from small samples)",
@@ -14405,7 +16405,12 @@
    ],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Insensitivity to sample size",
+    "url": "https://en.wikipedia.org/wiki/Insensitivity_to_sample_size",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Omission and Abstract Blindness",
@@ -14448,7 +16453,12 @@
    ],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Prospect theory",
+    "url": "https://en.wikipedia.org/wiki/Prospect_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Representativeness Heuristic",
@@ -14472,7 +16482,12 @@
    "sources": [
     "S20",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Representativeness heuristic",
+    "url": "https://en.wikipedia.org/wiki/Representativeness_heuristic",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sunk-Cost Fallacy",
@@ -14494,7 +16509,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Sunk cost",
+    "url": "https://en.wikipedia.org/wiki/Sunk_cost",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "'Walter Mitty Effect' (risk tolerance shifting with conditions)",
@@ -14533,7 +16553,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Ambiguity aversion",
+    "url": "https://en.wikipedia.org/wiki/Ambiguity_aversion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Base-Rate Neglect",
@@ -14556,7 +16581,12 @@
    ],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Base rate fallacy",
+    "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conjunction Fallacy",
@@ -14579,7 +16609,12 @@
    ],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Conjunction fallacy",
+    "url": "https://en.wikipedia.org/wiki/Conjunction_fallacy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dual-Process Theory (System 1 / System 2)",
@@ -14604,7 +16639,12 @@
    ],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Dual process theory",
+    "url": "https://en.wikipedia.org/wiki/Dual_process_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Framing",
@@ -14648,7 +16688,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Fundamental attribution error",
+    "url": "https://en.wikipedia.org/wiki/Fundamental_attribution_error",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hindsight Bias",
@@ -14672,7 +16717,12 @@
     "S20",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Hindsight bias",
+    "url": "https://en.wikipedia.org/wiki/Hindsight_bias",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hyperbolic Discounting",
@@ -14693,7 +16743,12 @@
    "thinkers": [],
    "sources": [
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Hyperbolic discounting",
+    "url": "https://en.wikipedia.org/wiki/Hyperbolic_discounting",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Language Instinct",
@@ -14712,7 +16767,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "The Language Instinct",
+    "url": "https://en.wikipedia.org/wiki/The_Language_Instinct",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mental Accounting",
@@ -14736,7 +16796,12 @@
     "S18",
     "S16",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Mental accounting",
+    "url": "https://en.wikipedia.org/wiki/Mental_accounting",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Myopic Loss Aversion",
@@ -14755,7 +16820,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Loss aversion",
+    "url": "https://en.wikipedia.org/wiki/Loss_aversion",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Noise (Fischer Black)",
@@ -14774,7 +16844,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Noise trader",
+    "url": "https://en.wikipedia.org/wiki/Noise_trader",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Overreaction Bias",
@@ -14812,7 +16887,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Regret",
+    "url": "https://en.wikipedia.org/wiki/Regret",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Stereotyping",
@@ -14849,7 +16929,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bounded rationality",
+    "url": "https://en.wikipedia.org/wiki/Bounded_rationality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bystander Effect (diffusion of responsibility)",
@@ -14865,7 +16950,12 @@
    "listedBy": [],
    "id": "M0749",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bystander effect",
+    "url": "https://en.wikipedia.org/wiki/Bystander_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cognitive Dissonance",
@@ -14881,7 +16971,12 @@
    "listedBy": [],
    "id": "M0394",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cognitive dissonance",
+    "url": "https://en.wikipedia.org/wiki/Cognitive_dissonance",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dunning-Kruger Effect",
@@ -14897,7 +16992,12 @@
    "listedBy": [],
    "id": "M0024",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Dunning–Kruger effect",
+    "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Endowment Effect",
@@ -14913,7 +17013,12 @@
    "listedBy": [],
    "id": "M0533",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Endowment effect",
+    "url": "https://en.wikipedia.org/wiki/Endowment_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Halo Effect",
@@ -14929,7 +17034,12 @@
    "listedBy": [],
    "id": "M0414",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Halo effect",
+    "url": "https://en.wikipedia.org/wiki/Halo_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Intrinsic vs. Extrinsic Motivation (overjustification effect)",
@@ -14946,7 +17056,12 @@
    "listedBy": [],
    "id": "M0151",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Overjustification effect",
+    "url": "https://en.wikipedia.org/wiki/Overjustification_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Learned Helplessness",
@@ -14961,7 +17076,12 @@
    "listedBy": [],
    "id": "M0624",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Learned helplessness",
+    "url": "https://en.wikipedia.org/wiki/Learned_helplessness",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Maslow's Hierarchy of Needs",
@@ -14976,7 +17096,12 @@
    "listedBy": [],
    "id": "M0598",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Maslow's hierarchy of needs",
+    "url": "https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Peak-End Rule",
@@ -14994,7 +17119,12 @@
    "thinkers": [
     "kahneman"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Peak–end rule",
+    "url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Planning Fallacy",
@@ -15013,7 +17143,12 @@
     "kahneman",
     "tversky"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Planning fallacy",
+    "url": "https://en.wikipedia.org/wiki/Planning_fallacy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Theory of Mind",
@@ -15030,7 +17165,12 @@
    "listedBy": [],
    "id": "M0491",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Theory of mind",
+    "url": "https://en.wikipedia.org/wiki/Theory_of_mind",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Five W's Rule in Communication",
@@ -15129,7 +17269,12 @@
    "sources": [
     "S02",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Bureaucratic inertia",
+    "url": "https://en.wikipedia.org/wiki/Bureaucratic_inertia",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Corporate Governance",
@@ -15150,7 +17295,12 @@
    "sources": [
     "S07",
     "S19"
-   ]
+   ],
+   "ref": {
+    "title": "Corporate governance",
+    "url": "https://en.wikipedia.org/wiki/Corporate_governance",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Culture as a Control System",
@@ -15252,7 +17402,12 @@
    "thinkers": [],
    "sources": [
     "S18"
-   ]
+   ],
+   "ref": {
+    "title": "Parkinson's Law",
+    "url": "https://en.wikipedia.org/wiki/Parkinson%27s_Law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Self-Organization",
@@ -15271,7 +17426,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Self-organization",
+    "url": "https://en.wikipedia.org/wiki/Self-organization",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Self-Organized Criticality",
@@ -15293,7 +17453,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Self-organized criticality",
+    "url": "https://en.wikipedia.org/wiki/Self-organized_criticality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Wisdom of Crowds",
@@ -15313,7 +17478,12 @@
    "thinkers": [],
    "sources": [
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "The Wisdom of Crowds",
+    "url": "https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bureaucracy (Weber)",
@@ -15329,7 +17499,12 @@
    "listedBy": [],
    "id": "M0316",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bureaucracy",
+    "url": "https://en.wikipedia.org/wiki/Bureaucracy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conway's Law",
@@ -15344,7 +17519,12 @@
    "listedBy": [],
    "id": "M0269",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Conway's law",
+    "url": "https://en.wikipedia.org/wiki/Conway%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Diffusion of Innovations",
@@ -15361,7 +17541,12 @@
    "listedBy": [],
    "id": "M0656",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Diffusion of innovations",
+    "url": "https://en.wikipedia.org/wiki/Diffusion_of_innovations",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dunbar's Number",
@@ -15377,7 +17562,12 @@
    "listedBy": [],
    "id": "M0125",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Dunbar's number",
+    "url": "https://en.wikipedia.org/wiki/Dunbar%27s_number",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Groupthink",
@@ -15393,7 +17583,12 @@
    "listedBy": [],
    "id": "M0368",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Groupthink",
+    "url": "https://en.wikipedia.org/wiki/Groupthink",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Institutional Imperative",
@@ -15413,7 +17608,12 @@
    "thinkers": [
     "buffett"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Warren Buffett",
+    "url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Iron Law of Oligarchy",
@@ -15429,7 +17629,12 @@
    "listedBy": [],
    "id": "M0438",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Iron law of oligarchy",
+    "url": "https://en.wikipedia.org/wiki/Iron_law_of_oligarchy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Norms and Taboos",
@@ -15445,7 +17650,12 @@
    "listedBy": [],
    "id": "M0518",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Social norm",
+    "url": "https://en.wikipedia.org/wiki/Social_norm",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Peter Principle",
@@ -15460,7 +17670,12 @@
    "listedBy": [],
    "id": "M0523",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Peter principle",
+    "url": "https://en.wikipedia.org/wiki/Peter_principle",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Social Capital",
@@ -15476,7 +17691,12 @@
    "listedBy": [],
    "id": "M0032",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Social capital",
+    "url": "https://en.wikipedia.org/wiki/Social_capital",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Tribalism / In-Group Out-Group Dynamics",
@@ -15496,7 +17716,12 @@
    "listedBy": [],
    "id": "M0947",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "In-group and out-group",
+    "url": "https://en.wikipedia.org/wiki/In-group_and_out-group",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Complex Adaptive Systems",
@@ -15525,7 +17750,12 @@
     "S16",
     "S18",
     "S36"
-   ]
+   ],
+   "ref": {
+    "title": "Complex adaptive system",
+    "url": "https://en.wikipedia.org/wiki/Complex_adaptive_system",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Feedback Loops",
@@ -15560,7 +17790,12 @@
     "S18",
     "S32",
     "S34"
-   ]
+   ],
+   "ref": {
+    "title": "Feedback",
+    "url": "https://en.wikipedia.org/wiki/Feedback",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Systems Thinking (Consequences of Consequences)",
@@ -15584,7 +17819,12 @@
    "sources": [
     "S35",
     "S17"
-   ]
+   ],
+   "ref": {
+    "title": "Systems thinking",
+    "url": "https://en.wikipedia.org/wiki/Systems_thinking",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Bottlenecks (Theory of Constraints)",
@@ -15633,7 +17873,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Churn rate",
+    "url": "https://en.wikipedia.org/wiki/Churn_rate",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Emergence",
@@ -15656,7 +17901,12 @@
    "sources": [
     "S20",
     "S16"
-   ]
+   ],
+   "ref": {
+    "title": "Emergence",
+    "url": "https://en.wikipedia.org/wiki/Emergence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Irreducibility",
@@ -15677,7 +17927,12 @@
    "thinkers": [],
    "sources": [
     "S20"
-   ]
+   ],
+   "ref": {
+    "title": "Computational irreducibility",
+    "url": "https://en.wikipedia.org/wiki/Computational_irreducibility",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Antifragility",
@@ -15696,7 +17951,12 @@
    "thinkers": [
     "taleb"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Antifragility",
+    "url": "https://en.wikipedia.org/wiki/Antifragility",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cascading Failure",
@@ -15715,7 +17975,12 @@
    "listedBy": [],
    "id": "M0183",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cascading failure",
+    "url": "https://en.wikipedia.org/wiki/Cascading_failure",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Chaos and Sensitivity to Initial Conditions",
@@ -15732,7 +17997,12 @@
    "listedBy": [],
    "id": "M0597",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Chaos theory",
+    "url": "https://en.wikipedia.org/wiki/Chaos_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Law of Requisite Variety",
@@ -15749,7 +18019,12 @@
    "listedBy": [],
    "id": "M0870",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Variety (cybernetics)",
+    "url": "https://en.wikipedia.org/wiki/Variety_(cybernetics)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Leverage Points",
@@ -15766,7 +18041,12 @@
    "listedBy": [],
    "id": "M0061",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Twelve leverage points",
+    "url": "https://en.wikipedia.org/wiki/Twelve_leverage_points",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Network Topology",
@@ -15785,7 +18065,12 @@
    "listedBy": [],
    "id": "M0370",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Network topology",
+    "url": "https://en.wikipedia.org/wiki/Network_topology",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Path Dependence",
@@ -15807,7 +18092,12 @@
    "listedBy": [],
    "id": "M0909",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Path dependence",
+    "url": "https://en.wikipedia.org/wiki/Path_dependence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Queueing and Utilization",
@@ -15825,7 +18115,12 @@
    "listedBy": [],
    "id": "M0327",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Queueing theory",
+    "url": "https://en.wikipedia.org/wiki/Queueing_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Resilience vs. Efficiency",
@@ -15842,7 +18137,12 @@
    "listedBy": [],
    "id": "M0345",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Resilience (engineering and construction)",
+    "url": "https://en.wikipedia.org/wiki/Resilience_(engineering_and_construction)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Stock and Flow",
@@ -15860,7 +18160,12 @@
    "listedBy": [],
    "id": "M0469",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stock and flow",
+    "url": "https://en.wikipedia.org/wiki/Stock_and_flow",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Time Delays and Lags",
@@ -15879,7 +18184,12 @@
    "listedBy": [],
    "id": "M0213",
    "thinkers": [],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "System dynamics",
+    "url": "https://en.wikipedia.org/wiki/System_dynamics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Man in the Arena",
@@ -15897,7 +18207,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Citizenship in a Republic",
+    "url": "https://en.wikipedia.org/wiki/Citizenship_in_a_Republic",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Strenuous Life",
@@ -15912,7 +18227,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Strenuous Life",
+    "url": "https://en.wikipedia.org/wiki/The_Strenuous_Life",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Speak Softly and Carry a Big Stick",
@@ -15927,7 +18247,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Big stick ideology",
+    "url": "https://en.wikipedia.org/wiki/Big_stick_ideology",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Good Trusts vs. Bad Trusts",
@@ -15945,7 +18270,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Trust (business)",
+    "url": "https://en.wikipedia.org/wiki/Trust_(business)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conservation as Intergenerational Stewardship",
@@ -15963,7 +18293,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Intergenerational equity",
+    "url": "https://en.wikipedia.org/wiki/Intergenerational_equity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Bully Pulpit",
@@ -15978,7 +18313,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bully pulpit",
+    "url": "https://en.wikipedia.org/wiki/Bully_pulpit",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Do What You Can, With What You Have",
@@ -15993,7 +18333,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Theodore Roosevelt",
+    "url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Square Deal",
@@ -16010,7 +18355,12 @@
    "thinkers": [
     "roosevelt"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Square Deal",
+    "url": "https://en.wikipedia.org/wiki/Square_Deal",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The View From Above",
@@ -16028,7 +18378,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stoicism",
+    "url": "https://en.wikipedia.org/wiki/Stoicism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Memento Mori",
@@ -16045,7 +18400,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Memento mori",
+    "url": "https://en.wikipedia.org/wiki/Memento_mori",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Obstacle Is the Way",
@@ -16062,7 +18422,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Obstacle Is the Way",
+    "url": "https://en.wikipedia.org/wiki/The_Obstacle_Is_the_Way",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Premeditatio Malorum",
@@ -16080,7 +18445,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Negative visualization",
+    "url": "https://en.wikipedia.org/wiki/Negative_visualization",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Discipline of Assent",
@@ -16097,7 +18467,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stoicism",
+    "url": "https://en.wikipedia.org/wiki/Stoicism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Objective Description",
@@ -16115,7 +18490,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Subjectivity and objectivity (philosophy)",
+    "url": "https://en.wikipedia.org/wiki/Subjectivity_and_objectivity_(philosophy)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sympatheia",
@@ -16132,7 +18512,12 @@
    "thinkers": [
     "aurelius"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stoicism",
+    "url": "https://en.wikipedia.org/wiki/Stoicism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Judgements, Not Events, Disturb Us",
@@ -16150,7 +18535,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Enchiridion of Epictetus",
+    "url": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Role Ethics (Play Your Part Well)",
@@ -16168,7 +18558,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Role ethics",
+    "url": "https://en.wikipedia.org/wiki/Role_ethics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Every Mischance Is an Opportunity",
@@ -16186,7 +18581,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Meditations",
+    "url": "https://en.wikipedia.org/wiki/Meditations",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Discipline of Assent",
@@ -16204,7 +18604,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stoicism",
+    "url": "https://en.wikipedia.org/wiki/Stoicism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Everything Has Two Handles",
@@ -16222,7 +18627,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Enchiridion of Epictetus",
+    "url": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Embody, Don't Expound",
@@ -16240,7 +18650,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Enchiridion of Epictetus",
+    "url": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The School Is a Hospital, Not a Lecture Hall",
@@ -16258,7 +18673,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Epictetus",
+    "url": "https://en.wikipedia.org/wiki/Epictetus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Nothing Is Lost, Only Returned",
@@ -16276,7 +18696,12 @@
    "thinkers": [
     "epictetus"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Enchiridion of Epictetus",
+    "url": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Impartial Spectator",
@@ -16294,7 +18719,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Theory of Moral Sentiments",
+    "url": "https://en.wikipedia.org/wiki/The_Theory_of_Moral_Sentiments",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Man of System",
@@ -16312,7 +18742,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Theory of Moral Sentiments",
+    "url": "https://en.wikipedia.org/wiki/The_Theory_of_Moral_Sentiments",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Extent of the Market Limits Specialization",
@@ -16329,7 +18764,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Division of labour",
+    "url": "https://en.wikipedia.org/wiki/Division_of_labour",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sympathy as Imaginative Projection",
@@ -16347,7 +18787,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Theory of Moral Sentiments",
+    "url": "https://en.wikipedia.org/wiki/The_Theory_of_Moral_Sentiments",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Self-Love, Not Benevolence",
@@ -16364,7 +18809,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Invisible hand",
+    "url": "https://en.wikipedia.org/wiki/Invisible_hand",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Real Price Is Toil and Trouble",
@@ -16381,7 +18831,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Labor theory of value",
+    "url": "https://en.wikipedia.org/wiki/Labor_theory_of_value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Diamond–Water Paradox",
@@ -16398,7 +18853,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Paradox of value",
+    "url": "https://en.wikipedia.org/wiki/Paradox_of_value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Consumption Is the Sole End of Production",
@@ -16416,7 +18876,12 @@
    "thinkers": [
     "smith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Wealth of Nations",
+    "url": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ricardo's Law of Rent",
@@ -16434,7 +18899,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Law of rent",
+    "url": "https://en.wikipedia.org/wiki/Law_of_rent",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rent Follows Price, Not the Reverse",
@@ -16451,7 +18921,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Law of rent",
+    "url": "https://en.wikipedia.org/wiki/Law_of_rent",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ricardian Equivalence",
@@ -16469,7 +18944,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Ricardian equivalence",
+    "url": "https://en.wikipedia.org/wiki/Ricardian_equivalence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Iron Law of Wages",
@@ -16486,7 +18966,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Iron law of wages",
+    "url": "https://en.wikipedia.org/wiki/Iron_law_of_wages",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Labor Theory of Value (Embodied Cost)",
@@ -16503,7 +18988,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Labor theory of value",
+    "url": "https://en.wikipedia.org/wiki/Labor_theory_of_value",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Machinery Question",
@@ -16521,7 +19011,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Technological unemployment",
+    "url": "https://en.wikipedia.org/wiki/Technological_unemployment",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ricardian Vice",
@@ -16538,7 +19033,12 @@
    "thinkers": [
     "ricardo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "David Ricardo",
+    "url": "https://en.wikipedia.org/wiki/David_Ricardo",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Man muss immer verallgemeinern (Always Generalize)",
@@ -16556,7 +19056,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Carl Gustav Jacob Jacobi",
+    "url": "https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Jacobian (Local Linearization)",
@@ -16574,7 +19079,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Jacobian matrix and determinant",
+    "url": "https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Change of Variables (The Distortion Factor)",
@@ -16592,7 +19102,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Change of variables",
+    "url": "https://en.wikipedia.org/wiki/Change_of_variables",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hamilton–Jacobi: Transform Until It's Trivial",
@@ -16610,7 +19125,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hamilton–Jacobi equation",
+    "url": "https://en.wikipedia.org/wiki/Hamilton%E2%80%93Jacobi_equation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Iterative Relaxation (Jacobi Method)",
@@ -16628,7 +19148,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Jacobi method",
+    "url": "https://en.wikipedia.org/wiki/Jacobi_method",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Inversion Reveals Hidden Symmetry",
@@ -16646,7 +19171,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Jacobi elliptic functions",
+    "url": "https://en.wikipedia.org/wiki/Jacobi_elliptic_functions",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Honor of the Human Spirit",
@@ -16664,7 +19194,12 @@
    "thinkers": [
     "jacobi"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Carl Gustav Jacob Jacobi",
+    "url": "https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Prior Probability (The Prior)",
@@ -16682,7 +19217,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Prior probability",
+    "url": "https://en.wikipedia.org/wiki/Prior_probability",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Likelihood Ratio (Bayes Factor)",
@@ -16700,7 +19240,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bayes factor",
+    "url": "https://en.wikipedia.org/wiki/Bayes_factor",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Today's Posterior Is Tomorrow's Prior",
@@ -16718,7 +19263,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bayesian inference",
+    "url": "https://en.wikipedia.org/wiki/Bayesian_inference",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Confusion of the Inverse",
@@ -16736,7 +19286,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Confusion of the inverse",
+    "url": "https://en.wikipedia.org/wiki/Confusion_of_the_inverse",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Probability as Degree of Belief",
@@ -16754,7 +19309,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Bayesian probability",
+    "url": "https://en.wikipedia.org/wiki/Bayesian_probability",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cromwell's Rule (Never Zero, Never One)",
@@ -16771,7 +19331,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cromwell's rule",
+    "url": "https://en.wikipedia.org/wiki/Cromwell%27s_rule",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "False Positives in Rare-Event Testing",
@@ -16789,7 +19354,12 @@
    "thinkers": [
     "bayes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Base rate fallacy",
+    "url": "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Universal Gravitation (One Law for Heaven and Earth)",
@@ -16807,7 +19377,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Newton's law of universal gravitation",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Hypotheses Non Fingo (I Frame No Hypotheses)",
@@ -16825,7 +19400,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hypotheses non fingo",
+    "url": "https://en.wikipedia.org/wiki/Hypotheses_non_fingo",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Calculus of Change (Rates and Accumulation)",
@@ -16843,7 +19423,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Calculus",
+    "url": "https://en.wikipedia.org/wiki/Calculus",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Newton's Method (Iterative Approximation)",
@@ -16861,7 +19446,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Newton's method",
+    "url": "https://en.wikipedia.org/wiki/Newton%27s_method",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Three-Body Problem",
@@ -16878,7 +19468,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Three-body problem",
+    "url": "https://en.wikipedia.org/wiki/Three-body_problem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Same Effects, Same Causes (Newton's Rules of Reasoning)",
@@ -16896,7 +19491,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Philosophiæ Naturalis Principia Mathematica",
+    "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Experimentum Crucis (The Decisive Experiment)",
@@ -16913,7 +19513,12 @@
    "thinkers": [
     "newton"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Experimentum crucis",
+    "url": "https://en.wikipedia.org/wiki/Experimentum_crucis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Galileo's Ship (Galilean Relativity)",
@@ -16932,7 +19537,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Galileo's ship",
+    "url": "https://en.wikipedia.org/wiki/Galileo%27s_ship",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Refutation from Within",
@@ -16951,7 +19561,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Galileo's Leaning Tower of Pisa experiment",
+    "url": "https://en.wikipedia.org/wiki/Galileo%27s_Leaning_Tower_of_Pisa_experiment",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Dilute the Phenomenon (Inclined Plane)",
@@ -16970,7 +19585,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Inclined plane",
+    "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Idealization (Reasoning in a Vacuum)",
@@ -16989,7 +19609,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Idealization (philosophy of science)",
+    "url": "https://en.wikipedia.org/wiki/Idealization_(philosophy_of_science)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Instruments Precede Discovery",
@@ -17008,7 +19633,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "History of the telescope",
+    "url": "https://en.wikipedia.org/wiki/History_of_the_telescope",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Refusing to Look Through the Telescope",
@@ -17027,7 +19657,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Galileo affair",
+    "url": "https://en.wikipedia.org/wiki/Galileo_affair",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Primary vs. Secondary Qualities",
@@ -17045,7 +19680,12 @@
    "thinkers": [
     "galileo"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Primary–secondary quality distinction",
+    "url": "https://en.wikipedia.org/wiki/Primary%E2%80%93secondary_quality_distinction",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Second Incompleteness: No Self-Certification",
@@ -17063,7 +19703,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gödel's incompleteness theorems",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gödel Numbering (Arithmetization of Syntax)",
@@ -17081,7 +19726,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gödel numbering",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del_numbering",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Diagonal Lemma: Forced Self-Reference",
@@ -17099,7 +19749,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Diagonal lemma",
+    "url": "https://en.wikipedia.org/wiki/Diagonal_lemma",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gödel's Completeness Theorem",
@@ -17117,7 +19772,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gödel's completeness theorem",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_completeness_theorem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Expressiveness Buys Incompleteness",
@@ -17135,7 +19795,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gödel's incompleteness theorems",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Independence: Some Questions Are Choices",
@@ -17153,7 +19818,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Independence (mathematical logic)",
+    "url": "https://en.wikipedia.org/wiki/Independence_(mathematical_logic)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gödel Speed-Up",
@@ -17171,7 +19841,12 @@
    "thinkers": [
     "godel"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gödel's speed-up theorem",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del%27s_speed-up_theorem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Nyquist–Shannon Sampling Theorem",
@@ -17190,7 +19865,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Nyquist–Shannon sampling theorem",
+    "url": "https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Information Is Not Meaning",
@@ -17208,7 +19888,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Information theory",
+    "url": "https://en.wikipedia.org/wiki/Information_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Shannon–Weaver Transmission Model",
@@ -17226,7 +19911,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Shannon–Weaver model",
+    "url": "https://en.wikipedia.org/wiki/Shannon%E2%80%93Weaver_model",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mutual Information",
@@ -17244,7 +19934,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Mutual information",
+    "url": "https://en.wikipedia.org/wiki/Mutual_information",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rate–Distortion Tradeoff",
@@ -17262,7 +19957,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Rate–distortion theory",
+    "url": "https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Perfect Secrecy Requires Key, Not Obscurity",
@@ -17281,7 +19981,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Information-theoretic security",
+    "url": "https://en.wikipedia.org/wiki/Information-theoretic_security",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Boolean Algebra of Switching Circuits",
@@ -17299,7 +20004,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Boolean circuit",
+    "url": "https://en.wikipedia.org/wiki/Boolean_circuit",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Shannon's Demon (Rebalancing Bonus)",
@@ -17317,7 +20027,12 @@
    "thinkers": [
     "shannon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Diversification (finance)",
+    "url": "https://en.wikipedia.org/wiki/Diversification_(finance)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Consilience",
@@ -17335,7 +20050,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Consilience",
+    "url": "https://en.wikipedia.org/wiki/Consilience",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Sociobiology",
@@ -17352,7 +20072,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Sociobiology",
+    "url": "https://en.wikipedia.org/wiki/Sociobiology",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Island Biogeography (Species–Area Equilibrium)",
@@ -17370,7 +20095,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Theory of Island Biogeography",
+    "url": "https://en.wikipedia.org/wiki/The_Theory_of_Island_Biogeography",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Superorganism",
@@ -17387,7 +20117,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Superorganism",
+    "url": "https://en.wikipedia.org/wiki/Superorganism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Multilevel Selection",
@@ -17405,7 +20140,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Group selection",
+    "url": "https://en.wikipedia.org/wiki/Group_selection",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Biophilia",
@@ -17420,7 +20160,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Biophilia hypothesis",
+    "url": "https://en.wikipedia.org/wiki/Biophilia_hypothesis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Gene–Culture Coevolution",
@@ -17438,7 +20183,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Dual inheritance theory",
+    "url": "https://en.wikipedia.org/wiki/Dual_inheritance_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Character Displacement",
@@ -17453,7 +20203,12 @@
    "thinkers": [
     "wilson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Character displacement",
+    "url": "https://en.wikipedia.org/wiki/Character_displacement",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Coase Theorem",
@@ -17471,7 +20226,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Coase theorem",
+    "url": "https://en.wikipedia.org/wiki/Coase_theorem",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Reciprocal Nature of Harm",
@@ -17489,7 +20249,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Problem of Social Cost",
+    "url": "https://en.wikipedia.org/wiki/The_Problem_of_Social_Cost",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Comparative Institutional Analysis",
@@ -17506,7 +20271,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "New institutional economics",
+    "url": "https://en.wikipedia.org/wiki/New_institutional_economics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Blackboard Economics",
@@ -17523,7 +20293,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Ronald Coase",
+    "url": "https://en.wikipedia.org/wiki/Ronald_Coase",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Lighthouse Test",
@@ -17540,7 +20315,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Lighthouse in Economics",
+    "url": "https://en.wikipedia.org/wiki/The_Lighthouse_in_Economics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Coase Conjecture",
@@ -17557,7 +20337,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Coase conjecture",
+    "url": "https://en.wikipedia.org/wiki/Coase_conjecture",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Tradable Rights over Administrative Allocation",
@@ -17575,7 +20360,12 @@
    "thinkers": [
     "coase"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Emissions trading",
+    "url": "https://en.wikipedia.org/wiki/Emissions_trading",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Lifeboat Ethics",
@@ -17593,7 +20383,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Lifeboat ethics",
+    "url": "https://en.wikipedia.org/wiki/Lifeboat_ethics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Filters Against Folly",
@@ -17612,7 +20407,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Garrett Hardin",
+    "url": "https://en.wikipedia.org/wiki/Garrett_Hardin",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "No Technical Solution Problems",
@@ -17629,7 +20429,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Tragedy of the commons",
+    "url": "https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conscience Is Self-Eliminating",
@@ -17647,7 +20452,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Tragedy of the commons",
+    "url": "https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mutual Coercion, Mutually Agreed Upon",
@@ -17664,7 +20474,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Tragedy of the commons",
+    "url": "https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "CC-PP Game: Commonize Costs, Privatize Profits",
@@ -17681,7 +20496,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "CC–PP game",
+    "url": "https://en.wikipedia.org/wiki/CC%E2%80%93PP_game",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Never Globalize a Problem Solvable Locally",
@@ -17698,7 +20518,12 @@
    "thinkers": [
     "hardin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Subsidiarity",
+    "url": "https://en.wikipedia.org/wiki/Subsidiarity",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Attention as the Scarce Resource",
@@ -17717,7 +20542,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Attention economy",
+    "url": "https://en.wikipedia.org/wiki/Attention_economy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Near-Decomposability (The Architecture of Complexity)",
@@ -17735,7 +20565,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Sciences of the Artificial",
+    "url": "https://en.wikipedia.org/wiki/The_Sciences_of_the_Artificial",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Two Watchmakers (Stable Subassemblies)",
@@ -17753,7 +20588,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Sciences of the Artificial",
+    "url": "https://en.wikipedia.org/wiki/The_Sciences_of_the_Artificial",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Ant on the Beach",
@@ -17771,7 +20611,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Sciences of the Artificial",
+    "url": "https://en.wikipedia.org/wiki/The_Sciences_of_the_Artificial",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Inner and Outer Environment (Design as Interface)",
@@ -17789,7 +20634,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Sciences of the Artificial",
+    "url": "https://en.wikipedia.org/wiki/The_Sciences_of_the_Artificial",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Means-Ends Analysis",
@@ -17808,7 +20658,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Means–ends analysis",
+    "url": "https://en.wikipedia.org/wiki/Means%E2%80%93ends_analysis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ill-Structured Problems",
@@ -17825,7 +20680,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Problem solving",
+    "url": "https://en.wikipedia.org/wiki/Problem_solving",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Decision Premises",
@@ -17843,7 +20703,12 @@
    "thinkers": [
     "simon"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Administrative Behavior",
+    "url": "https://en.wikipedia.org/wiki/Administrative_Behavior",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Minimax (Worst-Case Optimization)",
@@ -17861,7 +20726,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Minimax",
+    "url": "https://en.wikipedia.org/wiki/Minimax",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Mixed Strategy (Deliberate Randomization)",
@@ -17878,7 +20748,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Strategy (game theory)",
+    "url": "https://en.wikipedia.org/wiki/Strategy_(game_theory)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Zero-Sum vs Positive-Sum",
@@ -17896,7 +20771,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Zero-sum game",
+    "url": "https://en.wikipedia.org/wiki/Zero-sum_game",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Expected Utility (von Neumann–Morgenstern)",
@@ -17914,7 +20794,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Expected utility hypothesis",
+    "url": "https://en.wikipedia.org/wiki/Expected_utility_hypothesis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Stored-Program Architecture",
@@ -17932,7 +20817,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Stored-program computer",
+    "url": "https://en.wikipedia.org/wiki/Stored-program_computer",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Universal Constructor (Self-Replication)",
@@ -17950,7 +20840,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Von Neumann universal constructor",
+    "url": "https://en.wikipedia.org/wiki/Von_Neumann_universal_constructor",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cellular Automata",
@@ -17967,7 +20862,12 @@
    "thinkers": [
     "von-neumann"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cellular automaton",
+    "url": "https://en.wikipedia.org/wiki/Cellular_automaton",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Destruction and Creation",
@@ -17985,7 +20885,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "John Boyd (military strategist)",
+    "url": "https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fast Transients",
@@ -18003,7 +20908,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "OODA loop",
+    "url": "https://en.wikipedia.org/wiki/OODA_loop",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Energy–Manoeuvrability Theory",
@@ -18021,7 +20931,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Energy–maneuverability theory",
+    "url": "https://en.wikipedia.org/wiki/Energy%E2%80%93maneuverability_theory",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Orientation Shapes Observation",
@@ -18039,7 +20954,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "OODA loop",
+    "url": "https://en.wikipedia.org/wiki/OODA_loop",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Moral–Mental–Physical Levels of Conflict",
@@ -18057,7 +20977,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "John Boyd (military strategist)",
+    "url": "https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Isolation vs. Interaction",
@@ -18075,7 +21000,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "John Boyd (military strategist)",
+    "url": "https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "To Be or To Do",
@@ -18093,7 +21023,12 @@
    "thinkers": [
     "boyd"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "John Boyd (military strategist)",
+    "url": "https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Know Yourself, Know the Enemy",
@@ -18111,7 +21046,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Winning Without Fighting",
@@ -18129,7 +21069,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Attack the Strategy, Not the Walls",
@@ -18147,7 +21092,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Deception and Formlessness",
@@ -18165,7 +21115,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cheng and Ch'i (Orthodox and Unorthodox)",
@@ -18184,7 +21139,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Shih (Strategic Momentum)",
@@ -18203,7 +21163,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Ground and Terrain",
@@ -18222,7 +21187,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Strike Emptiness, Avoid Strength",
@@ -18241,7 +21211,12 @@
    "thinkers": [
     "sun-tzu"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Art of War",
+    "url": "https://en.wikipedia.org/wiki/The_Art_of_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Culminating Point of Victory",
@@ -18259,7 +21234,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Culminating point",
+    "url": "https://en.wikipedia.org/wiki/Culminating_point",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "War as the Continuation of Politics by Other Means",
@@ -18277,7 +21257,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "On War",
+    "url": "https://en.wikipedia.org/wiki/On_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Remarkable Trinity",
@@ -18295,7 +21280,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "On War",
+    "url": "https://en.wikipedia.org/wiki/On_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Absolute War vs. Real War",
@@ -18313,7 +21303,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Absolute war",
+    "url": "https://en.wikipedia.org/wiki/Absolute_war",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Coup d'œil",
@@ -18331,7 +21326,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Coup d'œil",
+    "url": "https://en.wikipedia.org/wiki/Coup_d%27%C5%93il",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Moral Forces Outweigh Material Ones",
@@ -18348,7 +21348,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "On War",
+    "url": "https://en.wikipedia.org/wiki/On_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Theory Educates Judgment, It Does Not Supply Rules",
@@ -18365,7 +21370,12 @@
    "thinkers": [
     "clausewitz"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "On War",
+    "url": "https://en.wikipedia.org/wiki/On_War",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Jobs to Be Done",
@@ -18384,7 +21394,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Clayton Christensen",
+    "url": "https://en.wikipedia.org/wiki/Clayton_Christensen",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Innovator's Dilemma",
@@ -18401,7 +21416,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Innovator's Dilemma",
+    "url": "https://en.wikipedia.org/wiki/The_Innovator%27s_Dilemma",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Resources, Processes, and Values (RPV)",
@@ -18419,7 +21439,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Clayton Christensen",
+    "url": "https://en.wikipedia.org/wiki/Clayton_Christensen",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Value Network",
@@ -18436,7 +21461,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Value network",
+    "url": "https://en.wikipedia.org/wiki/Value_network",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Performance Oversupply",
@@ -18453,7 +21483,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Disruptive innovation",
+    "url": "https://en.wikipedia.org/wiki/Disruptive_innovation",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Law of Conservation of Attractive Profits",
@@ -18471,7 +21506,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Clayton Christensen",
+    "url": "https://en.wikipedia.org/wiki/Clayton_Christensen",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Good Money vs. Bad Money",
@@ -18488,7 +21528,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Good Money",
+    "url": "https://en.wikipedia.org/wiki/Good_Money",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Full Cost of \"Just This Once\"",
@@ -18506,7 +21551,12 @@
    "thinkers": [
     "christensen"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Clayton Christensen",
+    "url": "https://en.wikipedia.org/wiki/Clayton_Christensen",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Schedules of Reinforcement",
@@ -18523,7 +21573,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Reinforcement",
+    "url": "https://en.wikipedia.org/wiki/Reinforcement",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Variable-Ratio Reinforcement (Intermittent Reward)",
@@ -18541,7 +21596,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Reinforcement",
+    "url": "https://en.wikipedia.org/wiki/Reinforcement",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Shaping by Successive Approximation",
@@ -18558,7 +21618,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Shaping (psychology)",
+    "url": "https://en.wikipedia.org/wiki/Shaping_(psychology)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Three-Term Contingency (A-B-C)",
@@ -18576,7 +21641,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Three-term contingency",
+    "url": "https://en.wikipedia.org/wiki/Three-term_contingency",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Superstitious Behavior (Accidental Reinforcement)",
@@ -18593,7 +21663,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Superstition",
+    "url": "https://en.wikipedia.org/wiki/Superstition",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Skinner Box (Engineered Contingency)",
@@ -18610,7 +21685,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Operant conditioning chamber",
+    "url": "https://en.wikipedia.org/wiki/Operant_conditioning_chamber",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Punishment Suppresses, Reinforcement Builds",
@@ -18627,7 +21707,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Punishment (psychology)",
+    "url": "https://en.wikipedia.org/wiki/Punishment_(psychology)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Selection by Consequences",
@@ -18642,7 +21727,12 @@
    "thinkers": [
     "skinner"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Radical behaviorism",
+    "url": "https://en.wikipedia.org/wiki/Radical_behaviorism",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Natural Law (True Law Is Right Reason)",
@@ -18661,7 +21751,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Natural law",
+    "url": "https://en.wikipedia.org/wiki/Natural_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Honorable vs. the Expedient",
@@ -18679,7 +21774,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "De Officiis",
+    "url": "https://en.wikipedia.org/wiki/De_Officiis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Five Canons of Rhetoric",
@@ -18696,7 +21796,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Rhetoric",
+    "url": "https://en.wikipedia.org/wiki/Rhetoric",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Teach, Delight, Move (Officia Oratoris)",
@@ -18714,7 +21819,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "De Oratore",
+    "url": "https://en.wikipedia.org/wiki/De_Oratore",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Four Personae (Role-Based Duty)",
@@ -18732,7 +21842,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "De Officiis",
+    "url": "https://en.wikipedia.org/wiki/De_Officiis",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Cui Bono? (Who Benefits?)",
@@ -18750,7 +21865,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Cui bono?",
+    "url": "https://en.wikipedia.org/wiki/Cui_bono%3F",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Res Publica (The People's Property)",
@@ -18768,7 +21888,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Res publica",
+    "url": "https://en.wikipedia.org/wiki/Res_publica",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Inter Arma Silent Leges",
@@ -18786,7 +21911,12 @@
    "thinkers": [
     "cicero"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Inter arma enim silent leges",
+    "url": "https://en.wikipedia.org/wiki/Inter_arma_enim_silent_leges",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Concentrates the Mind Wonderfully",
@@ -18804,7 +21934,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Samuel Johnson",
+    "url": "https://en.wikipedia.org/wiki/Samuel_Johnson",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Knowledge Is of Two Kinds",
@@ -18821,7 +21956,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Samuel Johnson",
+    "url": "https://en.wikipedia.org/wiki/Samuel_Johnson",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Nothing Attempted If All Objections Answered",
@@ -18839,7 +21979,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Samuel Johnson",
+    "url": "https://en.wikipedia.org/wiki/Samuel_Johnson",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Last Refuge of a Scoundrel",
@@ -18857,7 +22002,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Samuel Johnson",
+    "url": "https://en.wikipedia.org/wiki/Samuel_Johnson",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Reminded More Than Informed",
@@ -18872,7 +22022,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Rambler",
+    "url": "https://en.wikipedia.org/wiki/The_Rambler",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Triumph of Hope over Experience",
@@ -18887,7 +22042,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Samuel Johnson",
+    "url": "https://en.wikipedia.org/wiki/Samuel_Johnson",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "I Refute It Thus (kicking the stone)",
@@ -18905,7 +22065,12 @@
    "thinkers": [
     "johnson"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Samuel Johnson",
+    "url": "https://en.wikipedia.org/wiki/Samuel_Johnson",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Fractal Geometry and Self-Similarity",
@@ -18923,7 +22088,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Fractal",
+    "url": "https://en.wikipedia.org/wiki/Fractal",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Coastline Paradox",
@@ -18941,7 +22111,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Coastline paradox",
+    "url": "https://en.wikipedia.org/wiki/Coastline_paradox",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Roughness Has a Dimension",
@@ -18959,7 +22134,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Fractal dimension",
+    "url": "https://en.wikipedia.org/wiki/Fractal_dimension",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Wild vs. Mild Randomness",
@@ -18977,7 +22157,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Fat-tailed distribution",
+    "url": "https://en.wikipedia.org/wiki/Fat-tailed_distribution",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Noah and Joseph Effects",
@@ -18995,7 +22180,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Hurst exponent",
+    "url": "https://en.wikipedia.org/wiki/Hurst_exponent",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Volatility Clustering",
@@ -19012,7 +22202,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Volatility clustering",
+    "url": "https://en.wikipedia.org/wiki/Volatility_clustering",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Trading Time vs. Clock Time",
@@ -19029,7 +22224,12 @@
    "thinkers": [
     "mandelbrot"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Volatility (finance)",
+    "url": "https://en.wikipedia.org/wiki/Volatility_(finance)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Descent with Modification (Common Descent)",
@@ -19048,7 +22248,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Common descent",
+    "url": "https://en.wikipedia.org/wiki/Common_descent",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Artificial Selection (The Breeder's Analogy)",
@@ -19067,7 +22272,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Selective breeding",
+    "url": "https://en.wikipedia.org/wiki/Selective_breeding",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Principle of Divergence",
@@ -19085,7 +22295,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Divergent evolution",
+    "url": "https://en.wikipedia.org/wiki/Divergent_evolution",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Struggle for Existence (Superfecundity)",
@@ -19103,7 +22318,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Struggle for existence",
+    "url": "https://en.wikipedia.org/wiki/Struggle_for_existence",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Entangled Bank (Cats to Clover)",
@@ -19121,7 +22341,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Food web",
+    "url": "https://en.wikipedia.org/wiki/Food_web",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Rudimentary Organs as Evidence of History",
@@ -19139,7 +22364,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Vestigiality",
+    "url": "https://en.wikipedia.org/wiki/Vestigiality",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Coevolution (Reciprocal Adaptation)",
@@ -19158,7 +22388,12 @@
    "thinkers": [
     "darwin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Coevolution",
+    "url": "https://en.wikipedia.org/wiki/Coevolution",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Franklin Effect",
@@ -19176,7 +22411,12 @@
    "thinkers": [
     "franklin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Benjamin Franklin effect",
+    "url": "https://en.wikipedia.org/wiki/Benjamin_Franklin_effect",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Moral Algebra",
@@ -19194,7 +22434,12 @@
    "thinkers": [
     "franklin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Decisional balance sheet",
+    "url": "https://en.wikipedia.org/wiki/Decisional_balance_sheet",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Virtue Ledger (Thirteen Virtues)",
@@ -19212,7 +22457,12 @@
    "thinkers": [
     "franklin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Autobiography of Benjamin Franklin",
+    "url": "https://en.wikipedia.org/wiki/The_Autobiography_of_Benjamin_Franklin",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Junto",
@@ -19230,7 +22480,12 @@
    "thinkers": [
     "franklin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Junto (club)",
+    "url": "https://en.wikipedia.org/wiki/Junto_(club)",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Modest Diffidence in Assertion",
@@ -19248,7 +22503,12 @@
    "thinkers": [
     "franklin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Autobiography of Benjamin Franklin",
+    "url": "https://en.wikipedia.org/wiki/The_Autobiography_of_Benjamin_Franklin",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Matching Funds",
@@ -19266,7 +22526,12 @@
    "thinkers": [
     "franklin"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Matching funds",
+    "url": "https://en.wikipedia.org/wiki/Matching_funds",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Conventional Wisdom",
@@ -19284,7 +22549,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Conventional wisdom",
+    "url": "https://en.wikipedia.org/wiki/Conventional_wisdom",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Countervailing Power",
@@ -19301,7 +22571,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Countervailing power",
+    "url": "https://en.wikipedia.org/wiki/Countervailing_power",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Private Affluence, Public Squalor",
@@ -19319,7 +22594,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Affluent Society",
+    "url": "https://en.wikipedia.org/wiki/The_Affluent_Society",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Dependence Effect",
@@ -19337,7 +22617,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Affluent Society",
+    "url": "https://en.wikipedia.org/wiki/The_Affluent_Society",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Technostructure",
@@ -19354,7 +22639,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Technostructure",
+    "url": "https://en.wikipedia.org/wiki/Technostructure",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Brevity of Financial Memory",
@@ -19372,7 +22662,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "John Kenneth Galbraith",
+    "url": "https://en.wikipedia.org/wiki/John_Kenneth_Galbraith",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Innocent Fraud",
@@ -19390,7 +22685,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "The Economics of Innocent Fraud",
+    "url": "https://en.wikipedia.org/wiki/The_Economics_of_Innocent_Fraud",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Money Mistaken for Intelligence",
@@ -19407,7 +22707,12 @@
    "thinkers": [
     "galbraith"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "John Kenneth Galbraith",
+    "url": "https://en.wikipedia.org/wiki/John_Kenneth_Galbraith",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Delivery, Delivery, Delivery (Hypokrisis)",
@@ -19425,7 +22730,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Demosthenes",
+    "url": "https://en.wikipedia.org/wiki/Demosthenes",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Beaten by the Event",
@@ -19440,7 +22750,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Demosthenes",
+    "url": "https://en.wikipedia.org/wiki/Demosthenes",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Aggression by Increments",
@@ -19458,7 +22773,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Salami slicing tactics",
+    "url": "https://en.wikipedia.org/wiki/Salami_slicing_tactics",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Standing Force over Improvised Expedition",
@@ -19473,7 +22793,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Philippic",
+    "url": "https://en.wikipedia.org/wiki/Philippic",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Pleasant Counsel Drives Out Sound Counsel",
@@ -19488,7 +22813,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Sycophancy",
+    "url": "https://en.wikipedia.org/wiki/Sycophancy",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Half-Shaved Head",
@@ -19505,7 +22835,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Demosthenes",
+    "url": "https://en.wikipedia.org/wiki/Demosthenes",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "The Bought Insider",
@@ -19520,7 +22855,12 @@
    "thinkers": [
     "demosthenes"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Demosthenes",
+    "url": "https://en.wikipedia.org/wiki/Demosthenes",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Legal Parity Is the Trigger",
@@ -19539,7 +22879,12 @@
    "thinkers": [
     "gresham"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gresham's law",
+    "url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Exit of the Undervalued",
@@ -19557,7 +22902,12 @@
    "thinkers": [
     "gresham"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gresham's law",
+    "url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Debasement as a Silent Tax",
@@ -19575,7 +22925,12 @@
    "thinkers": [
     "gresham"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Debasement",
+    "url": "https://en.wikipedia.org/wiki/Debasement",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Recoinage (Call In the Bad Units)",
@@ -19593,7 +22948,12 @@
    "thinkers": [
     "gresham"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Gresham's law",
+    "url": "https://en.wikipedia.org/wiki/Gresham%27s_law",
+    "host": "Wikipedia"
+   }
   },
   {
    "name": "Credit Follows Coin",
@@ -19611,7 +22971,12 @@
    "thinkers": [
     "gresham"
    ],
-   "sources": []
+   "sources": [],
+   "ref": {
+    "title": "Credit",
+    "url": "https://en.wikipedia.org/wiki/Credit",
+    "host": "Wikipedia"
+   }
   }
  ]
 }

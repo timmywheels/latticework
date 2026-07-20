@@ -136,7 +136,7 @@ def main():
             'links': links, 'provenance': m['provenance'],
             'mungerCitation': m['mungerCitation'], 'mungerQuote': m['mungerQuote'],
             'aka': m['aka'], 'thinkers': [t for t in m.get('thinkers', []) if t in THINKERS],
-            'sources': m.get('sources', []),
+            'sources': m.get('sources', []), 'ref': m.get('ref'),
         })
 
     # ---- symmetrize + guarantee minimum connectivity ---------------------
@@ -310,6 +310,8 @@ def main():
     L.append('  thinkers?: string[]')
     L.append('  /** source ids (see SOURCES) this model traces to */')
     L.append('  sources?: string[]')
+    L.append('  /** a verified reference explaining the concept (Wikipedia/SEP/Investopedia) */')
+    L.append('  ref?: { title: string; url: string; host: string }')
     L.append(f'  /** lattice coordinates in a {int(W)} × {int(H)} space */')
     L.append('  lx: number')
     L.append('  ly: number')
@@ -414,6 +416,9 @@ def main():
             L.append(f"    thinkers: [{', '.join(chr(39)+t+chr(39) for t in m['thinkers'])}],")
         if m['sources']:
             L.append(f"    sources: [{', '.join(chr(39)+x+chr(39) for x in m['sources'])}],")
+        if m.get('ref') and m['ref'].get('url'):
+            r = m['ref']
+            L.append(f"    ref: {{ title: '{esc(r['title'])}', url: '{esc(r['url'])}', host: '{esc(r['host'])}' }},")
         L.append(f"    lx: {m['lx']},")
         L.append(f"    ly: {m['ly']},")
         L.append('  },')

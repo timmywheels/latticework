@@ -11,7 +11,8 @@ interface SourceListProps {
  */
 export function SourceList({ model }: SourceListProps) {
   const ids = model.sources ?? []
-  if (!ids.length) return null
+  const ref = model.ref
+  if (!ids.length && !ref) return null
 
   const rows = ids.map((id) => SOURCES[id]).filter(Boolean)
   const primary = rows.filter((s) => PRIMARY_SOURCE_TYPES.has(s.type))
@@ -62,6 +63,26 @@ export function SourceList({ model }: SourceListProps) {
     <>
       {group('IN MUNGER’S WORDS', primary)}
       {group('ALSO CATALOGUED IN', secondary)}
+      {ref && (
+        <>
+          <dt className="mt-4 border-t border-ink/10 pt-3 font-mono text-[9.5px] font-medium tracking-[0.18em] text-stone">
+            LEARN THE MODEL
+          </dt>
+          <dd className="mt-1.5 flex flex-col gap-1.5">
+            <a
+              href={ref.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group cursor-pointer font-serif text-[12.5px] leading-[1.35] text-prussian transition-colors duration-150 hover:text-ember"
+            >
+              <span className="border-b border-prussian/40 group-hover:border-ember">
+                {ref.title}
+              </span>
+              <span className="ml-1 font-mono text-[9px] text-faded">· {ref.host}</span>
+            </a>
+          </dd>
+        </>
+      )}
     </>
   )
 }
