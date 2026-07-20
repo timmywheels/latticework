@@ -2,8 +2,7 @@ export function Footer() {
   return (
     <div className="mt-auto border-t border-ink/16">
       <div className="mx-auto flex max-w-[1280px] flex-col gap-2 px-4 py-4 font-mono text-[9.5px] tracking-[0.12em] text-stone md:flex-row md:items-center md:justify-between md:gap-4 md:px-7">
-        <span>LATTICEWORK — AFTER C. T. MUNGER'S LATTICE OF MODELS</span>
-        <span className="hidden md:inline">SET IN NEWSREADER &amp; IBM PLEX MONO</span>
+        <span>LATTICEWORK.PAGE – A FIELD GUIDE FOR DECISION-MAKING</span>
         <div className="flex items-center gap-x-3">
           <a
             href="https://github.com/timmywheels/latticework"

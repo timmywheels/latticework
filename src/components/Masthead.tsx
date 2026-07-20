@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router'
 import { motion } from 'motion/react'
 import { MODELS } from '../data/models'
-import { StitchMark } from './StitchMark'
+import { Logo } from './Logo'
 
 interface MastheadProps {
   studiedCount: number
@@ -24,15 +24,17 @@ export function Masthead({ studiedCount, savedCount, onSearch }: MastheadProps) 
   return (
     <div className="border-b-2 border-ink/16">
       <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3 md:px-7 md:py-4">
-        <Link to="/" className="flex cursor-pointer items-baseline gap-3.5">
-          {/* self-center keeps the mark optically centered while the wordmark and
-              tagline share a true text baseline */}
-          <span className="self-center">
-            <StitchMark size={19} />
+        {/* one row, items-center: the mark and wordmark center against each other.
+            leading-none trims the font's phantom descender space so the wordmark
+            sits centered, not hugging the top. The tagline drops to the wordmark's
+            baseline on its own. */}
+        <Link to="/" className="flex cursor-pointer items-center gap-2.5">
+          <Logo size={22} />
+          <span className="font-serif text-2xl font-semibold leading-none tracking-[-0.01em] [text-box-edge:cap_alphabetic] [text-box-trim:trim-both]">
+            latticework.
           </span>
-          <span className="font-serif text-2xl font-semibold tracking-[-0.01em]">latticework.</span>
-          <span className="hidden font-mono text-[10px] tracking-[0.14em] text-stone lg:inline">
-            A FIELD GUIDE FOR DECISIONS
+          <span className="hidden font-mono text-[10px] leading-none tracking-[0.14em] text-stone lg:inline [text-box-edge:cap_alphabetic] [text-box-trim:trim-both]">
+            A FIELD GUIDE FOR DECISION-MAKING
           </span>
         </Link>
         <div className="flex flex-wrap items-center gap-x-[18px] gap-y-1.5">
